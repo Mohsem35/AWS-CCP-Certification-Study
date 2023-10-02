@@ -114,3 +114,81 @@ There are 3 common cloud deployment models
 
 
 > **_NOTE:_** Know the _computing models_ and _delpoyment models_
+
+#### Region
+
+**`Region`**: A Region is a  _physical location_. AWS logically _groups its Regions_ into **`geographic`** locations
+
+
+Region Characteristics:
+
+
+- A Region is a **`collection of AZs`**
+- You should set up resources in Regions _closest to your users_
+- A Region is **`global`** and has _2 or more AZs_
+- Fully **`Independent`** and **`Isolated`**
+- **`Physicall seperated`** and they _use different power grids_
+- _Connected among themselves_ through **`low-latency`** links
+- **`Fault tolerant`** means one AZ goes out of service, the _other should not be impacted_
+- Allows for high availability
+
+
+#### Availability Zones
+
+**`Availability Zones`**: Availability Zones (AZs) consist of one or more physically separated **`data centers`**, each with _redundant power, networking, and connectivity, housed in separate facilities_.
+
+1. An AZ is a **`collection of data centers`**
+2. An AZ contains the _servers you are renting_, and where you deploy your applications
+3. An AZ is _associated with a single Region_
+4. **`Multi-AZ deployments`** provide high availability. Systems that are highly available are dependable enough to **`operate continuously without failure`**
+
+
+#### Edge Locations
+
+**`Edge Locations`**: Edge locations **`cache content`** for **`fast delivery`** to your users
+
+- Edge locations **`reduce latency`**
+- Content delivery network(**`CDN`**) and cache content by **`Amazon CloudFront`**
+- An edge location is like **`mini data center`**, but it _doesn't run our main infrastructure_ like EC2 instances.
+- Edge locations ensure low latency by placing content **`closer to users`**. There are _more edge locations than Regions and AZs_
+
+
+
+
+
+#### The AWS Management Console
+
+
+The AWS Management Console is **`GUI`** and allows you to access your AWS account and manage applications running in your account from a **`web browser`**
+
+Good For: 
+- If you’re just _getting started with the cloud_.
+- If you serve in a _non-technical role: business analyst, project manager, and many more_. 
+- If you serve in a _technical role: software engineer, web developer, solutions architect, and many more_.
+
+
+#### Root User
+
+Root user is **`automatically`** created when you **`initially sign up`** for your account
+- _Protect Root user_ with multi-factor authentication (**`MFA`**)
+- There are _certain things that only the root user can do_
+- One thing that will _already be provisioned in our AWS account_ will be a **`default VPC`**
+
+#### AWS Command Line Interface (CLI)
+
+
+The AWS Command Line Interface (CLI) allows you to _access your AWS account_ through a **`terminal`** or **`command`** window.
+
+- The CLI is mainly used by **`developers`**
+- AWS CLI are sending commands which **`trigger APIs`** _through your terminal_
+
+> **_NOTE:_** Sometimes new features are available via the CLI before the console
+
+**`Programmatic Access`**: Programmatic access provides _access to your AWS resources_ through an application or a _tool like the CLI_
+
+AWS services can be accessed by 3 ways
+
+1. _CLI_: from a terminal session of our laptop
+2. _Application Code_: services can be accessed from application code using SDKs and programmatic calls
+3. _Software Development Kits (SDKs)_: from popular programming languages like Java, Python, C# and many more 
+
