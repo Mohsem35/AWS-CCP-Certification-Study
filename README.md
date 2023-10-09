@@ -8,7 +8,7 @@
 - **`Billing, Pricing, and Support`** (12% of scored content)
 
 #### chapter 1
-### Foundations of Cloud Computing
+### Foundations of Cloud Computing (24%)
 
 Q: What is cloud computing, exactly?
 Cloud computing is the **delivery of computing services** over the internet.
@@ -143,6 +143,10 @@ Region Characteristics:
 4. **`Multi-AZ deployments`** provide high availability. Systems that are highly available are dependable enough to **`operate continuously without failure`**
 
 
+#### Data Center
+
+A single data center contains multiple servers
+
 #### Edge Locations
 
 **`Edge Locations`**: Edge locations **`cache content`** for **`fast delivery`** to your users
@@ -192,3 +196,44 @@ AWS services can be accessed by 3 ways
 2. _Application Code_: services can be accessed from application code using SDKs and programmatic calls
 3. _Software Development Kits (SDKs)_: from popular programming languages like Java, Python, C# and many more 
 
+
+#### Questions  
+
+Which of the following is a best practice for securing access to your AWS account?
+- Multi-Factor Authentication (MFA)
+
+Which of the following are benefits provided by cloud computing?
+- It offers easy access to servers, storage, and other services over the internet.
+- It allows on-demand spinning up of needed resources (such as virtual machines).
+
+Which of the following is a geographic area containing multiple Availability Zones (AZs)?
+- Region
+
+AWS defines a hybrid cloud as a combination of public and private clouds.
+
+- True
+
+What does the concept of durability mean in a cloud computing environment?
+- Durability offers long-term data protection.
+
+Which of the following contains 1 or more physically separated data centers?
+- Availability Zone
+
+Which type of expense includes upfront purchases toward fixed assets?
+- Capital expenditures (CapEx)
+
+Which of the following actions can be performed using the AWS Console?
+- Access your AWS account
+- Search for services
+- Manage applications
+
+Which type of expense includes funds used to run day-to-day operations? 
+- Operating expenses (OpEx)
+
+
+#### chapter 2
+### Technology (33%)
+
+Elastic simply means that it can grow and shrink
+
+EC2 is a foundational piece of AWS's Cloud Computing platform 
