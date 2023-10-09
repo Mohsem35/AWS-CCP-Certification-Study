@@ -234,6 +234,134 @@ Which type of expense includes funds used to run day-to-day operations?
 #### chapter 2
 ### Technology (33%)
 
-Elastic simply means that it can grow and shrink
 
-EC2 is a foundational piece of AWS's Cloud Computing platform 
+#### Elastic Compute Cloud (EC2)
+
+- Elastic compute power simply means that it can grow and shrink
+- EC2 is a **`foundational piece`** of AWS's Cloud Computing platform 
+- EC2 allows you to **`rent and manage virtual servers`** in the cloud
+
+
+**`Servers`** are the _physical compute hardware_ **`running in a data center`**.
+
+**`EC2 instances`** are the _virtual servers_ running on these physical servers.
+
+Instances are **`not`** considered **`serverless`**
+
+##### Let's take a closer look of EC2
+
+1. You're able to provision an EC2 instance at the click of a button
+2. You can use a preconfigured **`template`** called an **`Amazon Machine Image (AMI)`** to launch your instance.
+3. You can deploy your applications directly to EC2 instances.
+4. You receive 750 compute hours per month on the Free Tier plan.
+
+
+##### Use Cases
+
+EC2 in the Real World
+
+1. **`Deploy a database`**: Deploying a database to EC2 gives you _full control over the database_
+
+1. **`Deploy a web application`**: Deploy to **`multiple AZs`** to make the web application highly available
+
+##### Connectivity
+
+Methods to Access an EC2 Instance
+
+
+
+
+- [x] _AWS Management Console_
+You're able to configure and manage your instances **`via web browser`**
+
+- [x] _Secure Shell (SSH)_
+SSH allows you to establish a **`secure connection`** to your instance **`from your local laptop`** 
+
+- [x] _EC2 Instance Connect (EIC)_
+EIC allows you to use **`IAM policies`** to control SSH access to your instances, **`removing the need to manage SSH keys`**
+
+- [x] _AWS Systems Manager_
+Systems Manager allows you to manage your EC2 instances **`via a web browser or the AWS CLI`**.
+
+
+#### EC2 Pricing Options
+
+##### 1. On-Demand
+A fixed price in which you are billed **`down to the second`** based on the instance type. There is no contract, and you **`pay only for what you use`**.
+
+Use On-Demand instances when:
+1. You care about _low cost without any upfront payment or long-term commitment_.
+2. Your applications have _unpredictable workloads that can't be interrupted_.
+3. Your _applications are under development_.
+4. Your workloads will _not run longer than a year_.
+
+Fun facts:
+
+You can **`reserve capacity`** using On-Demand Capacity Reservations. The EC2 capacity is held for you whether or not you run the instance.
+
+
+##### 2. Spot (Cheapest Option)
+Spot instances let you take advantage of **`unused`** EC2 capacity. Your request is fulfilled **`only`** if capacity is available.
+
+Use Spot instances when:
+1. You are **`not concerned`** about the _start or stop time of your application_
+2. Your workloads can be **`interrupted`**.
+3. Your _application is only feasible at very low compute prices_
+
+
+Fun facts:
+
+You can save up to **`90% off`** On-Demand prices. You pay the spot price that's in effect at the beginning of each hour.
+
+
+##### 3. Reserved Instances (RIs)
+RIs allow you to **`commit`** to a _specific instance type_ in a **`particular Region for 1 or 3 years`**.
+
+Use Reserved Instances when:
+
+1. Your application has **`steady state usage`**, and you can commit to 1 or 3 years.
+2. You can pay money **`upfront`** in order to receive a discount on On-Demand prices.
+3. Your application requires a **`capacity reservation`**
+
+
+Fun facts:
+- You can save up to 75% off On-Demand prices.
+- You are **`required to sign a contract`**.
+- You can **`reserve capacity`** in an **`Availability Zone`** _for any duration_   
+- You can pay **`All Upfront`**, Partial Upfront, or No Upfront. All Upfront for the max term earns the highest discount.
+- Provides convertible types at **`54%`** discount.
+
+
+
+##### 4. Dedicated Hosts
+
+Dedicated Hosts allow you to pay for a physical server that is **`fully dedicated to running your instances`**.
+
+Use Dedicated Hosts when:
+1. You want to **`bring your own`** _server-bound software_ **`license`** from vendors like Microsoft or Oracle.
+2. You have regulatory or corporate compliance requirements around tenancy model.
+
+
+Fun facts:
+
+- You can save up to 70% off On-Demand prices.
+- You bring your existing **`per-socket`**, **`per-core`**, or **`per-VM`** software licenses.
+- There is no multi-tenancy, meaning the **`server is not shared with other customers`**.
+- A Dedicated Host is a physical server, whereas a Dedicated Instance runs on the host.
+
+
+
+##### 5. Savings Plan
+Savings Plan allows you to commit to compute usage (**`measured per hour`**) _for 1 or 3 years_.
+
+Use Savings Plans when:
+1. _You want to lower your bill across multiple compute services_.
+2. You want the **`flexibility to change`** compute services, instance types, operating sytems, or Regions.
+
+Fun facts:
+
+- You can save up to 72% off On-Demand prices.
+- You are not making a commitment to a Dedicated Host, **`just compute usage`**
+- Savings **`can be shared across various compute services`** like EC2, Fargate, and Lambda.
+- This does **`not`** provide a capacity reservation.
+
