@@ -410,3 +410,70 @@ Auto Scaling reduces the impact of system failures and improves the availability
 - `Horizontal scaling vs. vertical scaling`: Horizontal scaling (or scaling out) adds or replaces instances, while vertical scaling (or scaling up) upgrades an existing instance.
 - `Understand the benefits of Auto Scaling`: Remember Auto Scaling improves the availability of your applications, and don't confuse it with load balancing.
 - `Understand how to connect to an EC2 instance from your local machine`: A key pair is needed to access an EC2 instance from your local machine.
+
+
+
+
+
+![Alt text](download.png)
+
+#### AWS Lambda
+
+
+
+Lambda allows **`developers`** to _focus on core business logic_ for the apps they are developing _instead of worrying about managing servers_
+
+AWS Lambda is a **`serverless compute service`** that lets you **`run code without managing servers`**
+
+- _You author application code_, called **`functions`**, using many popular languages
+- Scales automatically
+- **`Serverless`** means you _don’t worry about managing servers like with EC2_
+
+
+##### Use Cases
+
+Lambda is a **`building block`** for many serverless applications. Serverless simply means _AWS manages the servers for you_ and you **`cannot access`** them. You can pretend they don't exist.
+
+
+1. **`Real-time file processing`**
+
+![Alt text](Screenshot%202023-10-10%20at%208.10.24%20PM.png)
+
+
+2. **`Sending email notifications`**
+
+![Alt text](Screenshot%202023-10-10%20at%208.14.13%20PM.png)
+
+3. **`Backend business logic`**
+
+![Alt text](Screenshot%202023-10-10%20at%208.14.23%20PM.png)
+
+
+##### Features
+
+
+1. **`Supports popular programming languages`** like Java, Go, PowerShell, Node.js, C#, Python, and Ruby.
+2. You **`author code`** using your favorite development environment or via the console.
+3. Lambda can _execute your code_ in _response to events_
+4. Lambda **`functions`** have a **`15-minute timeout`**
+
+
+##### Pricing Model
+
+You are charged based on the **`duration`** and **`number of requests`**
+
+
+
+
+1. **`Compute time`**: Pay only for compute time used - there is **`no charge if your code is not running`**
+
+2. **`Request count`**: A request is counted each time it starts execution. _Test invokes in the console count as well_
+
+3. **`Always free`**: The free usage tier includes **`1 million free requests each month`**
+
+
+>**_Note_**: Things to Remember When Studying for the Exam
+
+
+- Your responsibility: You are only responsible for your application code. AWS manages servers, coding environment, and language support.
+- Always free: Even after the free-usage tier expires, you'll have access to 1 million free Lambda calls each month.
