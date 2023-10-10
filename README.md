@@ -234,6 +234,8 @@ Which type of expense includes funds used to run day-to-day operations?
 #### chapter 2
 ### Technology (33%)
 
+![amazon_ec2](https://github.com/Mohsem35/AWS-Learning/assets/58659448/69d04611-d71a-41e5-bbe4-88323bf20ff4)
+
 
 #### Elastic Compute Cloud (EC2)
 
@@ -269,19 +271,23 @@ EC2 in the Real World
 Methods to Access an EC2 Instance
 
 
-
-
 - [x] _AWS Management Console_
+
 You're able to configure and manage your instances **`via web browser`**
 
 - [x] _Secure Shell (SSH)_
+
 SSH allows you to establish a **`secure connection`** to your instance **`from your local laptop`** 
 
 - [x] _EC2 Instance Connect (EIC)_
+
 EIC allows you to use **`IAM policies`** to control SSH access to your instances, **`removing the need to manage SSH keys`**
 
 - [x] _AWS Systems Manager_
+
 Systems Manager allows you to manage your EC2 instances **`via a web browser or the AWS CLI`**.
+
+<img width="850" alt="Screenshot 2023-10-10 at 12 26 20 AM" src="https://github.com/Mohsem35/AWS-Learning/assets/58659448/684a2491-5cd2-47f6-a4ae-11887e32befc">
 
 
 #### EC2 Pricing Options
@@ -365,3 +371,42 @@ Fun facts:
 - Savings **`can be shared across various compute services`** like EC2, Fargate, and Lambda.
 - This does **`not`** provide a capacity reservation.
 
+#### Features
+
+
+EC2 instances offer 
+
+1. **`load balancing`** and
+2. **`Auto Scaling`**
+
+
+
+
+**_Elastic Load Balancing_** automatically distributes your **`incoming application traffic`** across multiple EC2 instances
+
+<img width="387" alt="Screenshot 2023-10-10 at 5 42 21 PM" src="https://github.com/Mohsem35/AWS-Learning/assets/58659448/a3e03089-161c-4eea-83e6-5672b2220308">
+
+Four types of load balancers are available
+1. Classis
+2. Application
+3. Gateway
+4. Network
+
+
+![download](https://github.com/Mohsem35/AWS-Learning/assets/58659448/72d61e38-f1f2-4ce7-92fa-89a1ecd38bf7)
+
+
+**_EC2 Auto Scaling_** adds or replaces EC2 instances automatically across AZs, **`based on need and changing demand`**
+
+<img width="349" alt="Screenshot 2023-10-10 at 5 51 47 PM" src="https://github.com/Mohsem35/AWS-Learning/assets/58659448/3ad0ebce-5043-4730-8d4e-e47a69a0f318">
+
+Auto Scaling reduces the impact of system failures and improves the availability of your applications.
+
+> **_Note_** : Do not confuse horizontal scaling with vertical scaling (or scaling up), which upgrades an EC2 instance by adding more power (CPU, RAM) to an existing server.
+
+- `EC2 pricing options`: Understand On-Demand, Spot, Reserved Instances, Dedicated Hosts, and Savings Plans.
+- `Know the types of load balancers`: Classic, Application, Gateway, and Network
+- `Understand real-world usage`: Deploying a database or a web application
+- `Horizontal scaling vs. vertical scaling`: Horizontal scaling (or scaling out) adds or replaces instances, while vertical scaling (or scaling up) upgrades an existing instance.
+- `Understand the benefits of Auto Scaling`: Remember Auto Scaling improves the availability of your applications, and don't confuse it with load balancing.
+- `Understand how to connect to an EC2 instance from your local machine`: A key pair is needed to access an EC2 instance from your local machine.
