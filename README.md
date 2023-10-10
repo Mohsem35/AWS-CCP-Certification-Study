@@ -414,8 +414,7 @@ Auto Scaling reduces the impact of system failures and improves the availability
 
 
 
-
-![Alt text](download.png)
+![download png 20-44-42-831](https://github.com/Mohsem35/AWS-Learning/assets/58659448/24f4939f-0761-4a02-8eb0-6e7dde49fa4d)
 
 #### AWS Lambda
 
@@ -437,16 +436,17 @@ Lambda is a **`building block`** for many serverless applications. Serverless si
 
 1. **`Real-time file processing`**
 
-![Alt text](Screenshot%202023-10-10%20at%208.10.24%20PM.png)
+<img width="400" alt="Screenshot 2023-10-10 at 8 10 24 PM" src="https://github.com/Mohsem35/AWS-Learning/assets/58659448/96c7d03e-5c9f-41d3-8fd8-bad3fa09dd53">
 
 
 2. **`Sending email notifications`**
 
-![Alt text](Screenshot%202023-10-10%20at%208.14.13%20PM.png)
+<img width="400" alt="Screenshot 2023-10-10 at 8 14 13 PM" src="https://github.com/Mohsem35/AWS-Learning/assets/58659448/7fe2999d-20f6-4234-9d5f-029207213013">
+
 
 3. **`Backend business logic`**
 
-![Alt text](Screenshot%202023-10-10%20at%208.14.23%20PM.png)
+<img width="400" alt="Screenshot 2023-10-10 at 8 14 23 PM" src="https://github.com/Mohsem35/AWS-Learning/assets/58659448/13c72d5b-7390-467c-a3ef-1e0de5f2ecca">
 
 
 ##### Features
@@ -461,8 +461,6 @@ Lambda is a **`building block`** for many serverless applications. Serverless si
 ##### Pricing Model
 
 You are charged based on the **`duration`** and **`number of requests`**
-
-
 
 
 1. **`Compute time`**: Pay only for compute time used - there is **`no charge if your code is not running`**
