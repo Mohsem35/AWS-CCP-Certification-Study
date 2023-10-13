@@ -1,3 +1,5 @@
+Demonstrate: EC2, Lambda. S3,   
+
 ## AWS-Learning for AWS Certified Cloud Practitioner Exam
 
 4 exam domains
@@ -475,3 +477,213 @@ You are charged based on the **`duration`** and **`number of requests`**
 
 - Your responsibility: You are only responsible for your application code. AWS manages servers, coding environment, and language support.
 - Always free: Even after the free-usage tier expires, you'll have access to 1 million free Lambda calls each month.
+
+
+
+#### AWS Fargate
+
+Fargate is a **`serverless`** compute engine for **`containers`**
+
+
+- Fargate allows you to _manage containers, like Docker_.
+- _Scales automatically_
+- Serverless means you don’t worry about provisioning, configuring, or scaling servers.
+- Fargate _works with Amazon Elastic Container Service_, **`ECS`**
+
+
+
+
+#### Amazon Lightsail
+
+Lightsail allows you to **`quickly launch(preconfigured applications) all the resources`** you need for **`small projects`**
+
+- _Deploy preconfigured applications_, like **`WordPress websites`**, at the click of a button
+- Simple screens for _people with no cloud experience_
+- Includes a **`virtual machine`**, **`SSD-based storage`**, **`data transfer`**, **`DNS management`**, and a **`static IP`**
+- Provides a low, predictable monthly fee, as low as $3.50
+
+
+
+#### AWS Outposts
+
+AWS তে outpost লিখা দেখলেই বুঝতে হবে, সেখানে internal data center থাকবে 
+
+Outposts allows you to **`run cloud services`** in your **`internal data center`**
+
+- Supports workloads that need to **`remain on-premises`** due to _latency or data sovereignty needs_
+
+> **_Note_**: data sovereignty is also considered data residency.
+You may have _legal, regulatory, or contractual requirements that require you to keep your data in a particular location_,and Outposts can assist you with that.
+
+- AWS **`delivers and installs servers`** in your _internal data center_
+- Have access to the cloud services and APIs to develop **`apps on-premises`**
+- Used for a **`hybrid`** experience
+
+
+
+#### AWS Batch
+
+Batch allows you to process large **`workloads in smaller chunks`** (or batches).
+
+- Runs hundreds and thousands of smaller **`batch processing`** jobs
+- **`Dynamically`** provisions instances **`based on volume`**
+
+
+
+
+#### AWS Amazon Simple Storage Service (S3)
+
+Companies today need to _collect_, _store_, and _analyze_ the data they've accumulated over the years on a massive scale. Storage services in the cloud provide a place for companies to store data.
+
+S3 is an **`object storage service`** for the cloud that is highly available
+
+- **`Objects`** (or files) are stored in **`buckets`** (or directories). _Instead of files and directories, we have objects and buckets_
+- Essentially **`unlimited storage`** that can hold millions of objects per bucket.
+- Objects can be **`public`** or **`private`**
+- You can **`upload`** objects via the _console_, the _CLI_, or _programmatically from within code using SDKs_. 
+
+
+##### Facts
+
+
+You can set **`security`** at the `bucket` or `individual` object level using _access control lists(ACLs)_, _bucket policies_, or _access point policies_
+
+
+You can **`enable versioning`** to create _multiple versions of your file_ in order to protect against _accidental deletion_ and to use a previous version.
+
+
+You can use **`S3 access logs`** to track the access to your buckets and objects. So that you can see the _root cause of issues_ or _track down any suspicious activity_
+
+S3 is a **`regional service`**, but **`bucket names must be globally unique`**
+
+
+##### Data Accessibility
+
+
+
+1. **Durability**: Will my data be there tomorrow? means you can _expect your data to be there_. Durability is important so your **`objects are never lost or compromised`**
+
+    Amazon S3 Standard is designed for _99.999999999%_ (**`11 9’s`**) of durability
+
+2. **Availability**: How quickly can I access my data? _can I have it right now?_. Availability is important so you can **`access your data quickly`** when you need it.
+
+    Amazon S3 Standard is designed for _99.99%_ availability
+
+##### Q: How can AWS offer 11 nines of durability and 99.99%?
+
+- data stored on an S3 buscket inside a region is **`replicated across multiple servers`**. so it gives HA and durability on a regional level. _for cross region replication, we have to set up of our own_
+
+##### S3 Storage Classes
+
+Amazon S3 offers several storage classes designed for different use cases.
+
+
+1. **`S3 Standard`**
+    - General-purpose storage 
+    - Data stored across multiple Availability Zones
+    - Low latency and high throughput
+
+Recommended for: Frequently accessed data 
+
+Durability of 99.999999999% & Availability of 99.99%
+
+
+2. **`S3 Intelligent-Tiering`**
+    - **`Automatically moves`** your data to the **`most cost-effective storage class`**
+    - **`Automatic cost savings`**
+    - _Machine learning behind the scene_
+    - _No retrieval fees_
+    - Data stored across multiple Availability Zones
+
+Recommended for: **`Data`** with **`unknown or changing access pattern`**
+
+Durability of 99.999999999% & Availability of 99.9% 
+
+
+3. **`S3 Standard-Infrequent Access Recommended for (IA)`**
+    - _Data accessed less frequently_ but requires rapid access
+    - Data stored across multiple Availability Zones
+    - Cheaper than S3 Standard
+
+
+Recommended for: **`Long-lived data`**, **`Infrequently accessed`**, Millisecond access when needed
+Availability of 99.9%
+
+Durability of 99.999999999% & Availability of 99.9% 
+
+
+4. **`S3 One Zone-Infrequent(IA)`**
+    - Like S3 Standard-IA but **`data stored in a single Availability Zone`**
+    - Costs 20% less than S3 Standard-IA
+    - Data stored in this storage class can be lost
+
+Durability of 99.999999999% & Availability of **`99.5%`**
+
+Recommended for: **`Re-creatable data`**, Infrequently accessed with millisecond access, **`Availability and durability not essential`**
+
+
+5. **`S3 Glacier`**
+
+    - _Long-term data storage and archival for lower costs_
+    - Data retrieval takes longer
+    - 3 retrieval options: **`1-5 minutes`**, **`3-5 hours`**, or **`5-12 hours`**
+    - Data stored across multiple Availability Zones
+
+Recommended for: **`Long-term backups`**, Cheaper storage options
+
+Durability of 99.999999999% and **`no Availability`**
+
+
+6. **`S3 Glacier Deep Archive`**
+
+    - Like S3 Glacier but longer access times
+    - 2 retrieval options: **`12 hours`** or **`48 hours`**
+    - **`Cheapest of all S3 options`**
+    - Data stored across multiple Availability Zones
+
+Recommended for: _Long-term data archival_ accessed **`once or twice a year`**, Retaining data for **`regulatory compliance requirements`**
+
+Durability of 99.999999999% & **`no Availability`**
+
+
+7. **`S3 Outposts`**
+
+    - Provides object storage on- premises
+    - A single storage class
+    - Store data across multiple devices and servers
+
+Recommended for: **`Data that needs to be kept local`**, Demanding **`application performance needs`**
+
+**`no Durability & Availability`**
+
+
+##### S3 in the Real World
+
+
+1. _Static websites_: Deploy static websites to S3 and use _CloudFront_ for global distribution.
+
+2. _Data archive_: Archive data using _Amazon Glacier_ as a storage option for Amazon S3.
+
+3. _Analytics systems_: Store data in Amazon S3 for use with analytics services like _Redshift_ and _Athena_
+
+4. _Mobile applications_: Mobile application users can _upload files_ to an Amazon S3 bucket.
+
+
+Things to Remember
+> **_Note_**: S3 is a _regional service but has a global namespace_, S3 offers unlimited storage with many storage classes. Understand the use cases for each storage class.
+
+
+#### Additional Storage Services
+
+#### EC2 Storage
+All EC2 instances must have a root drive. this could be an **`EBS`** volume or an **`instance store drives(physical machine)`**
+
+You can also _attach multiple EBS volumes to a single EC2 instance_. You can think of these as **`hard drives`** that you've installed on the EC2 instance. The important **`distinction`** between EBS drives and instance store drives is that EBS drives are **`persistent`**. You can stop or terminate the instance, or even detach an EBS drive and attach it to a different EC2 instance. They have lower latency, but that data does not persist if an EC2 instance is stopped or terminated.
+
+
+#### Amazon Elastic File System (EFS)
+
+like dropbox or google drive
+
+
+So if you have a Site-to-Site VPN or a direct connection to the AWS Cloud, you can use Storage Gateway to hybridize your data storage. You can think of this sort of as a file directory, where some of the files are hosted locally, and some of them are hosted in the cloud.
