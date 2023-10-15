@@ -675,15 +675,154 @@ Things to Remember
 
 #### Additional Storage Services
 
-#### EC2 Storage
-All EC2 instances must have a root drive. this could be an **`EBS`** volume or an **`instance store drives(physical machine)`**
+
+#### > EC2  Storage
+
+All EC2 instances must have a **`root drive`**. this could be an _EBS_ volume or an _instance store drives(physical machine)_
+
+
+#### Amazon Elastic Block Store (EBS)
+
+EBS is a **`storage device`** (called a **`volume`**) that _can be attached to (or removed from_) your instance
+
+
+- Data **`persists`** when the instance is not running
+- Tied to **`one`** Availability Zone
+- Can only be attached to **`one instance`** in the same Availability Zone
+
+
+Recommended for: Quickly accessible data, **`Running a database on an instance`**, Long-term data storagex
+
 
 You can also _attach multiple EBS volumes to a single EC2 instance_. You can think of these as **`hard drives`** that you've installed on the EC2 instance. The important **`distinction`** between EBS drives and instance store drives is that EBS drives are **`persistent`**. You can stop or terminate the instance, or even detach an EBS drive and attach it to a different EC2 instance. They have lower latency, but that data does not persist if an EC2 instance is stopped or terminated.
 
 
+
+
+#### EC2 Instance Store
+
+An **`instance store`** is local storage that is physically attached to the host computer and _cannot be removed_
+
+- Storage on disks **`physically attached to an instance`**
+- **`Faster`** with higher I/O speeds
+- Storage is **`temporary`** since **`data loss`** occurs when the EC2 instance is **`stopped`**
+
+Recommended for: Temporary storage needs, _Data replicated across multiple instances_
+
 #### Amazon Elastic File System (EFS)
 
-like dropbox or google drive
+EFS is a **`serverless network file system`** for sharing files.
+
+- Only supports the **`Linux`** file system
+- More **`expensive`** than EBS
+- Accessible across **`different Availability Zones`** in the same Region
+
+like **`dropbox`** or **`google drive`**
 
 
-So if you have a Site-to-Site VPN or a direct connection to the AWS Cloud, you can use Storage Gateway to hybridize your data storage. You can think of this sort of as a file directory, where some of the files are hosted locally, and some of them are hosted in the cloud.
+Recommended for: Main directories for **`business-critical apps`**, Lift-and-shift existing enterprise apps
+
+
+#### > Storage Gateway
+
+
+#### Storage Gateway
+
+Storage Gateway is a **`hybrid`** storage service.
+
+- Connect **`on-premises`** and **`cloud`** data 
+- Supports a hybrid model
+
+
+So if you have a Site-to-Site **`VPN`** or a direct connection to the AWS Cloud, you can use Storage Gateway to hybridize your data storage. You can think of this sort of as a file directory, where some of the files are hosted locally, and some of them are hosted in the cloud.
+
+Recommended for: **`Moving backups to the cloud`**, Reducing costs for hybrid cloud storage, _Low latency access to data_
+
+#### > AWS Backup
+
+#### AWS Backup
+
+AWS Backup helps you manage **`data backups across multiple AWS services`**
+
+- Integrates with resources like **`EC2`**, **`EBS`**, **`EFS`**, and more
+- Create a backup plan that includes **`frequency`** and **`retention`**
+
+
+
+
+
+
+
+
+
+#### Amazon CloudFront
+
+
+##### What is a content delivery network (CDN)?
+
+
+Well, the **`internet`** is all about **`delivering content`**, like websites and images and apps, and there are so many requests for massive amounts of data, like high-definition videos, large downloads, and more. Wouldn't it be nice if there were a **`service`** that ensured **`fast download times`**? Well, that's where a content delivery network comes into play.
+
+A CDN is a mechanism to **`deliver content quickly`** and efficiently based on **`geographic location`**. Low latency is good!
+
+
+**`Amazon CloudFront is a CDN`** that delivers data and applications globally with low latency.
+
+- Makes content available **`globally`** or restricts it based on location
+- **`Speeds up`** delivery of  static and dynamic web content
+- Uses **`edge locations`** to **`cache`** content
+- Even if your app is in a single Region, it can still be **`delivered globally`** because of CloudFront
+
+
+
+> _Note_: Did you know that if the content is already in the edge location, CloudFront delivers it immediately? If not, CloudFront retrieves the files from the origin.
+
+
+
+- **`CloudFront distribution cache`** is just the name given to a **`collection of edge locations`** and remember, an 
+- edge location is like a **`mini data center`** where files are cached.
+
+
+##### Use cases
+
+
+
+1. **`S3 static websites`**: CloudFront is often used with S3 to deploy content globally.
+
+2. **`Prevent attacks`**: CloudFront can stop certain web attacks, like _DDoS_. 
+3. **`IP addresses blocking`**: Geo-restriction prevents users in certain countries from accessing content.
+
+
+
+
+#### Amazon Global Accelerator
+
+Global Accelerator  **`sends your users`** through the **`AWS global network`** when _accessing your content, speeding up delivery_
+
+- _Improves latency and availability_ of **`single-Region applications`**
+- Sends traffic through the AWS global network infrastructure
+- **`60%`** performance boost
+- **`Automatically re-routes traffic`** to healthy available **`regional endpoints`**
+
+
+
+
+#### Amazon S3 Transfer Acceleration
+
+S3 Transfer Acceleration improves content **`uploads and downloads to and from S3 buckets`**
+
+- **`Fast transfer`** of files over **`long distances`**
+- **`Uses`** CloudFront’s globally distributed **`edge locations`**
+- Customers around the world can upload to a **`central bucket`**
+
+
+> Note: Things to Remember  
+
+CloudFront: Don't forget CloudFront allows for global distribution of content. Don't forget CloudFront has security features like  _DDoS protection and geo-restriction_
+
+Global Accelerator: Remember Global Accelerator provides _low latency_.
+
+S3 Transfer Acceleration: Remember S3 Transfer Acceleration provides fast transfer of files over long distances.
+
+
+
