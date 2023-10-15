@@ -529,6 +529,8 @@ Batch allows you to process large **`workloads in smaller chunks`** (or batches)
 - **`Dynamically`** provisions instances **`based on volume`**
 
 
+![0_8qgeGxrtC7ynPl8I](https://github.com/Mohsem35/AWS-Learning/assets/58659448/a8b6806b-3c80-4075-b1d2-d8616f00bb5e)
+
 
 
 #### AWS Amazon Simple Storage Service (S3)
@@ -678,8 +680,11 @@ Things to Remember
 
 #### > EC2  Storage
 
-All EC2 instances must have a **`root drive`**. this could be an _EBS_ volume or an _instance store drives(physical machine)_
+<img width="800" alt="Screenshot 2023-10-15 at 12 26 14 PM" src="https://github.com/Mohsem35/AWS-Learning/assets/58659448/51a7c98e-7231-4363-80ad-20c7b649249b">
 
+
+
+All EC2 instances must have a **`root drive`**. this could be an _EBS_ volume or an _instance store drives(physical machine)_
 
 #### Amazon Elastic Block Store (EBS)
 
@@ -749,12 +754,6 @@ AWS Backup helps you manage **`data backups across multiple AWS services`**
 
 
 
-
-
-
-
-
-
 #### Amazon CloudFront
 
 
@@ -773,19 +772,17 @@ A CDN is a mechanism to **`deliver content quickly`** and efficiently based on *
 - Uses **`edge locations`** to **`cache`** content
 - Even if your app is in a single Region, it can still be **`delivered globally`** because of CloudFront
 
-
-
 > _Note_: Did you know that if the content is already in the edge location, CloudFront delivers it immediately? If not, CloudFront retrieves the files from the origin.
-
 
 
 - **`CloudFront distribution cache`** is just the name given to a **`collection of edge locations`** and remember, an 
 - edge location is like a **`mini data center`** where files are cached.
 
+<img width="800" alt="Screenshot 2023-10-15 at 1 40 35 PM" src="https://github.com/Mohsem35/AWS-Learning/assets/58659448/c0947378-734f-487b-a411-ed90df358566">
+
+
 
 ##### Use cases
-
-
 
 1. **`S3 static websites`**: CloudFront is often used with S3 to deploy content globally.
 
