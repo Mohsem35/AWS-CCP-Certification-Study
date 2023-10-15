@@ -826,3 +826,19 @@ S3 Transfer Acceleration: Remember S3 Transfer Acceleration provides fast transf
 
 
 
+
+#### AWS VPC
+
+You're able to set up a private virtual network, and you specify various things like the **`IP address range`**, **`subnets`**, **`security groups,`** and you configure **`route tables`**.
+
+
+First, we have a NACL (or network access control list). This ensures the **`proper traffic`** is allowed into the **`subnet`** and you can use it to block traffic to a particular instance.
+
+
+Now _behind the scenes, the wizard is doing a lot for you_  . It's creating a VPC with a range of IP addresses, it's **`attaching an internet gateway to the VPC`**, creating a **`subnet`** creating a **`custom route table`**, and associating it with the subnet, and that basically allows the traffic to flow between the subnet and the internet gateway.
+
+
+
+Learnings from LAB
+
+create a VPC(only) -> create public subnet -> Enable auto-assign public IPv4 address for subnet ->  create internet gateway and attach to VPC -> create new route table to direct traffic in public subnet
