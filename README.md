@@ -824,18 +824,44 @@ S3 Transfer Acceleration: Remember S3 Transfer Acceleration provides fast transf
 
 
 
-#### AWS VPC
+#### Amazon Virtual Private Cloud (VPC)
 
-You're able to set up a private virtual network, and you specify various things like the **`IP address range`**, **`subnets`**, **`security groups,`** and you configure **`route tables`**.
+<img width="600" alt="1687361452587" src="https://github.com/Mohsem35/AWS-Learning/assets/58659448/22bda7cc-5127-4a6a-9bbf-00fdcc527f27">
 
 
-First, we have a NACL (or network access control list). This ensures the **`proper traffic`** is allowed into the **`subnet`** and you can use it to block traffic to a particular instance.
+VPC is a foundational service that allows you to create a **`secure private network`** in the AWS cloud where you launch your resources.
+
+- **`Private`** virtual network
+- **`Launch`** resources like EC2 instances inside the VPC
+- Isolate and **`protect resources`**
+- A VPC **`spans Availability Zones`** in a Region
+
+![Screenshot from 2023-10-17 19-15-35](https://github.com/Mohsem35/AWS-Learning/assets/58659448/96d53108-312d-4ee0-ae01-88c9257c8a54)
+
+- You're able to set up a private virtual network, and you specify various things like the **`IP address range`**, **`subnets`**, **`security groups,`** and you configure **`route tables`**.
+
+
+![Screenshot from 2023-10-17 19-18-04](https://github.com/Mohsem35/AWS-Learning/assets/58659448/bc11a2fe-b59e-4aca-8bf8-66c4e990083c)
+
+
+First, we have a **`NACL (or network access control list)`**. This ensures the **`proper traffic`** is allowed into the **`subnet`** and you can use it to block traffic to a particular instance.
+
+**`Router & Route Table`**: Defines where network traffic is routed
+
+**`Internet Gateway`**: allows public traffic to the internet from a VPC
+
+![Screenshot from 2023-10-17 19-22-50](https://github.com/Mohsem35/AWS-Learning/assets/58659448/6ccb378c-c100-441f-a107-0d004bcefddb)
 
 
 Now _behind the scenes, the wizard is doing a lot for you_  . It's creating a VPC with a range of IP addresses, it's **`attaching an internet gateway to the VPC`**, creating a **`subnet`** creating a **`custom route table`**, and associating it with the subnet, and that basically allows the traffic to flow between the subnet and the internet gateway.
 
-
+> **_Note_**: Things to Remember When
+Don't forget an _internet gateway allows traffic to the public internet_ and _peering connects 2 VPCs together_
 
 Learnings from LAB
-
 create a VPC(only) -> create public subnet -> Enable auto-assign public IPv4 address for subnet ->  create internet gateway and attach to VPC -> create new route table to direct traffic in public subnet
+
+#### Networking Services: Additional Networking Services
+
+
+AWS VPN is **`slightly cheaper`** than AWS Direct Connect
