@@ -861,7 +861,221 @@ Don't forget an _internet gateway allows traffic to the public internet_ and _pe
 Learnings from LAB
 create a VPC(only) -> create public subnet -> Enable auto-assign public IPv4 address for subnet ->  create internet gateway and attach to VPC -> create new route table to direct traffic in public subnet
 
-#### Networking Services: Additional Networking Services
+### Networking Services: Additional Networking Services
 
+Q: What Is DNS?
+
+DNS stands for **`Domain Name System`** and directs internet traffic by connecting domain names with web servers.
+
+![Amazon-Route-53](https://github.com/Mohsem35/AWS-Learning/assets/58659448/4ee3bbb9-6dad-41a5-aa8d-bc8a2ec35ce8)
+
+#### Amazon Route 53
+
+- Domain name registration
+- Performs **`health checks`** on AWS resources
+- Supports **`hybrid`** cloud architectures
+
+
+
+#### AWS Direct Connect
+
+![1682955125806](https://github.com/Mohsem35/AWS-Learning/assets/58659448/cdf2a6fb-58b8-4ca9-b212-d605666327be)
+
+
+
+Direct Connect is a **`dedicated physical network connection`** from your on-premises data center to AWS.
+
+- Dedicated **`physical`** network connection
+- Connects your **`on-premises`** data center to **`AWS`**
+- Data travels over a **`private network`** (over the public internet দিয়ে data travel করে না )
+- Supports a **`hybrid`** environment
+
+A hybrid cloud is a combination of public and private clouds.
+
+![Screenshot from 2023-10-18 18-40-35](https://github.com/Mohsem35/AWS-Learning/assets/58659448/65b8fa56-6fc1-4b0a-86d6-5ee63a152a82)
+
+
+##### Use cases of Direct Connect
+
+1. **`Large datasets`**: Transfer large datasets to AWS 
+2. **`Business-critical data`**: Transfer internal data directly to AWS, bypassing your internet service provider
+3. **`Hybrid model`**: Build hybrid environments
+
+
+#### AWS VPN
+
+**`Site-to-Site VPN`** creates a secure connection between your internal networks and your AWS VPCs. 
+
+- **`Similar to Direct Connect`**, but data travels over the **`public internet`** 
+- **`Data`** is automatically **`encrypted`**
+
+
+**Moving Applications**: A **`Site-to-Site`** VPN makes moving applications to the cloud easier.
+
+
+Site-to-Site VPN in the Real World
+
+![Screenshot from 2023-10-18 18-55-24](https://github.com/Mohsem35/AWS-Learning/assets/58659448/dea8be83-b874-4c9e-b802-f90d62be59d0)
+
+**`Virtual Private Gateway`**: The VPN connector on the AWS side
+**`Customer Gateway`**: The VPN connector on the customer side
 
 AWS VPN is **`slightly cheaper`** than AWS Direct Connect
+
+
+
+#### API Gateway
+
+API Gateway allows you to build and manage APIs
+
+- **`Share`** data between systems
+- **`Integrate`** with services like **`Lambda`**
+
+API Gateway in the Real World
+
+![Screenshot from 2023-10-18 19-02-47](https://github.com/Mohsem35/AWS-Learning/assets/58659448/0b0de208-21fc-46d1-b095-13defcba8858)
+
+
+
+
+> _Note_: Things to Remember When 
+
+`Route 53`: Don't forget Route 53 performs _health checks_ on AWS resources and supports a _hybrid_ model.
+
+`Direct Connect`: Remember that Direct Connect supports a _hybrid_ model.
+
+`Site-to-Site VPN`: Remember that a Site-to-Site VPN supports a _hybrid_ model. Don't forget to review components such as the `virtual private gateway` and `customer gateway`
+
+### Utilizing Databases
+
+#### Amazon Relational Database Service (RDS)
+
+![Amazon-RDS](https://github.com/Mohsem35/AWS-Learning/assets/58659448/274a3c6d-b07d-4e68-a940-994dbc52a0ce)
+
+
+RDS is a **`service`** that makes it easy to **`launch and manage relational`** databases
+
+
+- Supports popular **`database engines`**
+- Offers **`high availability`** and fault tolerance using **`Multi-AZ`** deployment option
+- **`AWS manages`** the database with _automatic software patching,  automated backups, operating system maintenance,_ and more.
+- Launch **`read replicas`** across Regions in order to provide enhanced **`performance`** and **`durability`**
+
+
+
+#### Amazon Aurora
+
+Aurora is a relational database compatible with **`MySQL`** and **`PostgreSQL`** that was created by AWS.
+
+- Supports MySQL and PostgreSQL database engines
+- **`5x`** faster than normal MySQL and **`3x`** faster than normal PostgreSQL
+- **`Scales automatically`** while  providing durability and high availability 
+- Managed by **`RDS`**
+
+#### Amazon DynamoDB
+
+
+![amazondynamodb](https://github.com/Mohsem35/AWS-Learning/assets/58659448/293e472c-fb5b-4d79-99ca-13dff8c3fe85)
+
+
+DynamoDB is a fully managed _NoSQL_ **`key-value`** and **`document`** database.
+
+- **`NoSQL`** key-value database
+- Fully managed and **`serverless`**
+- Non-relational
+- Scales automatically to massive workloads with fast performance
+
+
+
+#### Amazon DocumentDB
+
+DocumentDB is a **`fully managed document database`** that supports **`MongoDB`**
+
+- Document database
+- **`MongoDB`** compatible
+- Fully managed and **`serverless`**
+- Non-relational
+
+
+
+#### Amazon ElastiCache
+
+ElastiCache is a fully managed **`in-memory datastore`** compatible with Redis or Memcached.
+
+- In-memory datastore
+- Compatible with **`Redis`** or **`Memcached`** engines
+- Data can be **`lost`**
+- Offers **`high`** performance and **`low latency`**
+
+
+
+#### Amazon Neptune
+
+Neptune is a fully managed **`graph database service`** that supports highly connected datasets.
+
+
+- Supports highly connected datasets like **`social media`** networks
+- Fully managed and **`serverless`**
+- Fast and reliable
+
+
+
+Let's take a closer look at databases in the real world.
+
+
+Q1: Migrate an on-premises Oracle database to the cloud.
+- RDS
+
+Q2: Migrate an on-premises PostgreSQL database to the cloud.
+
+- RDS & Aurora
+
+Q3. Alleviate database load for data that is accessed often.
+
+- ElastiCache
+
+Q4. Process large sets of user profiles and social interactions. 
+
+- Neptune
+
+Q5. NoSQL database fast enough to handle millions of requests per second.
+
+- DynamoDB
+
+Q6. Operate MongoDB workloads at scale.
+
+- DocumentDB
+
+
+> _Note_: Things to Remember
+
+RDS: RDS is only for relational databases. Don't forget the supported database engines: Amazon Aurora, PostgreSQL, MySQL, MariaDB, Oracle Database, and SQL Server.
+
+DynamoDB: DynamoDB is a NoSQL database.
+
+Aurora: Aurora only supports PostgreSQL and MySQL.
+
+ElastiCache: ElastiCache is an in-memory datastore
+
+Neptune: Neptune helps you create social media graphs.
+
+DocumentDB: DocumentDB supports MongoDB.
+
+
+### Exploring Migration and Transfer Services
+
+A lot of companies are migrating to the cloud, and they need inexpensive, fast, and secure ways to move their on-premises data to AWS
+
+
+#### Database Migration Service (DMS)
+
+DMS helps you **`migrate databases to or within AWS`**
+
+- Migrate on-premises databases to AWS
+- **`Continuous`** data replication
+- Supports **`homogeneous`** and **`heterogeneous`** migrations
+- Virtually **`no downtime`**
+
+
+
+
