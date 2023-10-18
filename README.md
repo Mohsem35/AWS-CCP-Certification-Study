@@ -1078,4 +1078,59 @@ DMS helps you **`migrate databases to or within AWS`**
 
 
 
+##### DMS in the Real World
+
+Let's discuss when you would use DMS in the real world.
+
+1. **`Oracle to Aurora MySQL`**: Migrate an on-premises Oracle database to Aurora MySQL 
+2. **`Oracle to Oracle`**: Migrate an on-premises Oracle database to Oracle on EC2
+3. **`RDS Oracle to Aurora MySQL`**: Migrate an RDS Oracle database to Aurora MySQL
+
+
+
+#### Server Migration Service (SMS)
+
+SMS allows you to **`migrate on-premises servers to AWS`**
+
+- Migrates **`on-premises`** servers to AWS
+- Server saved as a new **`Amazon Machine Image (AMI)`**
+- Use **`AMI`** to launch servers as **`EC2`** instances
+
+![Screenshot from 2023-10-18 20-45-46](https://github.com/Mohsem35/AWS-Learning/assets/58659448/aa81be60-e429-4bb2-b05b-cd2806ec2150)
+
+##### Snow Family
+
+The Snow Family allows you to transfer **`large`** amounts of on-premises data to AWS using a **`physical device`**
+
+
+**Showcone**
+
+- The **`smallest`** member of data transport devices
+- **`8 terabytes`** of usable storage
+- **`Offline`** shipping
+- **`Online`** with **`DataSync`**
+
+Transfer data in and out 
+
+
+
+Cheaper than internet transfer
+
+Snowball Edge supports EC2 and Lambda
+
+
+
+Petabyte-scale data transport solution
+
+
+
+Snowcone
+
+Snowball and Snowball Edge
+
+Snowmobile
+
+
+
+
 
