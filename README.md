@@ -1,4 +1,4 @@
-Demonstrate: EC2, Lambda. S3,   
+Demonstrate: EC2, Lambda. S3, Rekognition
 
 ## AWS-Learning for AWS Certified Cloud Practitioner Exam
 
@@ -1110,27 +1110,424 @@ The Snow Family allows you to transfer **`large`** amounts of on-premises data t
 - **`Offline`** shipping
 - **`Online`** with **`DataSync`**
 
-Transfer data in and out 
+
+**Showball & Snowball Edge**
+
+- **`Petabyte`**-scale data transport solution 
+- Transfer data **`in`** and **`out`**
+- **`Cheaper`** than internet transfer
+- Snowball Edge supports **`EC2`** and **`Lambda`**
 
 
-
-Cheaper than internet transfer
-
-Snowball Edge supports EC2 and Lambda
+**Showmobile**
 
 
-
-Petabyte-scale data transport solution
-
-
-
-Snowcone
-
-Snowball and Snowball Edge
-
-Snowmobile
+- **`Multi-petabyte`** or **`exabyte`** scale
+- Data loaded to **`S3`**
+- **`Securely`** transported
 
 
 
 
+
+#### DataSync
+
+DataSync allows for **`online data transfer`** from on-premises to AWS storage services like **`S3 or EFS`**
+
+- Migrates data from **`on-premises`** to AWS
+- Copy data over **`Direct Connect`** or the **`internet`**
+- Copy data **`between`** _AWS storage services_
+- Replicate data **`cross-Region`** or **`cross-account`**
+
+
+
+
+
+> _Note_: Things to Remember
+
+- Snowball Edge: When going into the exam, don't forget the services natively supported by Snowball Edge, like EC2 and Lambda.
+
+- Snowmobile: Don't forget Snowmobile is the largest member of the transport family and supports exabyte-scale data.
+
+- Snowball: Remember that Snowball transfers petabytes of data and is cheaper than transferring over the internet.
+
+- DataSync: Don't forget DataSync transfers data online and can be used to replicate data cross-Region or cross-account.
+
+
+
+### Leveraging Analytics Services
+
+
+Q: What is a data warehouse?
+
+A data warehouse is a **`data storage`** solution that **`aggregates`** massive amounts of historical data from **`disparate sources`**.
+
+Q: What are the benefits of a data warehouse?
+
+Data warehouses support _querying, reporting, analytics, and business intelligence_. They are _not used for transaction processing_
+
+
+#### Amazon Redshift
+
+Redshift is a scalable data warehouse solution
+
+- **`Data warehousing`** solution
+- Improves **`speed`** and **`efficiency`**
+- Handles **`exabyte`**-scale data
+
+
+##### Use Cases
+
+1. _Data consolidation_: When you need to consolidate **`multiple data sources`** for reporting
+
+2. _Relational databases_: When you want to run a database that **`doesn't`** require **`real-time transaction`** processing (insert, update, and delete)
+
+
+
+
+
+#### Athena
+
+
+Athena is a **`query service`** for Amazon S3
+
+- Analyze **`S3`** data using **`SQL`**
+- Pay **`per query`**
+- Considered **`serverless`**
+
+
+
+#### Glue
+
+Glue **`prepares and load your data for analytics`**
+
+- Extract, transform, load (**`ETL`**) service
+- Helps to **`better understand`** your data
+
+
+
+#### Kinesis
+
+Kinesis allows you to _analyze data_ and **`video streams`** in real time.
+
+
+- Analyze real-time, **`streaming`** data
+- Supports **`video`**, **`audio`**, application logs, website clickstreams, and **`IoT`**
+
+
+
+#### Elastic MapReduce (EMR)
+
+EMR helps you **`process large`** amounts of data
+
+- Process **`big data`**
+- Analyze data using **`Hadoop`**
+- Works with **`big data`** frameworks
+
+
+
+#### Data Pipeline
+
+Data Pipeline helps you **`move data between`** _compute and storage services_ running either on _AWS or on-premises_
+
+
+- Moves data at specific **`intervals`**
+- Moves data based on **`conditions`**
+- Sends **`notifications`** on success or failure
+
+
+#### QuickSight
+
+QuickSight helps you visualize your data.
+
+- Build **`interactive dashboards`**
+- **`Embed`** dashboards in your applications
+
+
+
+Q: Search data in S3 ?
+ 
+Athena
+
+Q: Log analytics?
+
+Kinesis
+
+
+### Machine Learning Services
+
+
+#### Rekognition
+
+Rekognition allows you to **`automate your image and video analysis`**
+
+
+- Image and video analysis
+- Identify **`custom labels`** in images and videos
+- **`Face and text detection`** in images and videos
+
+
+
+##### Use cases
+
+_Analyze pizza images_: Rekognition could help Alfredo _identify the toppings_ on his pizzas to _make sure they are being made consistently_
+
+
+#### Comprehend
+
+Comprehend is a natural-language processing (**`NLP`**) service that finds relationships in text.
+
+
+- Uncovers **`insights`** and **`relationships`**
+- **`Analyzes text`**
+
+
+##### Use cases
+
+_Review social media posts_: Comprehend could help Alfredo process social media posts by looking for words that show customer sentiment about his pizza — words like _delicious, tasty, cold, or bad taste_. This is a great way to tell if his customers are happy.
+
+
+#### Polly
+
+Polly **`turns text into speech`**
+
+- **`Mimics`** natural-sounding **`human speech`**
+- **`Several voices`** across many languages
+- Can create a **`custom voice`**
+
+
+
+##### Use cases
+
+_Add complementary audio_: Polly could convert the text on a _blog post to speech that could then be downloaded or replayed in MP3 format_
+
+
+
+#### SageMaker
+
+SageMaker helps you _build, train, and deploy_ machine learning **`models quickly`** 
+
+
+- **`Prepare data`** for models
+- **`Train`** and **`deploy`** models
+- Provides Deep Learning Amazon Machine Learning Images(**`AMIs`**)
+
+
+##### Use cases
+
+_Recommendation engine_: Companies like **`Netflix`** and **`Amazon`** use machine learning models to _recommend movies and products to buy_. SageMaker is a great tool for creating these models.
+
+
+
+
+#### Translate
+
+Translate provides language translation.
+
+- Provides **`real-time`** and batch language **`translation`**
+- Supports **`many languages`**
+- **`Translates`** many content formats
+
+##### Use cases
+
+_Add localization to websites or applications_: 
+Translate allows you to add localization to your applications to support your diverse user base. Translate supports several popular languages.
+
+
+
+#### Lex
+
+Lex helps you _build conversational interfaces_ like **`chatbots`**
+
+- Recognizes speech and understands language
+- Build highly engaging chatbots
+- Powers Amazon **`Alexa`**
+
+
+##### Use cases
+_Integrate voice into a device:_ Amazon used the **`same technologies`** that power Lex to integrate Amazon Alexa with the Echo device.
+
+
+
+> _Note_: Things to Remember
+
+
+Comprehend: Don't forget Comprehend is used for natural language processing (NLP).
+
+Rekognition: Don't forget Rekognition processes videos and images.
+
+### Developer Tools
+
+#### Cloud9
+
+Cloud9 allows you to write code within an integrated development environment (**`IDE`**) from within your **`web browser`** 
+
+- **`Write`** and **`debug`** code
+- Supports popular **`programming languages`**
+
+
+##### Use cases
+
+_Build serverless applications_: Cloud9 preconfigures the development environment with the needed **`SDKs and libraries`**. You can easily write the code for your **`Lambda`** function directly in your web browser. 
+
+
+#### CodeCommit
+
+CodeCommit is a **`source control system`** for _private Git repositories_
+
+- Create **`repositories`** to store code
+- Commit, branch, and merge **`code`**
+- Collaborate with other software developers
+
+
+##### Use cases
+
+
+_Manage versions of source code files for your applications_: CodeCommit can be used to manage source code and the different versions of application files.  CodeCommit is **`similar to GitHub`**
+
+
+
+#### CodeBuild
+
+CodeBuild allows you to build and test your application source code. 
+
+- **`Compiles`** source code and **`runs`** tests
+- Enables continuous **`integration`** and **`delivery`**
+- Produces **`build artifacts`** ready to be deployed
+
+
+##### Use cases
+
+_Run tests before deploying a new version of an application to production_: CodeBuild allows you to run as many parallel streams of tests as needed, allowing you to deploy your changes to production more quickly. 
+
+
+
+#### CodeDeploy
+
+CodeDeploy _manages_ the **`deployment of code`** to compute services in the cloud or on-premises.
+
+- **`Deploys code`** to _EC2, Fargate, Lambda, and on-premises_
+- Maintains application **`uptime`**
+
+##### Use cases
+
+
+_Maintain application uptime when rolling out a new version:_ CodeDeploy **`eliminates the downtime`** of your application when deploying a new version due to its rolling deployments.
+
+
+#### CodePipeline
+
+CodePipeline automates the **`software release process`**
+
+- **`Quickly`** deliver new features and updates
+- Integrates with **`CodeBuild`** to run builds and **`unit tests`**
+- Integrates with **`CodeCommit`** to retrieve source code
+- Integrates with **`CodeDeploy`** to deploy your changes
+
+
+
+##### Use cases
+
+_Add automation to the building, testing, and deployment of your application:_ When combined with other developer tools, CodePipeline helps development teams implement **`DevOps`** practices that automate testing and the movement of code to production. 
+
+
+#### X-Ray
+
+X-Ray helps you **`debug production applications`**
+
+- **`Analyze`** and **`debug`** production applications
+- **`Map`** application components
+- **`View requests`** end to end
+
+##### Use cases
+
+_Trace calls to an RDS database_: X-Ray can help you **`map requests made to your RDS database`** from within your application. You can track information about the SQL queries generated and more.
+
+
+
+#### CodeStar
+
+CodeStar helps developers **`collaboratively`** work on development projects
+
+
+- Developers **`connect`** their development environment
+- Integrates with **`CodeCommit, CodeBuild, and CodeDeploy`**
+- Contains **`issue tracking dashboard`**
+
+
+
+##### Use cases
+
+_CodeStar can manage the development pipeline:_
+
+
+
+> _Note_: Things to Remember
+
+CodeCommit: Don't forget CodeCommit offers a service similar to GitHub that works with Git repositories. 
+
+CodeDeploy: Remember that CodeDeploy allows you to deploy an application to servers running on-premises and in the cloud.
+
+Cloud9: Don't forget Cloud9 offers an integrated development environment (IDE) that runs inside a web browser.
+
+CodePipeline: Don't forget CodePipeline allows you to implement a **`CI/CD`** pipeline.
+
+
+
+
+### Deployment and Infrastructure Management Services
+
+These services help you _quickly stand up new applications_, _automate the management of infrastructure_, and _provide real-time visibility into system health_
+
+
+**`IaC`** allows you to write a **`script`** to provision AWS resources. The benefit is that you provision resources in a **`reproducible`** manner that saves time
+
+
+```
+# json script
+"MyBucket" : {
+
+      "Type" : "AWS::S3::Bucket"
+ }
+```
+```
+# yaml script
+MyBucket:
+    Type: AWS::S3::Bucket
+```
+
+
+> _Note_: There's no need to use the S3 Management Console to create a bucket
+
+
+#### CloudFormation
+
+CloudFormation allows you to **`provision AWS resources`** using Infrastructure as Code (**`IaC`**)
+
+
+- Provides a **`repeatable process`** for provisioning resources
+-  Works with **`most`** AWS services 
+- Create **`templates`** for the resources you want to **`provision`**
+
+
+##### Use cases
+
+_Automate the infrastructure-provisioning process for EC2 servers:_ You can use CloudFormation to **`automate the creation of EC2 instances`** in your AWS account.
+
+
+
+#### Elastic Beanstalk
+
+Elastic Beanstalk allows you to **`deploy`** your **`web applications`** and **`web services`** to AWS.
+
+
+- Orchestration service that **`provisions`** resources
+- Automatically handles the **`deployment`**
+- **`Monitors`** application health via a **`health dashboard`**
+
+
+
+
+
+_Quickly deploy a scalable Java-based web application to AWS_
 
