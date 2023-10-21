@@ -1023,26 +1023,25 @@ Neptune is a fully managed **`graph database service`** that supports highly con
 Let's take a closer look at databases in the real world.
 
 
-Q1: Migrate an on-premises Oracle database to the cloud.
+_Q1: Migrate an on-premises Oracle database to the cloud_
 - RDS
 
-Q2: Migrate an on-premises PostgreSQL database to the cloud.
+_Q2: Migrate an on-premises PostgreSQL database to the cloud._
 
 - RDS & Aurora
 
-Q3. Alleviate database load for data that is accessed often.
-
+_Q3. Alleviate database load for data that is accessed often_
 - ElastiCache
 
-Q4. Process large sets of user profiles and social interactions. 
+_Q4. Process large sets of user profiles and social interactions _
 
 - Neptune
 
-Q5. NoSQL database fast enough to handle millions of requests per second.
+_Q5. NoSQL database fast enough to handle millions of requests per second._
 
 - DynamoDB
 
-Q6. Operate MongoDB workloads at scale.
+_Q6. Operate MongoDB workloads at scale._
 
 - DocumentDB
 
@@ -1069,6 +1068,9 @@ A lot of companies are migrating to the cloud, and they need inexpensive, fast, 
 
 #### Database Migration Service (DMS)
 
+<img width="461" alt="Screenshot 2023-10-20 at 6 32 54 PM" src="https://github.com/Mohsem35/AWS-Learning/assets/58659448/52ad948d-1363-494f-8685-22085119c0aa">
+
+
 DMS helps you **`migrate databases to or within AWS`**
 
 - Migrate on-premises databases to AWS
@@ -1089,6 +1091,8 @@ Let's discuss when you would use DMS in the real world.
 
 
 #### Server Migration Service (SMS)
+
+<img width="371" alt="Screenshot 2023-10-20 at 6 33 05 PM" src="https://github.com/Mohsem35/AWS-Learning/assets/58659448/c2a2f068-aff1-442d-a54e-5786ee366fc3">
 
 SMS allows you to **`migrate on-premises servers to AWS`**
 
@@ -1168,6 +1172,8 @@ Data warehouses support _querying, reporting, analytics, and business intelligen
 
 
 #### Amazon Redshift
+ 
+<img width="402" alt="Screenshot 2023-10-20 at 7 06 27 PM" src="https://github.com/Mohsem35/AWS-Learning/assets/58659448/65da6c7c-7041-44b8-9dd9-c6aa84d50d47">
 
 Redshift is a scalable data warehouse solution
 
@@ -1184,9 +1190,9 @@ Redshift is a scalable data warehouse solution
 
 
 
-
-
 #### Athena
+
+<img width="352" alt="Screenshot 2023-10-20 at 7 06 39 PM" src="https://github.com/Mohsem35/AWS-Learning/assets/58659448/4250f5ad-abec-4e0c-8d57-490597894232">
 
 
 Athena is a **`query service`** for Amazon S3
@@ -1207,6 +1213,9 @@ Glue **`prepares and load your data for analytics`**
 
 
 #### Kinesis
+
+<img width="378" alt="Screenshot 2023-10-20 at 7 06 54 PM" src="https://github.com/Mohsem35/AWS-Learning/assets/58659448/eb838ed5-17c6-47b2-865d-30e2a80ad6f9">
+
 
 Kinesis allows you to _analyze data_ and **`video streams`** in real time.
 
@@ -1447,6 +1456,9 @@ _Trace calls to an RDS database_: X-Ray can help you **`map requests made to you
 
 #### CodeStar
 
+<img width="350" alt="Screenshot 2023-10-20 at 8 30 49 PM" src="https://github.com/Mohsem35/AWS-Learning/assets/58659448/fcceac00-6654-4403-a827-3c4717f3b032">
+
+
 CodeStar helps developers **`collaboratively`** work on development projects
 
 
@@ -1521,15 +1533,15 @@ _Automate the infrastructure-provisioning process for EC2 servers:_ You can use 
 Elastic Beanstalk allows you to **`deploy`** your **`web applications`** and **`web services`** to AWS.
 
 
+
 - Orchestration service that **`provisions`** resources
 - Automatically handles the **`deployment`**
 - **`Monitors`** application health via a **`health dashboard`**
 
 
-
-
-
 _Quickly deploy a scalable Java-based web application to AWS_
+
+<img width="764" alt="Screenshot 2023-10-20 at 8 54 19 PM" src="https://github.com/Mohsem35/AWS-Learning/assets/58659448/2818c4ba-69c5-4aab-873e-3915ddf5eb6f">
 
 > _Note_ : In reality, Elastic Beanstalk is a compute service, but it's used when you are ready to deploy your application
 
@@ -1561,8 +1573,6 @@ OpsWorks: Remember that OpsWorks can deploy applications on-premises, and it als
 
 ### Utilizing Messaging and Integration Services: SQS
 
-
-
 #### Simple Queue Service (SQS)
 
 SQS is a message queuing service that allows you to build **`loosely coupled distributed systems`** with **`FIFO`**
@@ -1573,7 +1583,11 @@ SQS is a message queuing service that allows you to build **`loosely coupled dis
 - Messages are processed in an **`asynchronous`** manner
 
 
-##### Use caess
+
+##### Use cases
+
+<img width="800" alt="Screenshot 2023-10-21 at 8 08 03 AM" src="https://github.com/Mohsem35/AWS-Learning/assets/58659448/b50589f0-a14d-481d-b691-a996fd973547">
+
 
 _Build a money transfer app that performs well under heavy load:_ SQS lets you build an app that is loosely coupled, allowing components to send, store, and receive messages. The use of a messaging queue helps to improve performance and scalability. 
 
@@ -1602,6 +1616,7 @@ SNS allows you to **`send emails and text messages`** from your applications.
 
 _Send an email when CPU utilization of an EC2 instance goes above 80%:_ SNS works with **`CloudWatch`** when an alarm's metric threshold is breached to send an email.
 
+<img width="442" alt="Screenshot 2023-10-21 at 8 17 43 AM" src="https://github.com/Mohsem35/AWS-Learning/assets/58659448/a3dd9875-65ce-4855-bbe5-09a2c4074237">
 
 
 
@@ -1659,14 +1674,17 @@ _CloudWatch Events_: **`Trigger an event`** based on a **`condition`**
 _Provide real-time monitoring on EC2 instances_
 
 
+<img width="500" alt="Screenshot 2023-10-21 at 8 43 52 AM" src="https://github.com/Mohsem35/AWS-Learning/assets/58659448/de894384-6c10-41f8-b608-4860ac39fc32">
 
 
 
 _Receive a notification when root user activity is detected in your account:_ Create a **`CloudWatch event rule`** to notify you when root user API calls are detected in your account indicating root user activity.
 
+<img width="500" alt="Screenshot 2023-10-21 at 8 44 30 AM" src="https://github.com/Mohsem35/AWS-Learning/assets/58659448/bfca2724-de9f-411d-82f0-448e64d46fc6">
 
 
 #### CloudTrail
+
 
 CloudTrail tracks **`user activity`** and **`API`** calls within your account
 
@@ -1682,6 +1700,8 @@ You can troubleshoot events over the past 90 days using the **`CloudTrail event 
 
 
 ##### Things You Can Track with CloudTrail
+
+<img width="500" alt="Screenshot 2023-10-21 at 8 52 29 AM" src="https://github.com/Mohsem35/AWS-Learning/assets/58659448/7f3c5603-1314-4afe-9ba1-36de44efdf12">
 
 1. Username 
 2. Event time and time
