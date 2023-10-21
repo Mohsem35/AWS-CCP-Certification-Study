@@ -1,4 +1,4 @@
-Demonstrate: EC2, Lambda. S3, Rekognition
+Demonstrate: EC2, Lambda. S3, Rekognition, DynamoDB Table Using CloudFormation, Cloudwatch
 
 ## AWS-Learning for AWS Certified Cloud Practitioner Exam
 
@@ -1531,3 +1531,287 @@ Elastic Beanstalk allows you to **`deploy`** your **`web applications`** and **`
 
 _Quickly deploy a scalable Java-based web application to AWS_
 
+> _Note_ : In reality, Elastic Beanstalk is a compute service, but it's used when you are ready to deploy your application
+
+
+#### OpsWorks
+
+OpsWorks allows you to use **`Chef`** or **`Puppet`** to _automate the configuration_ of your servers and deploy code.
+
+- **`Deploy`** code and **`manage`** applications
+- Manage **`on-premises`** servers or **`EC2 instances`** in AWS Cloud
+
+
+##### Use cases
+
+_Automate software configurations and infrastructure management for your application_
+
+
+
+> _Note_: Things to Remember
+
+CloudFormation: Don't forget CloudFormation supports infrastructure automation using Infrastructure as Code (IaC)
+
+Elastic Beanstalk: Don't forget Elastic Beanstalk is only used to deploy applications to the AWS Cloud — it is not used to deploy applications on-premises.
+
+
+OpsWorks: Remember that OpsWorks can deploy applications on-premises, and it also automates infrastructure management using Chef or Puppet.
+
+
+
+### Utilizing Messaging and Integration Services: SQS
+
+
+
+#### Simple Queue Service (SQS)
+
+SQS is a message queuing service that allows you to build **`loosely coupled distributed systems`** with **`FIFO`**
+
+
+- Allows **`component-to-component`** communication using **`messages`**
+- Multiple components (or producers) can **`add`** messages to the **`queue`**
+- Messages are processed in an **`asynchronous`** manner
+
+
+##### Use caess
+
+_Build a money transfer app that performs well under heavy load:_ SQS lets you build an app that is loosely coupled, allowing components to send, store, and receive messages. The use of a messaging queue helps to improve performance and scalability. 
+
+
+> _Note:_ Things to Remember
+
+
+SQS: 
+- Don't forget messages in queues are processed in FIFO order.
+- Remember that message queues support loose coupling.
+
+
+
+### Utilizing Messaging and Integration Services: SNS and SES
+
+
+#### Simple Notification Service (SNS)
+
+SNS allows you to **`send emails and text messages`** from your applications.
+
+- Publish messages to a **`topic`**
+- **`Subscribers`** receive messages
+
+
+##### Use cases
+
+_Send an email when CPU utilization of an EC2 instance goes above 80%:_ SNS works with **`CloudWatch`** when an alarm's metric threshold is breached to send an email.
+
+
+
+
+#### Simple Email Service (SES)
+
+SES is an **`email service`** that allows you to send richly **`formatted HTML`** emails from your applications
+
+- Ideal choice for **`marketing campaigns`** or **`professional`** emails
+- Unlike SNS, SES sends **`HTML`** emails
+
+
+##### Use cases
+
+_Send a marketing email and track open or click-through rates_ 
+
+
+> _Note_: Things to Remember
+
+SNS: Don't forget SNS sends text messages and plain text emails
+
+SES: Remember that SES sends HTML-formatted emails for marketing campaigns.
+
+
+
+### Auditing, Monitoring, and Logging Services
+
+1. Who signed in and made changes via the AWS Management Console?
+2. What is the current load on this EC2 instance? 
+3. What is the root cause of this application error?
+4. Which execution path resulted in this error?
+
+
+
+#### CloudWatch
+
+CloudWatch is a **`collection of services`** that help you **`monitor and observe`** your cloud resources
+
+- Collects **`metrics`**, **`logs`**, and **`events`**
+- Detect **`anomalies`** in your environment
+- Set **`alarms`**
+- **`Visualize`** logs
+
+
+_CloudWatch Alarms_: Set high resolution alarms
+
+_CloudWatch Logs_: Monitor application logs
+
+_CloudWatch Metrics_: Visualize **`time-series data`**
+
+_CloudWatch Events_: **`Trigger an event`** based on a **`condition`**
+
+
+##### Use cases
+
+_Provide real-time monitoring on EC2 instances_
+
+
+
+
+
+_Receive a notification when root user activity is detected in your account:_ Create a **`CloudWatch event rule`** to notify you when root user API calls are detected in your account indicating root user activity.
+
+
+
+#### CloudTrail
+
+CloudTrail tracks **`user activity`** and **`API`** calls within your account
+
+- **`Log`** and **`retain`** account activity
+- Track activity through the **`console`**, **`SDKs`**, and **`CLI`**
+- Identify **`which user made changes`**
+- **`Detect`** unusual **`activity`** in your account
+
+##### Use cases
+
+_Track the time a particular event occurred in your account:_ 
+You can troubleshoot events over the past 90 days using the **`CloudTrail event history log`** to find the **`specific time`** an event occurred on a **`per-Region`** basis. You can create a custom trail to extend past 90 days
+
+
+##### Things You Can Track with CloudTrail
+
+1. Username 
+2. Event time and time
+3. IP Address
+4. Access Key
+5. Region
+6. Error Code
+
+> _Note_: Things to Remember
+
+CloudWatch: Don't forget you can use CloudWatch to monitor your EC2 instances and notify you when certain events occur.
+
+CloudTrail: Don't forget the things you can track with CloudTrail: username, event time and name, IP address, access key, Region, and error code.
+
+
+### Exploring Additional Services
+
+
+#### Amazon WorkSpaces
+
+Amazon WorkSpaces allows you to **`host virtual desktops`** in the cloud
+
+- Virtualize Windows or Linux desktops
+- Enables employees to **`work from home`**
+
+
+#### Amazon Connect
+
+Amazon Connect is a cloud **`contact center service`**
+
+- Provides customer service functionality
+- Improves productivity of help desk agents
+
+
+
+
+
+Q: Which service enables you to centralize and automate data protection across AWS services?
+
+AWS backup
+
+Q: What service could you recommend to a developer to automate the software release process?
+
+CodePipeline
+
+Q: Amazon EC2 offers a variety of pricing options. Which of the following EC2 pricing options is the cheapest?
+
+Spot instances
+
+Q: In which of the following is CloudFront content cached?
+
+Edge Location
+
+Q: Which of the following are true statements about Simple Queue Service (SQS)?
+
+- Standard queues provide a loose-FIFO capability
+- SQS FIFO queues always preserve the exact order
+
+Q:Which machine learning service helps you build, train, and deploy models quickly?
+
+SageMaker
+
+Q: Which machine learning service allows you to add image analysis to your applications?
+
+Amazon Rekognition
+
+Q: Which service allows you to host virtual desktops in the cloud?
+
+Amazon WorkSpaces
+
+Q: Which service can you use to deploy applications both on-premises or in the cloud, using Chef or Puppet?
+
+OpsWorks
+
+Q: Which of the following is true of Amazon Route 53?
+
+- Amazon Route 53 supports domain name registration.
+- Amazon Route 53 performs health checks on AWS resources.
+- Amazon Route 53 is a DNS service that routes users to applications.
+
+Q: Which migration service allows you to migrate databases to or within AWS over the internet easily and securely?
+
+AWS DMS
+
+Q: Which AWS networking service enables you to provision a logically isolated section of the AWS cloud where you can launch AWS resources in a virtual network that you define?
+
+Virtual Private Cloud (VPC)
+
+Q: Which networking and content delivery service makes content globally available with low latency?
+
+Amazon CloudFront
+
+Q: What is CloudWatch?
+
+It is a collection of services designed to monitor and observe cloud resources.
+
+Q: Which AWS service can send both text and email messages from your applications?
+
+Simple Notification Service (SNS)
+
+Q: Objects stored in S3 are stored in a single, central location within AWS.
+
+False
+
+True: Objects stored in S3 are stored in multiple servers, in multiple facilities across AWS.
+
+
+Q: Which services allow you to build hybrid environments by connecting on-premises infrastructure to AWS?
+
+- Site-to-Site VPN
+- AWS Direct Connect
+
+Q: Which service is used to allow resources in your VPC to access the internet?
+
+Internet Gateway
+
+Q: Which service allows you to practice Infrastructure as Code by provisioning your AWS resources via scripted templates?
+
+AWS CloudFormation
+
+Q: Which services allow you to run containerized applications without having to manage servers or clusters?
+
+- Amazon Elastic Container Service (Amazon ECS)
+- Amazon Elastic Kubernetes Service (EKS)
+- AWS Fargate
+
+Q: What data transport solution allows moving terabytes to petabytes of data to AWS, with additional capability of running computing locally, even when there is no network connection available?
+
+AWS Snowball Edge
+
+Q: Which storage service is a scalable file system that only works with Linux-based workloads?
+
+Amazon Elastic File System (EFS)
