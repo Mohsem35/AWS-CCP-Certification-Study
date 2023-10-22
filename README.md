@@ -1802,36 +1802,92 @@ Q: Which AWS service can send both text and email messages from your application
 
 Simple Notification Service (SNS)
 
-Q: Objects stored in S3 are stored in a single, central location within AWS.
+_Q: Objects stored in S3 are stored in a single, central location within AWS._
 
 False
 
 True: Objects stored in S3 are stored in multiple servers, in multiple facilities across AWS.
 
 
-Q: Which services allow you to build hybrid environments by connecting on-premises infrastructure to AWS?
-
+_Q: Which services allow you to build hybrid environments by connecting on-premises infrastructure to AWS_
 - Site-to-Site VPN
 - AWS Direct Connect
 
-Q: Which service is used to allow resources in your VPC to access the internet?
+_Q: Which service is used to allow resources in your VPC to access the internet?_
 
 Internet Gateway
 
-Q: Which service allows you to practice Infrastructure as Code by provisioning your AWS resources via scripted templates?
+_Q: Which service allows you to practice Infrastructure as Code by provisioning your AWS resources via scripted templates?_
 
 AWS CloudFormation
 
-Q: Which services allow you to run containerized applications without having to manage servers or clusters?
+_Q: Which services allow you to run containerized applications without having to manage servers or clusters?_
 
 - Amazon Elastic Container Service (Amazon ECS)
 - Amazon Elastic Kubernetes Service (EKS)
 - AWS Fargate
 
-Q: What data transport solution allows moving terabytes to petabytes of data to AWS, with additional capability of running computing locally, even when there is no network connection available?
+_Q: What data transport solution allows moving terabytes to petabytes of data to AWS, with additional capability of running computing locally, even when there is no network connection available?_
 
 AWS Snowball Edge
 
-Q: Which storage service is a scalable file system that only works with Linux-based workloads?
+_Q: Which storage service is a scalable file system that only works with Linux-based workloads?_
 
 Amazon Elastic File System (EFS)
+
+
+
+#### chapter 3
+### Security and Compliance (30%)
+
+#### Shared Responsibility Model
+
+In the public cloud, there is a shared security responsibility between you and AWS.
+
+`AWS' Responsibility`: Security **`of`** the Cloud
+`Your Responsibility`: Security **`in`** the Cloud
+
+#### Security of the Cloud
+AWS is responsible for _protecting and securing their infrastructure_
+
+1. _AWS Global Infrastructure_: AWS is responsible for its global infrastructure elements: **`Regions`**, **`edge locations`**, and **`Availability Zones`**
+2. _Building _Security_: AWS controls access to its **`data centers`** where your data resides.
+3. _Networking Components_: AWS maintains networking components: **`generators`**, uninterruptible power supply (**`UPS`**) systems, computer room air conditioning (**`CRAC`**) units, **`fire suppression systems`**, and more
+4. _Software_: AWS is responsible for any **`managed service`** like **`RDS`**, **`S3`**, **`ECS`**, or **`Lambda`**, **`patching of host operating systems`**, and **`data access endpoints`**
+
+#### Security in the Cloud
+
+You are responsible for how the services are implemented and managing your application data. 
+
+1. _Application Data_: You are responsible for **`managing application data`**, which includes **`encryption`** options.
+2. _Security Configuration_: You are responsible for securing your **`account and API calls`**, **`rotating credentials`**, **`restricting internet access from your VPCs`**, and more.
+
+3. _Patching_: You are responsible for the **`guest operating system (OS)`**, which includes _updates and security patches._
+
+4. _Identity and Access Management_: You are responsible for **`application security and identity and access management.`**
+
+5. _Network Traffic_: You are responsible for **`network traffic protection`**, which includes **`security group firewall configuration.`**
+
+6. _Installed Software_: You are responsible for your **`application code`**, **`installed software`**, and more. You should frequently _scan for and patch vulnerabilities in your code._
+
+##### Who is responsible for what?
+
+Firewall configuration - you
+
+Data center security for physical building -  AWS
+
+Encryption of EBS volumes - you
+
+Language version of Lambda - AWS
+
+Taking DB backups in RDS - you
+
+Updating the firmware on the underlying EC2 hosts - AWS
+
+Ensuring data is encrypted at rest - you
+
+Managing the network infrastructure - AWS
+
+Patching the guest operating system for EC2 - you
+
+Physically destroying storage media at end of life - AWS
