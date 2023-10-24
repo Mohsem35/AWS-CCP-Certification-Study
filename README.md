@@ -822,8 +822,6 @@ Global Accelerator: Remember Global Accelerator provides _low latency_.
 S3 Transfer Acceleration: Remember S3 Transfer Acceleration provides fast transfer of files over long distances.
 
 
-
-
 #### Amazon Virtual Private Cloud (VPC)
 
 <img width="600" alt="1687361452587" src="https://github.com/Mohsem35/AWS-Learning/assets/58659448/22bda7cc-5127-4a6a-9bbf-00fdcc527f27">
@@ -1946,13 +1944,12 @@ Physically destroying storage media at end of life - AWS
 
 #### Well-Architected Framework
 
-
 The **`6 pillars`** of the Well-Architected Framework describe **`design principles`** and best practices for **`running workloads`** in the cloud.
 
+<img width="301" alt="Screenshot 2023-10-24 at 6 44 56 PM" src="https://github.com/Mohsem35/AWS-Learning/assets/58659448/2052e08d-d5b8-407b-a5ed-75805489ced0">
 
 
-
-##### Real world use cases
+##### Real-world use cases
 
 
 OSRPCS
@@ -1980,12 +1977,19 @@ Well-Architected Framework: Going into the exam, remember the 6 pillars and thei
 
 #### 1. Identity and Access Management (IAM)
 
+![AWS-Identity-and-Access-Management_IAM](https://github.com/Mohsem35/AWS-Learning/assets/58659448/b3776656-39b0-48cc-a618-03ae81699ce9)
+
+
 IAM allows you to **`control`** access to your **`AWS services`** and **`resources`** 
 
 - Helps you **`secure`** your cloud resources
 - You define **`who`** has access
 - You define **`what`** they can do
 - A **`free global service`**
+
+<img width="361" alt="Screenshot 2023-10-24 at 7 09 21 PM" src="https://github.com/Mohsem35/AWS-Learning/assets/58659448/dddcf3d6-f59b-4930-b26c-1d4b579586bf">
+
+
 
 ##### Identities vs. Access 
 
@@ -2047,6 +2051,10 @@ You'll create a user in IAM so you can generate access keys for an _application 
 
 _Applications can also be user_
 
+<img width="550" alt="Screenshot 2023-10-24 at 7 39 12 PM" src="https://github.com/Mohsem35/AWS-Learning/assets/58659448/a7e8dc51-0829-43a6-95ec-5166a34d6f06">
+
+
+<img width="550" alt="Screenshot 2023-10-24 at 7 38 56 PM" src="https://github.com/Mohsem35/AWS-Learning/assets/58659448/c5d171bf-6b86-424a-bd9d-48d64998131d">
 
 ##### The least privilege principle
 
@@ -2094,7 +2102,6 @@ _Real-world use cases_: Don't forget the real-world use cases for IAM.
 
 Roles define _access permissions_ and are _temporarily assumed by an IAM user or service_
 
-
 ##### KEY TAKEAWAYS
  
 Roles
@@ -2103,6 +2110,9 @@ Roles
 2. Assumed by any **`user or service`** that needs it.
 3. Access is assigned **`using policies`**
 4. You grant **`users in one AWS account`** access 
+
+<img width="750" alt="Screenshot 2023-10-24 at 8 33 50 PM" src="https://github.com/Mohsem35/AWS-Learning/assets/58659448/168b501b-9c3d-4660-bc2a-6b93acd5b1d7">
+
 
 |   | Role | AWS Services  |
 | ------------- | ------------- | ------------- |
@@ -2114,6 +2124,7 @@ Roles
 
 **`Attach a role to an EC2 instance for access to S3`**: You can attach a role to an instance that provides privileges (e.g., uploading files to S3) to applications running on the instance. Roles help you avoid sharing long-term credentials like access keys and protect your instances from unauthorized access.
 
+<img width="500" alt="Screenshot 2023-10-24 at 8 35 10 PM" src="https://github.com/Mohsem35/AWS-Learning/assets/58659448/e3d05220-091f-44e2-8f3d-26428a1f5b6d">
 
 
 #### Policies
@@ -2121,11 +2132,18 @@ Roles
 You _manage permissions for IAM users, groups, and roles_ by _creating a policy document_ in **`JSON format`** and attaching it.
 
 1. **`Custom policy`** for User
+
+<img width="500" alt="Screenshot 2023-10-24 at 8 40 28 PM" src="https://github.com/Mohsem35/AWS-Learning/assets/58659448/e0447371-d23c-49b2-b3dd-3c53e72ee8be">
+
+
 2. **`Managed Policy`** for Developer Group & Role
 
-> _Note:_ If you're going to use an AWS managed policy, just make sure you look at the policy
+<img width="500" alt="Screenshot 2023-10-24 at 8 40 41 PM" src="https://github.com/Mohsem35/AWS-Learning/assets/58659448/77167f0c-350a-4744-98c1-dc993729c0b2">
+
+> _Note:_ If you're going to use an AWS-managed policy, just make sure you look at the policy
 and you understand everything that it really gives access to.
 
+<img width="500" alt="Screenshot 2023-10-24 at 8 41 20 PM" src="https://github.com/Mohsem35/AWS-Learning/assets/58659448/ceaec967-8b64-47f6-a0dd-084512f7a62c">
 
 
 ##### Policies in the Real World
@@ -2185,11 +2203,15 @@ WAF helps protect your web applications against **`common web attacks`**
 
 You can deploy a web application directly to an EC2 instance and protect it _from cross-site scripting attacks using WAF_. You can even deploy **`WAF on CloudFront`** as part of your CDN solution to **`block malicious traffic`**
 
+<img width="500" alt="Screenshot 2023-10-24 at 9 38 16 PM" src="https://github.com/Mohsem35/AWS-Learning/assets/58659448/c1cfa428-f24d-4933-8f18-735cc44fe05d">
 
 
 Have you heard about DDoS?
 
 A DDoS attack causes a **`traffic jam`** on a website or web application in an attempt to cause it to crash.
+
+<img width="700" alt="Screenshot 2023-10-24 at 9 39 06 PM" src="https://github.com/Mohsem35/AWS-Learning/assets/58659448/41591560-b1c4-4d6a-bb0f-d29a94c6d103">
+
 
 #### Shield
 
@@ -2205,8 +2227,10 @@ Shield is a managed Distributed Denial of Service (**`DDoS`**) _protection servi
 2. _Shield Advanced_: Provides enhanced protections and 24/7 access to AWS experts for a **`fee`**
 
 
-
 DDoS protection via Shield Advanced is supported on several services
+
+<img width="500" alt="Screenshot 2023-10-24 at 9 44 48 PM" src="https://github.com/Mohsem35/AWS-Learning/assets/58659448/66cfb548-0693-4fff-bd96-35359e234b50">
+
 
 
 ##### Shield in the Real World
