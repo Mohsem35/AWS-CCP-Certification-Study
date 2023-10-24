@@ -1891,3 +1891,224 @@ Managing the network infrastructure - AWS
 Patching the guest operating system for EC2 - you
 
 Physically destroying storage media at end of life - AWS
+
+
+
+#### Well-Architected Framework
+
+
+The **`6 pillars`** of the Well-Architected Framework describe **`design principles`** and best practices for **`running workloads`** in the cloud.
+
+
+
+
+##### Real world use cases
+
+
+OSRPCS
+
+1. **Operational Excellence**: You can use AWS **`CodeCommit`** for _version control to enable tracking of code changes_ and to _version-control CloudFormation templates_ of your infrastructure
+
+2. **Security**: You can _configure central logging of all actions_ performed in your account using **`CloudTrail`**
+
+3. **Reliability**: You can use _Multi-AZ deployments_ for enhanced availability and reliability of **`RDS databases`**
+
+4. **Performance Efficiency**: You can use AWS **`Lambda`** to _run code with zero administration_
+
+5. **Cost Optimization**: You can use **`S3 Intelligent-Tiering`** to _automatically move your data between access tiers based on your usage patterns_
+
+6. **Sustainability**:  You can use **`EC2 Auto Scaling`** to ensure you are _maximizing utilization_
+
+> _Note_: Things to Remember
+
+Well-Architected Framework: Going into the exam, remember the 6 pillars and their real-world use cases
+
+
+
+#### IAM Users 
+
+
+#### 1. Identity and Access Management (IAM)
+
+IAM allows you to **`control`** access to your **`AWS services`** and **`resources`** 
+
+- Helps you **`secure`** your cloud resources
+- You define **`who`** has access
+- You define **`what`** they can do
+- A **`free global service`**
+
+##### Identities vs. Access 
+
+_Identities_: **Who** can access your resources
+
+- Root user
+- Individual users
+- Groups
+- Roles
+
+
+_Access_: **What** resources they can access
+
+- Policies
+- AWS managed policies
+- Customer managed policies
+- Permissions boundaries
+
+
+##### Authentication ("Who") vs. Authorization ("What")
+
+Authentication is where you present your identity (_username_) and provide verification (_password_) where Authorization determines _which services and resources the authenticated identity has access to_
+
+
+#### 2. Users
+
+Users are entities you create in IAM to represent the **`person`** or **`application`** _needing to access your AWS resources_
+
+
+
+**1. ROOT USER**
+
+The root user is created when you _first open your AWS account_
+
+What can only the root user do?
+- Close your account
+- Change email address 
+- Modify your support plan
+
+**2. INDIVIDUAL USER**
+
+_Individual users are created in IAM and are used for everyday tasks_
+
+What can individual users do?
+
+- Perform administrative tasks 
+- Access application code
+- Launch EC2 instances
+- Configure databases
+
+Don't forget activity performed by users in your account is **`billed`** to your account!
+
+
+**3. APPLICATIONS**
+
+Did you know applications can be users?
+
+You'll create a user in IAM so you can generate access keys for an _application running on-premises that needs access to your cloud resources_
+
+_Applications can also be user_
+
+
+##### The least privilege principle
+
+The principle of least privilege involves giving a user the **`minimum access`** required to get the job done.
+
+
+
+#### 3. GROUP 
+
+**GROUPS**: A group is a **`collection of IAM users`** that helps you apply common access controls to all group members.
+
+`Administrators`: Administrators perform administrative tasks such as **`creating new users`**
+
+`Developers`: Developers use **`compute and database services`** to build applications.
+
+`Analysts`: Analysts run **`budget and usage reports`**
+
+> **_Note:_** Do not confuse security **groups for EC2 with IAM groups**. EC2 security groups act as **firewalls**, while IAM groups are **collections of users**.
+
+
+KEY TAKEAWAYS 
+
+**IAM Groups**
+
+- [x] Used to group users that perform similar tasks.
+- [x] Access permissions apply to all members of the group.
+- [x] Access is assigned using policies and roles.
+
+
+> _Note_: Things to Remember
+
+_Users and groups_: Going into the exam, understand the differences between users and group.
+
+_Root user tasks_: Remember the tasks that only the root user can do. 
+
+_Principle of least privilege_: Don't forget about the principle of least privilege
+
+_Real-world use cases_: Don't forget the real-world use cases for IAM.
+
+
+
+#### IAM Permissions
+
+#### Roles
+
+Roles define _access permissions_ and are _temporarily assumed by an IAM user or service_
+
+
+##### KEY TAKEAWAYS
+ 
+Roles
+
+1. You assume a role to perform a task in a **`single session`**
+2. Assumed by any **`user or service`** that needs it.
+3. Access is assigned **`using policies`**
+4. You grant **`users in one AWS account`** access 
+
+|   | Role | AWS Services  |
+| ------------- | ------------- | ------------- |
+| User  | DevOps-Engineer Role  | CodeCommit, CodePipeline
+| Lambda  | Lambda-Execution Role | S3, DynamoDB 
+
+
+##### Roles in Real World
+
+**`Attach a role to an EC2 instance for access to S3`**: You can attach a role to an instance that provides privileges (e.g., uploading files to S3) to applications running on the instance. Roles help you avoid sharing long-term credentials like access keys and protect your instances from unauthorized access.
+
+
+
+#### Policies
+
+You _manage permissions for IAM users, groups, and roles_ by _creating a policy document_ in **`JSON format`** and attaching it.
+
+1. **`Custom policy`** for User
+2. **`Managed Policy`** for Developer Group & Role
+
+> _Note:_ If you're going to use an AWS managed policy, just make sure you look at the policy
+and you understand everything that it really gives access to.
+
+
+
+##### Policies in the Real World
+
+You can limit access to an Amazon S3 bucket to specific users: You can add a bucket access policy directly to an Amazon S3 bucket to grant IAM users access permissions for the bucket and the objects in it.
+
+
+##### IAM Best Practices
+
+1. **`Enable MFA for privileged users`**: You should enable multi-factor authentication (MFA) for the root user and other administrative users.
+
+2. **`Implement strong password policies`**: You should require _IAM users to change their passwords after a specified period of time_, _prevent users from reusing previous passwords_, and _rotate security credentials regularly_
+
+3. **`Create individual users instead of using root`**: You _shouldn't use the root user for daily tasks_
+
+4. **`Use roles for Amazon EC2 instances`**: You should _use roles for applications_ that run on EC2 instances _instead of long-term credentials like access keys_
+
+
+#### IAM Credential Report
+
+The IAM credential report lists all users in your account and the status of their various credentials.
+
+- Lists all users and status of **`passwords`**, **`access keys`**, and **`MFA`** devices
+- Used for **`auditing`** and **`compliance`**
+
+
+
+> _Note_: Things to Remember
+
+Users, groups, roles, and policies: Going into the exam, understand the differences between users, groups, roles, and policies.
+
+IAM best practices: Don't forget to familiarize yourself with IAM best practices.
+
+Real-world use cases: Don't forget the real-world use cases for IAM.
+
+IAM credential report: Don't forget the importance of the IAM credential report
