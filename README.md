@@ -1,4 +1,4 @@
-Demonstrate: EC2, Lambda. S3, Rekognition, DynamoDB Table Using CloudFormation, Cloudwatch
+Demonstrate: EC2, Lambda. S3, Rekognition, DynamoDB Table Using CloudFormation, Cloudwatch, IAM
 
 ## AWS-Learning for AWS Certified Cloud Practitioner Exam
 
@@ -1835,7 +1835,57 @@ _Q: Which storage service is a scalable file system that only works with Linux-b
 
 Amazon Elastic File System (EFS)
 
+_Q: Which service routes user traffic through AWS's global network infrastructure to ensure low latency for your gaming application?_
 
+AWS Global Accelerator
+
+Which database services make it easy for you to set up, operate, and scale relational databases in the cloud?
+
+- Amazon Relational Database Service (RDS)
+- Amazon Aurora
+
+Q: Which monitoring service helps you observe your cloud resources and provides actionable insights?
+
+CloudWatch
+
+Q: Which AWS service provides a secure and resizable compute platform with choice of processor, storage, networking, operating system, and purchase model?
+
+EC2
+
+Q: Which machine learning service allows you to add image analysis to your applications?
+
+Amazon Rekognition
+
+Q: What AWS services are used for notifications and messaging?
+
+- Simple Email Service (SES)
+- Simple Notification Service (SNS)
+
+Q: In which of the following is CloudFront content cached?
+
+Edge Location
+
+Which service supports workloads that need to remain on-premises due to latency or data sovereignty needs?
+
+AWS Outposts
+
+Q: Objects stored in S3 are stored in a single, central location within AWS.
+
+False
+
+Q: Which EC2 storage mechanism is recommended when running a database on an EC2 instance?
+
+AWS EBS
+
+Q:Which EC2 pricing option is best for short-term, irregular workloads that should not be interrupted?
+
+On-Demand
+
+Q: Which machine learning service helps you build, train, and deploy models quickly?
+
+Sagemaker
+
+Which services allow you to send emails from your applications?
 
 #### chapter 3
 ### Security and Compliance (30%)
@@ -2112,3 +2162,81 @@ IAM best practices: Don't forget to familiarize yourself with IAM best practices
 Real-world use cases: Don't forget the real-world use cases for IAM.
 
 IAM credential report: Don't forget the importance of the IAM credential report
+
+
+
+
+#### AWS Security Services (Software Based)
+
+
+AWS has several _software-based security tools_ available to help you _monitor and protect_ your resources
+
+
+#### Web Application Firewall (WAF)
+
+WAF helps protect your web applications against **`common web attacks`**
+
+- **`Protects`** apps against common attack patterns
+- Protects against **`SQL injection`**
+- Protects against **`cross-site scripting`**
+
+##### WAF in the Real World
+
+
+You can deploy a web application directly to an EC2 instance and protect it _from cross-site scripting attacks using WAF_. You can even deploy **`WAF on CloudFront`** as part of your CDN solution to **`block malicious traffic`**
+
+
+
+Have you heard about DDoS?
+
+A DDoS attack causes a **`traffic jam`** on a website or web application in an attempt to cause it to crash.
+
+#### Shield
+
+Shield is a managed Distributed Denial of Service (**`DDoS`**) _protection service_
+
+- **`Always-on`** detection
+- Shield **`Standard`** is free
+- Shield **`Advanced`** is a paid service
+
+
+1. _Shield Standard_: Provides **`free`** protection against common and frequently occurring attacks
+
+2. _Shield Advanced_: Provides enhanced protections and 24/7 access to AWS experts for a **`fee`**
+
+
+
+DDoS protection via Shield Advanced is supported on several services
+
+
+##### Shield in the Real World
+
+
+Shield Advanced will give you _notifications of DDoS attacks_ via **`CloudWatch metrics`**.Additionally, with Shield Advanced, you have 24/7 access to AWS experts to assist during an attack. 
+
+
+#### Macie
+
+Macie helps you **`discover and protect sensitive data`**
+
+- Uses **`machine learning`** 
+- Evaluates **`S3`** environment
+- Uncovers **`personally identifiable information`** (PII) 
+
+
+
+##### Macie in the Real World
+
+
+Macie can be used to find sensitive data like **`passport numbers`**, **`social security numbers`**, and **`credit card numbers`** on S3.
+
+
+> _Note:_ Things to Remember
+
+
+WAF: Going into the exam, don't forget WAF protects against SQL injection and cross-site scripting attacks.
+
+Shield: Don't forget Shield provides DDoS protection and works with CloudFront, Route 53, Elastic Load Balancing, and AWS Global Accelerator.
+
+
+Macie: Remember that Macie helps you find sensitive information. 
