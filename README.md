@@ -1886,7 +1886,7 @@ Sagemaker
 Which services allow you to send emails from your applications?
 
 #### chapter 3
-### Security and Compliance (30%)
+### Security and Compliance (25%)
 
 #### Shared Responsibility Model
 
@@ -2264,3 +2264,169 @@ Shield: Don't forget Shield provides DDoS protection and works with CloudFront, 
 
 
 Macie: Remember that Macie helps you find sensitive information. 
+
+
+#### Additional Security Services
+
+#### Config
+
+Config allows you to _assess, audit, and evaluate_ the **`configurations`** of your resources
+
+- **`Track configuration changes`** over time
+- Delivers _configuration history_ file to **`S3`**
+- Notifications via Simple Notification Service (**`SNS`**) of every configuration change
+
+
+##### Config in the Real World
+
+_Identify system-level configuration changes made to your EC2 instances_: Config allows you to record configuration changes within your EC2 instances. You can view **`network`**, **`software`**, and **`operating system (OS)`** configuration changes, **`system-level updates`**, and more
+
+
+
+#### GuardDuty
+
+GuardDuty is an intelligent threat detection system that **`uncovers unauthorized behavior`**
+
+- Uses **`machine learning`**
+- **`Built-in detection`** for EC2, S3, and IAM 
+- Reviews CloudTrail, VPC Flow Logs, and DNS **`logs`**
+
+
+##### GuardDuty in the Real World
+
+_Detect unusual API calls in your account_: GuardDuty's anomaly detection feature **`evaluates all API requests`** in your account and identifies events that are associated with common techniques used by **`attackers`** 
+
+
+#### Inspector
+
+Inspector **`works with EC2`** instances to **`uncover and report`** vulnerabilities
+
+- Agent installed on EC2 instance 
+- **`Reports vulnerabilities`** found
+- **`Checks`** access from the **`internet`**, **`remote root login`**, **`vulnerable software versions`**, etc.
+
+##### Inspector in the Real World
+
+_Identify unintended network access to an EC2 instance via a detailed report of security findings:_ Inspector has several built-in rules to access your EC2 instances to find vulnerabilities and report them prioritized by level of severity.
+
+
+
+#### Artifact
+
+Artifact offers on-demand access to **`AWS security and compliance reports`**
+
+- Central repository for **`compliance reports`** from third-party auditors
+- _Service Organization Controls_ (**`SOC`**) reports
+- _Payment Card Industry_ (**`PCI`**) reports
+
+
+##### Artifact in the Real World
+
+_You need to access AWS' certification for ISO compliance:_ Artifact provides a central repository for AWS' security and compliance reports via a **`self-service portal`**
+
+
+#### Cognito
+
+Cognito helps you **`control access to mobile and web applications`**
+
+
+- Provides **`authentication`** and **`authorization`**
+- Helps you **`manage users`** 
+- Assists with **`user sign-up`** and **`sign-in`**
+
+
+##### Cognito in the Real World
+
+
+_You need to add a social media sign-in to your web application:_ Cognito provides functionality that allows your users to sign in to your application through social media accounts like **`Facebook`** and **`Google`**
+
+> _Note_: Things to Remember
+
+
+Config: Remember that Config allows you to identify changes to various resources over time.
+
+GuardDuty: Don't forget GuardDuty identifies malicious or unauthorized activities in your AWS account.
+
+Inspector: Don't forget Inspector **`only works for EC2 instances`**
+
+Artifact: Don't forget Artifact provides you with compliance reports
+
+Cognito: Don't forget Cognito controls access to mobile and web applications
+
+
+
+#### Data Encryption and Secrets Management Services
+
+Data encryption **`encodes`** data so it **`cannot be read`** by unauthorized users
+
+data in flight vs. data at rest
+
+
+
+
+**Data in Flight VS. Data at Rest**
+
+_Data in Flight_: Data in Flight also called data in **`transit`** or data in motion
+
+- **`Data`** that is moving from **`one location to another`**
+- An **`API`** that queries the **`database`** to send data back to the **`front end application`** or sending a text message, or data that is going across the internet or a **`private network`**
+
+
+_Data at Rest_: Data that is **`inactive or stored`** for later use
+
+- Think about data stored in **`S3`** or in a database like **`MySQL`**
+
+
+
+#### Key Management Service (KMS)
+
+KMS allows you to generate and store encryption keys
+
+- **`Key generator`**
+- **`Store`** and **`control`** keys
+- **`AWS manages`** encryption keys
+- Automatically **`enabled`** for certain services like CloudTrail logs, S3 Glacier, and Storage Gateway
+
+
+
+##### KMS in the Real World
+
+_Create encrypted Amazon EBS volumes:_ When you create an encrypted Amazon **`EBS`** volume, you're able to specify a KMS customer **`master key`**
+
+
+
+#### CloudHSM
+
+CloudHSM is a **`hardware security module`** (HSM) used to **`generate encryption keys`**
+
+- **`Dedicated hardware`** for security
+- Generate and manage your **`own`** encryption keys
+- AWS does **`not`** have access to your keys
+
+
+##### CloudHSM in the Real World
+
+
+CloudHSM allows you to _meet corporate, contractual, and regulatory compliance requirements for data security_ by using dedicated hardware in the cloud.
+
+
+#### Secrets Manager
+
+Secrets Manager allows you to **`manage`** and **`retrieve secrets`** (passwords or keys)
+
+- Rotate, manage, and retrieve secrets
+- **`Encrypt`** secrets at rest
+- **`Integrates`** with services like RDS, Redshift, and DocumentDB
+
+##### Secrets Manager in the Real World
+
+_Retrieve database credentials needed for your application code:_ Secrets Manager allows you to **`retrieve database credentials with a call to Secrets Manager APIs`**, _removing the need to hardcode sensitive information in plain text_ within your application code.
+
+
+> _Note:_ Things to Remembe
+
+KMS: Going into the exam, don't forget **`AWS manages KMS keys`**
+
+CloudHSM: Don't forget **`you manage`** the keys generated with CloudHSM
+
+Secrets Manager: Don't forget Secrets Manager has built-in integration for RDS, Redshift, and DocumentDB.
