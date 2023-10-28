@@ -2430,3 +2430,240 @@ KMS: Going into the exam, don't forget **`AWS manages KMS keys`**
 CloudHSM: Don't forget **`you manage`** the keys generated with CloudHSM
 
 Secrets Manager: Don't forget Secrets Manager has built-in integration for RDS, Redshift, and DocumentDB.
+
+
+_Which service can integrate with a Lambda function to automatically take remediation steps when it uncovers suspicious network activity when monitoring logs in your AWS account?_
+
+Amazon GuardDuty
+
+_Which of the following are tasks that only the root user can complete?_
+
+
+- Change the account name and email address.
+- Close your AWS account.
+
+_In the shared responsibility model, what is the customer responsible for?_
+
+- Firewall configuration and application security
+- Patching the guest operating system (OS)
+
+_Which service protects your web application from cross-site scripting attacks?_
+
+AWS Web Application Firewall (WAF)
+
+_Which service helps you control access to mobile and web applications?_
+
+Cognito
+
+_What is the purpose of CloudHSM?_
+
+Its purpose is to enable you to easily create and use your own encryption keys
+
+_How do you manage permissions for multiple users at once using AWS Identity and Access Management (IAM)?_
+
+Groups
+
+_Which service allows you to locate credit card numbers stored in Amazon S3?_
+
+Amazon Macie
+
+_Which service has a feature that can assist with compliance and auditing by offering a downloadable report that provides the status of passwords and MFA devices in your account?_
+
+AWS Identity and Access Management (IAM)
+
+_Which service allows you to generate encryption keys managed by AWS?_
+
+AWS Key Management Service (KMS)
+
+_Select the TRUE statement regarding the pillars of the AWS Well-Architected Framework._
+
+
+- The Performance Efficiency pillar enables the ability to use computing resources efficiently as demand and technology changes.
+
+
+- The Security pillar enables the ability to protect data, systems, and assets to improve your cloud security.
+
+
+- The Operational Excellence pillar enables the ability to support development, run workloads effectively, gain operational insights, and improve supporting processes and procedures.
+
+_Which service allows you to create access keys for someone needing to access AWS via the command line interface (CLI)?_
+
+AWS Identity and Access Management (IAM)
+
+
+#### chapter 4
+### Pricing, Billing and Governance (16%)
+
+### AWS Pricing
+
+There are 3 fundamental drivers of cost
+
+1. **`Compute`**: Hourly from launch to termination
+2. **`Storage`**: The data you store in the cloud
+3. **`Outbound data transfer`**: Data in flight moving between systems
+
+
+**Free Offer Types**
+
+There are 3 different types of free offers available depending on the service you choose
+
+
+1. _12 months free_: 12 months' free usage following your initial sign-up date to AWS
+
+2. _Always free_: Offers do not expire and are available to all AWS customers
+
+3. _Trials_: Short-term free trials starting from the date you activate a particular service
+
+
+> _Note:_ AWS services are priced independently!
+
+##### EC2 Pricing
+
+Don't forget, there are 5 ways to pay for Amazon EC2 instances.
+
+##### Lambda Pricing
+
+Don't forget how you're charged when using Lambda.
+
+##### S3 Pricing
+
+Don't forget with S3, **`you pay for the storage you use`**
+
+- _Storage class_: various **`storages`** classes
+
+- _Storage_: **`number`** and **`size`** of objects
+- _Data transfer_: data **`transferred out`** of S3 region 
+- _Request and data retrieval_: requests made for **`data`** and amounts of **`requests`**
+
+
+##### RDS Pricing
+
+Let's discuss the RDS features that **`drive pricing`**
+
+1. Running clock hours
+2. Type of database
+3. Storage
+4. Purchase type
+5. Database count
+6. API requests
+7. Deployment type
+8. Data transfer
+
+#### Total Cost of Ownership (TCO)?
+
+TCO is a **`financial estimate`** that helps you understand both the **`direct`** and **`indirect`** costs of AWS.
+
+> _Note:_ There used to be a `TCO Calculator` that is **`no longer available`**. However, you will see the term TCO on the exam, so understanding what it means is important. 
+
+
+#### Application Discovery Service
+
+Application Discovery Service helps you plan migration projects to the AWS Cloud
+
+- Plan **`migration`** projects
+- Used to **`estimate TCO`**
+- Works with other services to **`migrate servers`**
+
+
+##### A Few Ways to Reduce Your TCO Using AWS
+
+
+1. **`Minimize`** capital expenditures: AWS helps you **`minimize large capital expenditures`**, which reduces your TCO.
+
+
+2. **`Utilize`** Reserved Instances: AWS provides **`Reserved Instances`** to help you lock in savings and reduce your TCO.
+
+3. **`Right`** size your resources: AWS helps you **`match`** the **`provisioning`** of resources to your **`usage needs`** to reduce your TCO.
+
+
+#### AWS Price List API
+
+The Price List API allows you to **`query`** the price of AWS services
+
+
+- Query using **`JSON`** or **`HTML`**
+- Receive **`price alerts`** when prices change 
+
+
+> _Note_: Things to Remember
+
+_Pricing Calculator_: Don't forget the Pricing Calculator helps you calculate the TCO.
+
+_TCO_: Don't forget the ways **`a company can reduce their TCO`**.
+
+_Pricing_: Don't forget how pricing is calculated for EC2, Lambda, S3, and RDS.
+
+_Price List API_: Don't forget the Price List API is one way to determine the cost of services.
+
+
+
+
+### Billing Services
+
+There are several tools available to help you **`track`** your **`ongoing spend`**
+
+#### Budgets
+
+Budgets allows you to set custom budgets that **`alert`** you when your costs or usage **`exceed`** your budgeted amount.
+
+- Improve **`planning`** and **`cost control`**
+- **`Cost`**, **`usage`**, and **`reservation`** budgets
+- Budget alerts
+
+##### Budget Types
+
+- _Cost Budgets:_ Plan how much you want to **`spend`** on a service
+- _Usage Budgets:_ Plan how much you want to **`use`** on one or more services
+- _Reservation Budgets:_ Set Rls or Savings Plans **`utilization`** or coverage **`targets`**.
+
+
+##### Budgets in the Real World
+
+
+_Monitor Free Tier usage so you don’t incur unwanted costs:_ You can monitor Free Tier usage to ensure you don't accidentally exceed Free Tier limits and incur unwanted costs. You can set up an alert notification for when your account is approaching a particular dollar amount.
+
+
+#### Cost and Usage Report
+
+The Cost and Usage Report contains the most comprehensive set of cost and usage data.
+
+- **`Aggregate`** usage data on a _daily, hourly, or monthly level_
+
+
+##### Cost and Usage Report in the Real World
+
+_View the most granular data about your AWS bill_: The Cost and Usage Report gives you the ability to do a deep dive into your AWS cost and usage data. Once set up, you can download the report using the Amazon S3 console.
+
+
+#### Cost Explorer
+
+Cost Explorer allows you to **`visualize and forecast`** your costs and usage over time
+
+- Visualize costs over time
+- View **`past 12 months`**
+- **`Forecast`** for up to 3 months
+
+##### Cost Explorer in the Real World
+
+_Analyze your EC2 usage over the past 7, 30, or 60 days_: If you are considering your options for Savings Plans, AWS Cost Explorer can analyze your EC2 usage over the past **`7, 30, or 60`** days.
+
+
+
+#### Cost Allocation Tags
+
+Tags are useful for **`tracking spend`**
+
+1. Tags allow you to **`label`** resources using a **`key and value pair`**
+
+2. Tags allow you to **`track`** costs via the cost allocation **`report`**
+
+
+> _Note:_ Things to Remember
+
+Budgets: Going into the exam, don't forget you can be alerted when your usage exceeds a defined threshold using Budgets.
+
+Cost and Usage Report: Remember that the Cost and Usage Report provides the most detailed set of AWS cost and usage data available.
+
+Cost Explorer: Don't forget Cost Explorer helps you visualize and forecast spending.
+
+Cost Allocation Tags: Don't forget that tags can help you track spend.
