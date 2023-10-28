@@ -2667,3 +2667,151 @@ Cost and Usage Report: Remember that the Cost and Usage Report provides the most
 Cost Explorer: Don't forget Cost Explorer helps you visualize and forecast spending.
 
 Cost Allocation Tags: Don't forget that tags can help you track spend.
+
+
+### Governance Services
+
+
+**`Governance`** and management services help you **`maintain control`** over cost, compliance, and security **`across`** your AWS accounts.
+
+#### Organizations
+
+Organizations allows you to centrally **`manage multiple AWS accounts under one umbrella`** 
+
+- Group **`multiple`** accounts
+- **`Single payment`** for all accounts
+- **`Automate`** account creation
+- _Allocate resources and apply policies_ **`across accounts`**
+
+
+
+
+1. **Master Payer/Root Organization**: An organization is an entity that allows you to **`consolidate multiple AWS accounts into one`**. And that root account is called the master payer account, and it _pays for all member accounts using what's called consolidated billing._
+
+
+
+
+2. **Service control policies(SCP)**: are a _type of organization policy_ that you can use to manage permissions in your organization. They are used to **`enforce permissions`** that you want **`everyone`** in the organization to follow.
+
+3. **Organization units(OUs)**: Are a **`groupings of AWS accounts`** that are similar. In this example, **`accounts are grouped by departmental area`**. We have the _IT organization_, we have the _Shared Services organization_ and we have the _Marketing organization_
+
+4. **Member accounts**: Member accounts are the standard **`individual AWS accounts`**
+that contain your AWS resources
+
+
+##### What are the benefits?
+
+Organizations offers many benefits
+
+1. _Consolidated Billing_: The advantage of consolidated **`billing`** is that you receive **`one bill`** for multiple accounts.
+
+2. _Cost Savings_: You'll receive **`volume discounts`** since usage is combined across accounts. 
+
+3. _Account Governance_: You have a quick and automated way to **`create`** accounts or **`invite`** existing accounts. 
+
+
+##### Organizations in the Real World
+
+
+_Reduce costs by sharing resources across accounts_: Organizations allows you to save money using **`Reserved Instance (RI) sharing`**. RI sharing allows all accounts in the organization to receive the **`hourly cost-benefit of RIs`** purchased by any other account. You can always _turn off RI sharing using the master payer (or root) organization_
+
+
+#### Control Tower
+
+Control Tower helps you ensure your accounts **`conform`** to _company-wide policies_
+
+- Helps set up **`new accounts`** using a multi-account strategy
+- **`Works`** directly **`with`** AWS Organizations
+- Enforces the **`best use of services`** across accounts
+- Provides a **`dashboard`** to manage accounts
+
+##### Control Tower in the Real World
+
+_Disallow public write access to all S3 buckets across your accounts:_ Control Tower allows you to **`govern your multi-account`** environment by enabling **`cross-account security audits`** or preventing or detecting security issues through mandatory or optional **`guardrails`**
+
+
+
+#### Systems Manager
+
+Systems Manager gives you **`visibility`** and **`control`** over your **`AWS resources`**
+
+- **`Automate`** operational **`tasks`** on your resources
+- **`Group resources`** and take **`action`**
+- **`Patch`** and **`run commands`** on multiple EC2 instances or manage RDS instances
+
+
+##### Systems Manager in the Real World
+
+
+_Deploy operating system and software patches automatically across a large group of instances:_ Systems Manager allows you to auto-patch software running on EC2 instances according to a schedule.
+
+
+#### Trusted Advisor
+
+Trusted Advisor provides **`real-time guidance`** to help you **`provision your resources`** following AWS best practices. 
+
+- Helps you understand **`best practices`**
+
+Here are a few popular recommendations made by Trusted Advisor
+
+_Free Check_
+
+_EC2_: Checks for unrestricted access for specific **`ports`** on EC2 instances
+
+_S3_: Checks S3 **`bucket permissions`** to determine if public access
+
+_Root User_: Checks for multi-factor authentication (**`MFA`**) on root account 
+
+_RDS_: Checks for RDS **`public snapshots`**
+
+
+_Enterprise or Business support required_
+
+_IAM_: Checks IAM **`password policy`**
+
+Checks for service usage greater than **`80% over service limit`**
+
+_Keys_: Checks for **`exposed access keys`**
+
+_CloudFront_: Checks for CloudFront content delivery **`optimization`**
+
+
+##### Trusted Advisor in the Real World
+
+
+
+_Check read and write capacity service limits for DynamoDB:_ Trusted Advisor helps **`reduce your overall costs by monitoring service limits`**
+
+
+
+#### License Manager
+
+License Manager helps you manage software licenses
+- Manage **`on-premises`** and **`AWS licenses`**
+- Track licenses for **`Oracle`**, **`Microsoft`**, **`SAP`**, and more
+
+
+
+#### Certificate Manager
+
+Certificate Manager helps you provision and manage **`SSL/TLS certficates`**
+
+- Provides **`public`** and **`private`** certificates for **`free`**
+- Integrates with **`Elastic Load Balancing`**, **`API Gateway`**, and more
+
+
+> _Note:_ Things to Remember
+
+Organizations: Don't forget Organizations saves you money through consolidated billing. Also, remember the importance of SCPs.
+
+Control Tower: Don't forget Control Tower helps you enforce best use of services across your organization.
+
+Systems Manager: Remember that Systems Manager helps you maintain your resources through automatic patching and updates.
+
+Trusted Advisor: Remember the recommendations made by Trusted Advisor.
+
+License Manager: Remember that License Manager helps you manage on-premises or AWS-based Oracle licenses.
+
+Certificate Manager: Remember that Certificate Manager provides free public certificates.
+
+
