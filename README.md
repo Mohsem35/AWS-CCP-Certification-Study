@@ -1,4 +1,4 @@
-Demonstrate: EC2, Lambda. S3, Rekognition, DynamoDB Table Using CloudFormation, Cloudwatch, IAM
+Demonstrate: EC2, Lambda. S3, Rekognition, DynamoDB Table Using CloudFormation, Cloudwatch, IAM, AWS Pricing Calculator, Billing & Budget Alert, Cost Explorer
 
 ## AWS-Learning for AWS Certified Cloud Practitioner Exam
 
@@ -2641,7 +2641,7 @@ Cost Explorer allows you to **`visualize and forecast`** your costs and usage ov
 
 - Visualize costs over time
 - View **`past 12 months`**
-- **`Forecast`** for up to 3 months
+- **`Forecast`** for up to 12 months
 
 ##### Cost Explorer in the Real World
 
@@ -2813,5 +2813,156 @@ Trusted Advisor: Remember the recommendations made by Trusted Advisor.
 License Manager: Remember that License Manager helps you manage on-premises or AWS-based Oracle licenses.
 
 Certificate Manager: Remember that Certificate Manager provides free public certificates.
+
+
+### Utilizing Management Services
+
+There are expert teams available that help you _manage_ and _operate_ your cloud environment. 
+
+#### Managed Services
+
+Managed Services helps you efficiently **operate your AWS infrastructure**
+
+- **Augments** your internal staff
+- Provides **ongoing management** of your infrastructure
+- Reduces **operational risks** and overhead
+
+
+##### Managed Services in the Real World
+
+_Develop application-specific health monitoring using CloudWatch_: Managed services can increase your operational efficiency by helping you develop application-specific health monitoring using CloudWatch.
+
+
+#### Professional Services
+
+Professional Services helps enterprise customers **move to a cloud-based operating model**
+
+- **Implements** solutions
+
+##### Professional Services in the Real World
+
+
+_Get help with evaluating an application for migration to the cloud_: You can quickly move on-premises applications to the cloud using AWS Professional Services.
+
+
+#### AWS Partner Network (APN)
+
+APN is a **global community** of approved partners that offer software solutions and consulting services for AWS
+
+- Offers **technology** partners that provide **software solutions**
+- Provides **consulting** partners that offer **professional services**
+- Find **approved vendors** with deep AWS expertise
+
+
+
+##### APN in the Real World
+
+_You need help designing and building a new application_: If your team lacks the technical expertise to build and deploy cloud applications, the APN could help you get up and running quickly.
+
+
+
+#### Marketplace
+
+Marketplace is a digital catalog of prebuilt solutions you **can purchase or license**. You may also **sell your own solutions** to others via Marketplace
+
+- **Buy** third-party software
+- **Sell** solutions to AWS customers
+- **Search** the catalog of software listings and install with the click 
+of a button
+
+
+##### Marketplace in the Real World
+
+_Try out an application before making a long-term commitment_: Some products listed on Marketplace offer free trials. The free trial allows you to try the software before you buy it
+
+
+#### Personal Health Dashboard
+
+Personal Health Dashboard **alerts you to events** that might impact your AWS environment
+
+- Provides **troubleshooting** guidance
+- Feedback tailored to your **specific** environment
+
+
+> _Note:_ Things to Remember
+
+Managed Services: Don't forget Managed Services augments your staff and helps improve your overall operational efficiency
+
+Marketplace and APN: Remember that AWS recognizes partners and providers from these networks
+
+Professional Services: Don't forget Professional Services can help you migrate from on-premises to the cloud. 
+
+Personal Health Dashboard: Don't forget Personal Health Dashboard provides tailored advice.
+
+
+### Exploring Support Plans
+
+
+#### Support Plans
+
+There are 4 support plans.
+
+1. **`Basic`**: Basic Support is included for **free** for all AWS accounts. 
+
+- Account and billing, 
+- Service limit increases
+
+Customer Service: 24/7 access via email only
+
+2. **`Developer`**: Developer Support starts at **$29** a month and is recommended for **testing and development**.
+
+- Account and billing, 
+- Service limit increases
+- Technical support
+
+1 primary contact, unlimited cases
+
+Customer Service: Business-hours access via email only
+
+3. **`Business`**: Business Support starts at **$100** a month and is recommended for **production workloads**.
+
+- Account and billing, 
+- Service limit increases
+- Technical support
+
+Unlimited Contacts, Unlimited Cases, **Full Set** of Trusted Advisor Checks
+
+Customer Service: 24/7 access via email, phone, or chat
+
+4. **`Enterprise`**: Enterprise Support starts at **$15,000** a month and is recommended for **business or mission-critical** production workloads.
+
+
+- Account and billing, 
+- Service limit increases
+- Technical support
+
+Unlimited Contacts, Unlimited Cases, **Technical Account Manager (TAM)**, **Concierge** Support Team, **Infrastructure Event** Management, Full Set of Trusted Advisor Checks
+
+Customer Service: Business-hours access via email only
+
+#### Support Case Types
+
+There are 3 types of support cases you can open with AWS Support.
+
+1. **Account and billing**: Account-related and billing cases can be opened by all customers
+2. **Service limit increases**: Default service quota (or limit) increases can be opened by all customers.
+3. **Technical support**: Technical support cases can only be opened by customers on the Developer, Business, or Enterprise plans. 
+
+
+> _Note_: AWS Support does **not** allow cases for _code development_, _debugging custom software_, or _performing system administration tasks_.
+
+
+> _Note:_ Things to Remember
+
+
+_Basic Support_: Don't forget how to open tickets and the types of tickets you're allowed to open
+
+_Developer Support_: Don't forget how to open tickets and the types of tickets you're allowed to open
+
+_Business Support_: Don't forget how to open tickets and the types of tickets you're allowed to open. Remember this support plan includes the full set of Trusted Advisor checks.
+
+_Enterprise Support_: Don't forget how to open tickets and the types of tickets you're allowed to open.Remember this support plan includes the full set of Trusted Advisor checks.
+
+Don't forget this support plan provides access to a **Technical Account Manager (TAM)** and the Concierge **Support Team**.
 
 
