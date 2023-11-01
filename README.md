@@ -1,4 +1,4 @@
-Demonstrate: EC2, Lambda. S3, Rekognition, DynamoDB Table Using CloudFormation, Cloudwatch, IAM, AWS Pricing Calculator, Billing & Budget Alert, Cost Explorer
+Demonstrate: EC2, Lambda. S3, Rekognition, DynamoDB Table Using CloudFormation, Cloudwatch, IAM
 
 ## AWS-Learning for AWS Certified Cloud Practitioner Exam
 
@@ -2521,13 +2521,19 @@ There are 3 different types of free offers available depending on the service yo
 
 Don't forget, there are 5 ways to pay for Amazon EC2 instances.
 
+<img width="550" alt="Screenshot 2023-10-28 at 12 46 48 PM" src="https://github.com/Mohsem35/AWS-Learning/assets/58659448/e02c52d4-e6af-451c-baa5-73d97c1a1efb">
+
+
 ##### Lambda Pricing
 
 Don't forget how you're charged when using Lambda.
 
+<img width="500" alt="Screenshot 2023-10-28 at 2 06 08 PM" src="https://github.com/Mohsem35/AWS-Learning/assets/58659448/b256f531-3bde-408b-be81-de42cea7b464">
+
 ##### S3 Pricing
 
 Don't forget with S3, **`you pay for the storage you use`**
+![Uploading Screenshot 2023-10-28 at 12.56.35 PM.png…]()
 
 - _Storage class_: various **`storages`** classes
 
