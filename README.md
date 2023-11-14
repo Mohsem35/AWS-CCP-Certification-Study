@@ -1913,7 +1913,7 @@ In the public cloud, there is a shared security responsibility between you and A
 AWS is responsible for _protecting and securing their infrastructure_
 
 1. _AWS Global Infrastructure_: AWS is responsible for its global infrastructure elements: **`Regions`**, **`edge locations`**, and **`Availability Zones`**
-2. _Building _Security_: AWS controls access to its **`data centers`** where your data resides.
+2. _Building Security_: AWS controls access to its **`data centers`** where your data resides.
 3. _Networking Components_: AWS maintains networking components: **`generators`**, uninterruptible power supply (**`UPS`**) systems, computer room air conditioning (**`CRAC`**) units, **`fire suppression systems`**, and more
 4. _Software_: AWS is responsible for any **`managed service`** like **`RDS`**, **`S3`**, **`ECS`**, or **`Lambda`**, **`patching of host operating systems`**, and **`data access endpoints`**
 
@@ -1931,6 +1931,7 @@ You are responsible for how the services are implemented and managing your appli
 5. _Network Traffic_: You are responsible for **`network traffic protection`**, which includes **`security group firewall configuration.`**
 
 6. _Installed Software_: You are responsible for your **`application code`**, **`installed software`**, and more. You should frequently _scan for and patch vulnerabilities in your code._
+
 
 ##### Who is responsible for what?
 
@@ -1963,20 +1964,24 @@ The **`6 pillars`** of the Well-Architected Framework describe **`design princip
 <img width="301" alt="Screenshot 2023-10-24 at 6 44 56 PM" src="https://github.com/Mohsem35/AWS-Learning/assets/58659448/2052e08d-d5b8-407b-a5ed-75805489ced0">
 
 
-##### Real-world use cases
+##### Real-world use cases of well-architected framework
 
 
-OSRPCS
+OC PR SS
 
 1. **Operational Excellence**: You can use AWS **`CodeCommit`** for _version control to enable tracking of code changes_ and to _version-control CloudFormation templates_ of your infrastructure
 
-2. **Security**: You can _configure central logging of all actions_ performed in your account using **`CloudTrail`**
+5. **Cost Optimization**: You can use **`S3 Intelligent-Tiering`** to _automatically move your data between access tiers based on your usage patterns_
 
-3. **Reliability**: You can use _Multi-AZ deployments_ for enhanced availability and reliability of **`RDS databases`**
 
 4. **Performance Efficiency**: You can use AWS **`Lambda`** to _run code with zero administration_
 
-5. **Cost Optimization**: You can use **`S3 Intelligent-Tiering`** to _automatically move your data between access tiers based on your usage patterns_
+
+3. **Reliability**: You can use _Multi-AZ deployments_ for enhanced availability and reliability of **`RDS databases`**
+
+
+
+2. **Security**: You can _configure central logging of all actions_ performed in your account using **`CloudTrail`**
 
 6. **Sustainability**:  You can use **`EC2 Auto Scaling`** to ensure you are _maximizing utilization_
 
@@ -2009,10 +2014,10 @@ IAM allows you to **`control`** access to your **`AWS services`** and **`resourc
 
 _Identities_: **Who** can access your resources
 
-- Root user
-- Individual users
-- Groups
-- Roles
+- _Root user_
+- _Individual users_
+- _Groups_
+- _Roles_
 
 
 _Access_: **What** resources they can access
@@ -2049,10 +2054,10 @@ _Individual users are created in IAM and are used for everyday tasks_
 
 What can individual users do?
 
-- Perform administrative tasks 
+- Perform **administrative tasks** 
 - Access application code
 - Launch EC2 instances
-- Configure databases
+- **Configure databases**
 
 Don't forget activity performed by users in your account is **`billed`** to your account!
 
@@ -2114,7 +2119,7 @@ _Real-world use cases_: Don't forget the real-world use cases for IAM.
 
 #### Roles
 
-Roles define _access permissions_ and are _temporarily assumed by an IAM user or service_
+Roles define **access permissions** and are _temporarily assumed by an IAM user or service_
 
 ##### KEY TAKEAWAYS
  
@@ -2143,7 +2148,7 @@ Roles
 
 #### Policies
 
-You _manage permissions for IAM users, groups, and roles_ by _creating a policy document_ in **`JSON format`** and attaching it.
+You _manage permissions for IAM users, groups, and roles_ by **creating a policy document** in **`JSON format`** and attaching it.
 
 1. **`Custom policy`** for User
 
@@ -2162,7 +2167,7 @@ and you understand everything that it really gives access to.
 
 ##### Policies in the Real World
 
-You can limit access to an Amazon S3 bucket to specific users: You can add a bucket access policy directly to an Amazon S3 bucket to grant IAM users access permissions for the bucket and the objects in it.
+**You can limit access to an Amazon S3 bucket to specific users**: You can add a bucket access policy directly to an Amazon S3 bucket to grant IAM users access permissions for the bucket and the objects in it.
 
 
 ##### IAM Best Practices
@@ -2215,7 +2220,7 @@ WAF helps protect your web applications against **`common web attacks`**
 ##### WAF in the Real World
 
 
-You can deploy a web application directly to an EC2 instance and protect it _from cross-site scripting attacks using WAF_. You can even deploy **`WAF on CloudFront`** as part of your CDN solution to **`block malicious traffic`**
+You can deploy a web application directly to an EC2 instance and protect it _from cross-site scripting attacks using WAF_. You can even deploy **`WAF on CloudFront`** as part of your **CDN solution** to **`block malicious traffic`**
 
 <img width="500" alt="Screenshot 2023-10-24 at 9 38 16 PM" src="https://github.com/Mohsem35/AWS-Learning/assets/58659448/c1cfa428-f24d-4933-8f18-735cc44fe05d">
 
@@ -2233,7 +2238,7 @@ Shield is a managed Distributed Denial of Service (**`DDoS`**) _protection servi
 
 - **`Always-on`** detection
 - Shield **`Standard`** is free
-- Shield **`Advanced`** is a paid service
+- Shield **`Advanced`** is a **paid** service
 
 
 1. _Shield Standard_: Provides **`free`** protection against common and frequently occurring attacks
@@ -2288,7 +2293,7 @@ Config allows you to _assess, audit, and evaluate_ the **`configurations`** of y
 
 - **`Track configuration changes`** over time
 - Delivers _configuration history_ file to **`S3`**
-- Notifications via Simple Notification Service (**`SNS`**) of every configuration change
+- Notifications via Simple Notification Service (**`SNS`**) of **every configuration change**
 
 
 ##### Config in the Real World
@@ -2299,7 +2304,7 @@ _Identify system-level configuration changes made to your EC2 instances_: Config
 
 #### GuardDuty
 
-GuardDuty is an intelligent threat detection system that **`uncovers unauthorized behavior`**
+GuardDuty is an **intelligent threat detection** system that **`uncovers unauthorized behavior`**
 
 - Uses **`machine learning`**
 - **`Built-in detection`** for EC2, S3, and IAM 
@@ -2313,7 +2318,7 @@ _Detect unusual API calls in your account_: GuardDuty's anomaly detection featur
 
 #### Inspector
 
-Inspector **`works with EC2`** instances to **`uncover and report`** vulnerabilities
+Inspector **`works with EC2`** instances to **`uncover and report`** **vulnerabilities**
 
 - Agent installed on EC2 instance 
 - **`Reports vulnerabilities`** found
@@ -2399,7 +2404,7 @@ KMS allows you to generate and store encryption keys
 - **`Key generator`**
 - **`Store`** and **`control`** keys
 - **`AWS manages`** encryption keys
-- Automatically **`enabled`** for certain services like CloudTrail logs, S3 Glacier, and Storage Gateway
+- Automatically **`enabled`** for certain services like **CloudTrail logs**, **S3 Glacier**, and **Storage Gateway**
 
 
 
@@ -2430,7 +2435,7 @@ Secrets Manager allows you to **`manage`** and **`retrieve secrets`** (passwords
 
 - Rotate, manage, and retrieve secrets
 - **`Encrypt`** secrets at rest
-- **`Integrates`** with services like RDS, Redshift, and DocumentDB
+- **`Integrates`** with services like **RDS**, **Redshift**, and **DocumentDB**
 
 ##### Secrets Manager in the Real World
 
