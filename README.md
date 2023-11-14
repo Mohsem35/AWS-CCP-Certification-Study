@@ -1,5 +1,14 @@
 Demonstrate: EC2, Lambda. S3, Rekognition, DynamoDB Table Using CloudFormation, Cloudwatch, IAM
 
+
+Agendas
+
+1. [Foundations of Cloud Computing](#foundations-of-cloud-computing)
+2. [Technology](#technology)
+3. [Security and Compliance](#security-and-compliance)
+4. [Pricing, Billing and Governance](#pricing-billing-and-governance)
+
+
 ## AWS-Learning for AWS Certified Cloud Practitioner Exam
 
 4 exam domains
@@ -10,7 +19,9 @@ Demonstrate: EC2, Lambda. S3, Rekognition, DynamoDB Table Using CloudFormation, 
 - **`Billing, Pricing, and Support`** (12% of scored content)
 
 #### chapter 1
-### Foundations of Cloud Computing (24%)
+### Foundations of Cloud Computing 
+
+### 24%
 
 Q: What is cloud computing, exactly?
 Cloud computing is the **delivery of computing services** over the internet.
@@ -234,7 +245,9 @@ Which type of expense includes funds used to run day-to-day operations?
 
 
 #### chapter 2
-### Technology (33%)
+### Technology 
+
+#### (33%)
 
 ![amazon_ec2](https://github.com/Mohsem35/AWS-Learning/assets/58659448/69d04611-d71a-41e5-bbe4-88323bf20ff4)
 
@@ -1886,7 +1899,8 @@ Sagemaker
 Which services allow you to send emails from your applications?
 
 #### chapter 3
-### Security and Compliance (25%)
+### Security and Compliance 
+#### (25%)
 
 #### Shared Responsibility Model
 
@@ -2492,7 +2506,8 @@ AWS Identity and Access Management (IAM)
 
 
 #### chapter 4
-### Pricing, Billing and Governance (16%)
+### Pricing, Billing and Governance 
+#### (16%)
 
 ### AWS Pricing
 
