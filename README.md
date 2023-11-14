@@ -2972,3 +2972,68 @@ _Enterprise Support_: Don't forget how to open tickets and the types of tickets 
 Don't forget this support plan provides access to a **Technical Account Manager (TAM)** and the Concierge **Support Team**.
 
 
+##### Questions
+
+_Which AWS Trusted Advisor real-time guidance recommendations are available for AWS Basic Support and AWS Developer Support customers?_
+
+- Security Groups - Specific Ports Unrestricted
+- Amazon S3 bucket permissions
+- Service limit checks
+
+_Who can assist with accelerating the migration of legacy contact center infrastructure to AWS?_
+
+- AWS Professional Services
+- AWS Partner Network consulting partners
+
+_Which service allows you to select and deploy operating system and software patches automatically across large groups of Amazon EC2 instances?_
+
+AWS Systems Manager
+
+_Which of the following usage types will always be free even after the 12-month Free Tier plan has expired?_
+
+1 million AWS Lambda requests per month
+
+_Which cost management tool gives you the ability to be alerted when the actual or forecasted cost and usage exceeds your desired threshold?_
+
+AWS Budgets
+
+_Which service provides the easiest way to set up and govern a secure, multi-account AWS environment?_
+
+Control Tower
+
+_Which API allows you to receive price alerts when prices change?_
+
+Price List API
+
+_Which tool allows you to compare your estimated service costs per Region?_
+
+AWS Pricing Calculator
+
+_Which service best reduces the operational overhead for your existing AWS cloud specialists?_
+
+AWS Managed Services
+
+_Which service alerts you to events that might impact your AWS environment?_
+
+Personal Health Dashboard
+
+_Which service helps you manage on-premises and AWS licenses?_
+
+License Manager
+
+_Which feature allows you to track AWS costs by labeling resources using a key and value pair?_
+
+Cost allocation tags
+
+_Which cost management tool allows you to see the most detailed information about your AWS bill?_
+
+AWS Cost and Usage Reports
+
+_Which types of issues are covered by AWS Support?_
+
+- "How to" questions about AWS services and features
+- Problems detected by health checks
+
+_What is the easiest way for a customer on the AWS Basic Support plan to increase service limits?_
+
+Open a service limit increase support case via email.
