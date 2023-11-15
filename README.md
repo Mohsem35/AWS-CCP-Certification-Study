@@ -2566,14 +2566,14 @@ Don't forget with S3, **`you pay for the storage you use`**
 
 Let's discuss the RDS features that **`drive pricing`**
 
-1. Running clock hours
-2. Type of database
-3. Storage
-4. Purchase type
-5. Database count
-6. API requests
-7. Deployment type
-8. Data transfer
+1. _Running clock hours_
+2. _Type of database_
+3. _Storage_
+4. _Purchase type_
+5. _Database count_
+6. _API requests_
+7. _Deployment type_
+8. _Data transfer_
 
 #### Total Cost of Ownership (TCO)?
 
@@ -2584,7 +2584,7 @@ TCO is a **`financial estimate`** that helps you understand both the **`direct`*
 
 #### Application Discovery Service
 
-Application Discovery Service helps you plan migration projects to the AWS Cloud
+Application Discovery Service helps you **plan migration projects to the AWS Cloud**
 
 - Plan **`migration`** projects
 - Used to **`estimate TCO`**
@@ -2594,12 +2594,12 @@ Application Discovery Service helps you plan migration projects to the AWS Cloud
 ##### A Few Ways to Reduce Your TCO Using AWS
 
 
-1. **`Minimize`** capital expenditures: AWS helps you **`minimize large capital expenditures`**, which reduces your TCO.
+1. **Minimize capital expenditures**: AWS helps you **`minimize large capital expenditures`**, which reduces your TCO.
 
 
-2. **`Utilize`** Reserved Instances: AWS provides **`Reserved Instances`** to help you lock in savings and reduce your TCO.
+2. **Utilize Reserved Instances**: AWS provides **`Reserved Instances`** to help you lock in savings and reduce your TCO.
 
-3. **`Right`** size your resources: AWS helps you **`match`** the **`provisioning`** of resources to your **`usage needs`** to reduce your TCO.
+3. **Right size your resources**: AWS helps you **`match`** the **`provisioning`** of resources to your **`usage needs`** to reduce your TCO.
 
 
 #### AWS Price List API
@@ -2607,7 +2607,7 @@ Application Discovery Service helps you plan migration projects to the AWS Cloud
 The Price List API allows you to **`query`** the price of AWS services
 
 
-- Query using **`JSON`** or **`HTML`**
+- **Query** using **`JSON`** or **`HTML`**
 - Receive **`price alerts`** when prices change 
 
 
@@ -2651,7 +2651,7 @@ _Monitor Free Tier usage so you don’t incur unwanted costs:_ You can monitor F
 
 #### Cost and Usage Report
 
-The Cost and Usage Report contains the most comprehensive set of cost and usage data.
+The Cost and Usage Report contains the most **comprehensive set of cost and usage data**.
 
 - **`Aggregate`** usage data on a _daily, hourly, or monthly level_
 
@@ -2698,7 +2698,7 @@ Cost Allocation Tags: Don't forget that tags can help you track spend.
 ### Governance Services
 
 
-**`Governance`** and management services help you **`maintain control`** over cost, compliance, and security **`across`** your AWS accounts.
+**`Governance`** and management services help you **`maintain control`** over **cost**, **compliance**, and **security** **`across`** your AWS accounts.
 
 #### Organizations
 
@@ -2747,7 +2747,7 @@ _Reduce costs by sharing resources across accounts_: Organizations allows you to
 Control Tower helps you ensure your accounts **`conform`** to _company-wide policies_
 
 - Helps set up **`new accounts`** using a multi-account strategy
-- **`Works`** directly **`with`** AWS Organizations
+- **`Works`** directly with **AWS Organizations**
 - Enforces the **`best use of services`** across accounts
 - Provides a **`dashboard`** to manage accounts
 
@@ -2850,8 +2850,8 @@ There are expert teams available that help you _manage_ and _operate_ your cloud
 Managed Services helps you efficiently **operate your AWS infrastructure**
 
 - **Augments** your internal staff
-- Provides **ongoing management** of your infrastructure
-- Reduces **operational risks** and overhead
+- Provides **ongoing management** of your **infrastructure**
+- **Reduces operational risks** and overhead
 
 
 ##### Managed Services in the Real World
