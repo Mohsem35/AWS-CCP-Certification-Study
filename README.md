@@ -1413,7 +1413,7 @@ CodeBuild allows you to build and test your application source code.
 
 - **`Compiles`** source code and **`runs`** tests
 - Enables continuous **`integration`** and **`delivery`**
-- Produces **`build artifacts`** ready to be deployed
+- Produces **`build s`** ready to be deployed
 
 
 ##### Use cases
@@ -2289,6 +2289,8 @@ Macie: Remember that Macie helps you find sensitive information.
 
 #### Config
 
+![AWS-Config](https://github.com/Mohsem35/AWS-Learning/assets/58659448/d1a025b9-e9be-4ff9-81f8-bdc100947a94)
+
 Config allows you to _assess, audit, and evaluate_ the **`configurations`** of your resources
 
 - **`Track configuration changes`** over time
@@ -2331,6 +2333,9 @@ _Identify unintended network access to an EC2 instance via a detailed report of 
 
 
 #### Artifact
+
+![pict--aws-artifact-aws-security,-identity-and-compliance-vector-stencils-library](https://github.com/Mohsem35/AWS-Learning/assets/58659448/0680d2c8-12ac-405a-a1ed-01bd84b3751e)
+
 
 Artifact offers on-demand access to **`AWS security and compliance reports`**
 
@@ -2663,6 +2668,8 @@ _View the most granular data about your AWS bill_: The Cost and Usage Report giv
 
 #### Cost Explorer
 
+![AWS-Config](https://github.com/Mohsem35/AWS-Learning/assets/58659448/d1a025b9-e9be-4ff9-81f8-bdc100947a94)
+
 Cost Explorer allows you to **`visualize and forecast`** your costs and usage over time
 
 - Visualize costs over time
@@ -2701,6 +2708,9 @@ Cost Allocation Tags: Don't forget that tags can help you track spend.
 **`Governance`** and management services help you **`maintain control`** over **cost**, **compliance**, and **security** **`across`** your AWS accounts.
 
 #### Organizations
+
+![images](https://github.com/Mohsem35/AWS-Learning/assets/58659448/9fac1156-57e0-442e-944b-04f3b4047d5e)
+
 
 Organizations allows you to centrally **`manage multiple AWS accounts under one umbrella`** 
 
@@ -2773,6 +2783,9 @@ _Deploy operating system and software patches automatically across a large group
 
 
 #### Trusted Advisor
+
+![AWS-Trusted-Advisor](https://github.com/Mohsem35/AWS-Learning/assets/58659448/11189983-2504-403b-9e78-68d504f12f97)
+
 
 Trusted Advisor provides **`real-time guidance`** to help you **`provision your resources`** following AWS best practices. 
 
