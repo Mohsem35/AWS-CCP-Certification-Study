@@ -3057,3 +3057,19 @@ _Which types of issues are covered by AWS Support?_
 _What is the easiest way for a customer on the AWS Basic Support plan to increase service limits?_
 
 Open a service limit increase support case via email.
+
+_Q: Which cost management tool allows you to view costs from the past 12 months, current detailed costs, and forecasts costs for up to 3 months?_
+
+AWS Cost Explorer
+
+_Q: Which service provides public and private certificates for free?_
+
+Certificate Manager
+
+_Q: Which features of AWS reduce your total cost of ownership (TCO)?_
+
+- Elastic computing
+- Pay-as-you-go pricing model
+- Multi-tenancy
+
+
