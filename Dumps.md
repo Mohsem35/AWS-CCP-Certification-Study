@@ -423,6 +423,442 @@ _In which of the following is CloudFront content cached?_
 **Edge location**
 
 
-### Dumps 2
+## Dumps 2
+
+Question 1
+
+Select all the TRUE statements regarding the AWS Shared Responsibility Model. (Choose 3).
+(Choose 3)
+
+- Customers are responsible for security "in" the cloud.
+- AWS manages the hardware and AWS Global Infrastructure.
+- AWS is responsible for security "of" the cloud
+
+Question 2
+
+_Which of the following tools provides a view of the performance and availability of your AWS services based on your requirements?_
+
+**AWS Health Dashboard**
+
+**Infrastructure as a Service (IaaS)**
 
 
+Question 3
+
+Which of the following can be used to author _CloudFormation templates_?
+(Choose 2)
+
+- JSON
+- YAML
+
+Question 4
+
+When considering common cloud computing models, which model is Amazon Elastic Compute Cloud (AWS EC2) an example of?
+
+Question 5
+
+_Your Finance Department has instructed you to save costs wherever possible when using the AWS Cloud. You notice that using reserved EC2 instances on a 1-year contract will save money. What payment method will save the most money?_
+
+All Upfront
+
+Question 6
+
+You have been tasked with creating identical, repeatable infrastructure for your customers. Which service will you use?
+
+**CloudFormation**
+
+Question 7
+
+Upon attempting to create an additional S3 bucket, _you realize you have reached your S3 bucket limit in your AWS account. You anticipate creating even more S3 buckets in the future for your photos and documents. Which of the following is the best long-term solution?_
+
+**Submit a service limit increase**
+
+Question 8
+
+_Which of the following is an AWS managed database service that is compatible with MySQL?_
+
+**Aurora**
+
+Question 9
+
+_Microsoft has announced a new patch for its operating system. For a platform-as-a-service solution, who would be responsible for applying the patch?_
+
+AWS
+
+Question 10
+
+_Which benefit of cloud computing is demonstrated when you don't have to plan ahead of time how much capacity you will need to run your applications?_
+
+**Elasticity**
+
+Question 11
+
+When AWS uses tape media to perform backups in their data centers, who would be responsible for their safe and secure disposal?
+
+AWS
+
+Question 12
+
+_What benefits can CloudFront bring to your e-commerce website?_
+(Choose 3)
+
+- Increased application **availability**
+- **Protection** against network and application layer attacks via WAF
+- **Lower latency** for customers of your e-commerce website
+
+
+Question 13
+
+_Which of the following acts like built-in firewalls per instance for your virtual servers?_
+
+**Security groups**
+
+Question 14
+
+_A user has created several IAM users in their account to perform administrative and general tasks. How can the user monitor and track the IP address of the users performing activities in their account?_
+
+**CloudTrail**
+
+Question 15
+
+_Which of the following are load balancer types offered by AWS?_
+(Choose 3)
+
+- **Network**
+- **Classic**
+- **Application**
+
+Question 16
+
+_Which security concept confirms that users are who they say they are, by presenting an identity (username) and providing a verification (password)?_
+
+**Authentication**
+
+Question 17
+
+A huge department store sells products online and in-person. Most of their customers use credit cards instead of cash when making purchases. For security purposes, the credit card data must be encrypted at rest. _Which services allow the department store to generate and store the encryption key used to secure the credit card numbers?_
+(Choose 2)
+
+- **CloudHSM**
+- **Key Management Service (KMS)**
+
+Question 18
+
+Deploying your EC2 instances across multiple AZs will help address which cloud concept?
+
+High availability
+
+Question 19
+
+A developer deployed an application that consisted of 1 Lambda function, a DynamoDB table, and a firewall using Web Application Firewall (WAF) via the AWS Command Line Interface (CLI). When attempting to access the application's resources via the AWS Management Console, the developer cannot find the Lambda function or DynamoDB table. What could be the problem?
+
+The developer is probably in a different Region from where the resources were initially deployed.
+
+Question 20
+
+_Which type of Elastic Load Balancer is recommended for flexible application management and supports HTTP and HTTPS/2 traffic?_
+
+**Application Load Balancer**
+
+
+Question 21
+
+Your company is moving to the AWS Cloud and is reviewing the shared responsibility model. Which item is entirely the responsibility of AWS?
+
+Physical and environmental controls
+
+Question 22
+
+_Which of the following best describes DynamoDB?_
+
+**DynamoDB is a NoSQL database**
+
+Question 23
+
+_Which of the below is true about root accounts on AWS?_
+(Choose 2)
+
+- The root user should not be used for day-to-day activities.
+- The root user has full access to everything in the AWS account.
+
+Question 24
+
+_A small software company is starting to work with the AWS Cloud. Which service will allow them to find, test, buy, and deploy software that runs on AWS?_
+
+**AWS Marketplace**
+
+Question 25
+
+You are managing the company's AWS account. The current support plan is Basic, but you would like to begin using _Infrastructure Event Management_. What support plan (that already normally includes Infrastructure Event Management) should you upgrade to?
+
+**Upgrade to the Enterprise plan**
+
+Question 26
+
+A popular company that sells products online just experienced a distributed denial-of-service (DDoS) attack that consumed all available bandwidth on their network and didn't allow legitimate requests to be processed. _Which AWS services can the company integrate and combine going forward to prevent future attacks?_
+(Choose 4)
+
+- **Web Application Firewall (WAF)**
+- **CloudFront**
+- **Route 53**
+- **AWS Shield**
+
+Question 27
+
+The CTO of a software company has requested an executive summary detailing the advantages of a potential move to the AWS Cloud. What can you say is an advantage of an RDS database over a traditional database?
+
+AWS maintains the underlying OS and performs software patching on the database
+
+Question 28
+
+Which AWS service can provide a Desktop as a Service (DaaS) solution?
+
+**Amazon WorkSpaces**
+
+Question 29
+
+A developer needs to provide version control for multiple Python source code files. Which service will provide source control for the files?
+
+**CodeCommit**
+
+Question 30
+
+An independent developer needs help with _monitoring service limits to ensure they don't exceed free-tier usage on their account_. Which services will help them monitor service limits?
+(Choose 2)
+
+- **Trusted Advisor**
+- **CloudWatch**
+
+Question 31
+
+A company has signed a 3-year contract with a school district to develop a Teacher Absence Management application. They anticipate consistent, daily development work throughout the duration of this project. Which type of EC2 instance would be best suited for this scenario?
+
+- **Standard Reserved Instances**
+
+Question 32
+
+A company has multiple AWS accounts across many departments. They are considering using Organizations to group all their accounts under 1 master payer account. What are the benefits of using Organizations?
+(Choose 3)
+
+- They can reduce costs by sharing resources across accounts
+- They can easily add new accounts or create new accounts.
+- They can receive 1 bill for all their AWS accounts
+
+Question 33
+
+You are reviewing the AWS Shared Responsibility model to present an overview to management on what your company is responsible for in AWS. Which option is a customer responsibility?
+
+Customer data   
+
+Question 34
+
+Under the shared responsibility model, which of the following is an example of _security of the cloud?_
+(Choose 3)
+
+- Maintaining networking components
+- Managing the AWS global infrastructure
+- Protecting the data center infrastructure
+
+Question 35
+
+_Which storage service can provide very high durability storage for objects?_
+
+**Amazon S3**
+
+Question 36
+
+_Your company is considering migrating its data center to the cloud. Which of the following is an advantage of the AWS Cloud over an on-premises data center?_
+
+Replace upfront capital expenses with low variable costs
+
+Question 37
+
+A company is using CloudTrail to simplify operational analysis and troubleshooting. _When tracking user activity, which content fields does CloudTrail track when a user accesses the AWS Management Console?_
+(Choose 2)
+
+- Region
+- Username
+
+Question 38
+
+Which statement below is one of the 6 advantages of cloud computing?
+
+**Benefit from increased speed and agility**
+
+Question 39
+
+_A company needs to use a load balancer that can serve traffic at the TCP and UDP layers. Additionally, it needs to handle millions of requests per second at very low latencies. Which load balancer should they use?_
+
+**Network Load Balancer**
+
+Question 40
+
+_You need to allow IPv4 resources in a private subnet to connect to services outside your VPC, but you can't allow external services to initiate a connection with those private IPv4 resources. Which of the following must be present to enable this access?_
+
+**NAT gateway**
+
+Question 41
+
+You are a Systems Administrator who has just started adding IAM users to your company’s AWS account. However, you worry that the users will not create passwords strong enough to prevent unauthorized access. _What is the most reliable way to ensure that users are using strong passwords?_
+
+**Apply an IAM password policy to ensure users create appropriately strong passwords**.
+
+
+Question 42
+
+Broadly speaking, as a customer of AWS, you are responsible for:
+
+Security IN the Cloud
+
+Question 43
+
+You just had a Data Analyst join the company, and you have been tasked with creating a new IAM user accordingly. Although the user has received all the necessary credentials, _she realized that she cannot perform any Amazon RDS actions on the Clients table. Which of the following are possible solutions to this issue?_
+(Choose 2)
+
+- Create an **identity-based policy**
+- Add the user to the group that has the **necessary permission policy**
+
+Question 44
+
+You have a MySQL database that you want to migrate to the cloud, and you need it to be significantly faster there. You are looking for a speed increase up to 5 times the current performance. Which AWS offering could you use?
+
+**Amazon Aurora**
+
+Question 45
+
+A company is using Trusted Advisor to ensure they are following AWS best practices. _What real-time guidance does Trusted Advisor provide?_
+(Choose 3)
+
+- **Open-access permissions for S3 buckets**
+- **Low utilization on EC2 instances**
+- **Exposed access keys**
+
+Question 46
+
+Which of the following are focuses of the _performance efficiency pillar of the Well-Architected Framework?_
+(Choose 2)
+
+- Use a **serverless architecture** first.
+- Use **multi-region deployments**.
+
+Question 47
+
+What is the maximum number of objects you can store in S3 per AWS account?
+
+Question 48
+
+Which are focuses of the security pillar of the Well-Architected Framework?
+(Choose 2)
+
+- Track who did what and when
+- Assign only the least privilege required
+
+Question 49
+
+A small company has purchased a new system which they want to deploy in the AWS Cloud _but does not have anyone with the required AWS skill set to perform the deployment. Which service can help with this?_
+
+**AWS Partner Network (APN) Consulting Partners**
+
+Question 50
+
+Which of the below are TRUE when running a database in an EC2 instance?
+(Choose 3)
+
+- The customer is responsible for managing access to the database
+- The customer is responsible for updating the database software
+- The customer is responsible for updating the guest operating system
+
+Question 51
+
+_Which is a core design principle for deploying resources in AWS?_
+
+Deploy in multiple Availability Zones.
+
+Question 52
+
+A new web application is getting much more traffic than expected. You decide to add another EC2 instance to share the load. _Which AWS concept best describes the act of changing the number of instances using the same instance size?_
+
+**Horizontal scaling**
+
+Question 53
+
+Which of the following database migrations are classified as heterogeneous?
+(Choose 2)
+
+- Microsoft SQL Server to Amazon Aurora PostgreSQL
+- Oracle to Amazon Aurora PostgreSQL
+
+
+Question 54
+
+_Your company is migrating to the AWS Cloud. For servers, your company has existing per-core licenses they would like to continue to use. Which EC2 purchasing option allows this? (Subject to your license terms)._
+
+**Dedicated Host**
+
+Question 55
+
+_You are trying out AWS on a trial basis and need to deploy a web application without having to configure servers. Which AWS service can you use?_
+
+- **Elastic Beanstalk**
+
+Question 56
+
+_Which of the following data archival services is extremely inexpensive but can have a multi-hour data-retrieval window?_
+
+**Glacier**
+
+Question 57
+
+A company is _rearchitecting its monolithic application using a microservices architecture_. Which design principle for cloud architecture should the company consider?
+
+**Implement loose coupling**
+
+Question 58
+
+A recent audit has dictated that a _company begin keeping a log of AWS Management Console actions and API calls. Which AWS service can help with this?_
+
+**AWS CloudTrail**
+
+Question 59
+
+Your company has decided to use Amazon WorkSpaces. _They can use Amazon WorkSpaces to provision either Windows or Linux desktops in just a few minutes. What type of solution is this?_
+
+**DaaS**
+
+Question 60
+
+A company is considering moving their critical applications and databases to the cloud. _They want to ensure their data never becomes corrupted or lost due to a system malfunction_. A system that reliably stores data without loss is considered to be what?
+
+**Durable**
+
+Question 61
+
+A company would like to _reduce operational overhead when operating AWS infrastructure_. Which service can help them do this?
+
+**Managed Services**
+
+Question 62
+
+A company is considering moving its data and applications to the cloud. What are some of the benefits of moving to the cloud?
+(Choose 2)
+
+- Operate production workloads that are more highly available, fault tolerant, and scalable
+- Provision exactly the right type and size of computing resources you need
+
+Question 63
+
+Which of the following allows you to restrict access to an entire S3 bucket?
+
+**Bucket policies**
+
+Question 64
+
+_You suspect that 1 of the AWS services your company is using has gone down. How can you check on the status of this service?_
+
+**AWS Personal Health Dashboard**
+
+Question 65
+
+You have many database backups you need to store for an indefinite amount of time. If the backups are ever needed, they just need to be retrieved within 4 hours. What is the lowest-cost solution for this scenario?
+
+S3 Glacier Flexible Retrieval (formerly S3 Glacier)
