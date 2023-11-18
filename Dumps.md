@@ -63,11 +63,11 @@ Question 10
 
 A company has underutilized servers in its on-premises data center. Unfortunately, they are still required to pay for idle resources. Which benefit of the cloud can help the company solve this problem?
 
-Elasticity
+**Elasticity**
 
 Question 11
 
-A customer set up an Amazon S3 bucket to accept downloads from their mobile application users. Due to data privacy requirements, the customer needs to automatically and continually scan S3 for the users' addresses. Which service can do this?
+A customer set up an Amazon S3 bucket to accept downloads from their mobile application users. _Due to data privacy requirements, the customer needs to automatically and continually scan S3 for the users' addresses. Which service can do this?_
 
 **Macie**
 
@@ -75,13 +75,13 @@ Question 12
 
 A financial company needs to migrate large amounts of data, at a petabyte scale, to AWS. Which AWS service can perform this type of migration?
 
-AWS Snowball
+**AWS Snowball**
 
 Question 13
 
-Which of the following services helps you deliver content to your customers faster?
+_Which of the following services helps you deliver content to your customers faster?_
 
-CloudFront
+**CloudFront**
 
 Question 14
 
@@ -91,9 +91,9 @@ Deploy the application to multiple Regions
 
 Question 15
 
-When you upload an object to S3 storage, where will AWS keep it?
+_When you upload an object to S3 storage, where will AWS keep it?_
 
-In multiple Availability Zones within the Region you select
+In **multiple Availability Zones** within the Region you select
 
 Question 16
 
@@ -104,21 +104,21 @@ You're hosting a web application on EC2. After a few days of production usage, y
 
 Question 17
 
-What is a geographical area of the world that is a collection of logically grouped data centers?
+_What is a geographical area of the world that is a collection of logically grouped data centers?_
 
 Region
 
 Question 18
 
-How can a customer on the Developer Support plan open a system impaired support case?
+How can a _customer on the Developer Support plan open a system impaired support case?_
 
-Open a technical support case via email.
+Open a technical **support case via email**.
 
 Question 19
 
-Which service allows users to record software configuration changes within servers running on-premises over time?
+Which service allows users to _record software configuration changes within servers running on-premises over time?_
 
-Config
+**Config**
 
 Question 20
 
@@ -136,34 +136,34 @@ Question 22
 
 A customer has an on-premises 5-gigabyte Oracle database that needs to be migrated to AWS and converted to Aurora. The customer requires minimal downtime to the database. Which service is the best option for migration and conversion?
 
-Database Migration Service
+**Database Migration Service**
 
 Question 23
 
-A solutions architect is designing a system to withstand the failure of one or more components. What type of system is able to withstand failure?
+_A solutions architect is designing a system to withstand the failure of one or more components. What type of system is able to withstand failure?_
 
 Highly available    
 
 Question 24
 
-A customer would like to store secondary backup copies of on-premises data to the cloud. The customer is not concerned about an extra level of protection by geographic redundancy but requires rapid access to the data when it is needed. Which Amazon S3 storage class should be used as the lowest cost option with rapid access?
+A customer would like to store secondary backup copies of on-premises data to the cloud. The customer is _not concerned about an extra level of protection by geographic redundancy_ but requires rapid access to the data when it is needed. _Which Amazon S3 storage class should be used as the lowest cost option with rapid access?_
 
-S3 One Zone-Infrequent Access
+**S3 One Zone-Infrequent Access**
 
 Question 25
 
-A company wants to provide access to an Amazon S3 bucket to all applications running on a Reserved Instance (RI) that's been assigned to a specific Availability Zone. What's the best way to give S3 access to all applications running on the EC2 instance?
+A company wants to provide access to an Amazon S3 bucket to all applications running on a Reserved Instance (RI) that's been assigned to a specific Availability Zone. _What's the best way to give S3 access to all applications running on the EC2 instance?_
 
-Use an instance profile to pass an IAM role with Amazon S3 permissions to the EC2 instance
+Use an **instance profile to pass an IAM role** with Amazon S3 permissions to the EC2 instance
 
 Question 26
 
-A company is in the process of migrating its workloads to AWS, and they want to develop and implement security policies. What are some of the recommended best practices for Identity and Access Management (IAM) they can put in place to make sure their accounts are secure?
+A company is in the process of migrating its workloads to AWS, and they want to develop and implement security policies. _What are some of the recommended best practices for Identity and Access Management (IAM) they can put in place to make sure their accounts are secure?_
 (Choose 3)
 
-- Enable MFA for privileged users
-- Create individual users instead of using root.
-- Do not share access keys.
+- Enable **MFA** for privileged users
+- Create **individual users** instead of using root.
+- **Do not share access keys**.
 
 
 Question 27
@@ -184,7 +184,7 @@ Question 29
 
 AWS purchases computing resources in large quantities at lower costs and then _passes volume discounts on to their customers. Which benefit of cloud computing does this demonstrate?_
 
-Lower pay-as-you-go prices due to massive economies of scale
+**Lower pay-as-you-go prices due to massive economies of scale**
 
 Question 30
 
@@ -249,7 +249,7 @@ _Which of the following are classified as migration services?_
 
 Question 39
 
-A company is considering a serverless architecture and wants to build and run applications without having to manage infrastructure. _Which AWS services should the company consider using when building applications?_
+A company is considering a _serverless architecture_ and wants to _build and run applications without having to manage infrastructure_. _Which AWS services should the company consider using when building applications?_
 (Choose 4)
 
 - **DynamoDB**
@@ -267,7 +267,7 @@ Question 41
 
 A company is considering migrating its applications to AWS. Which costs should the company consider when comparing its on-premises total cost of ownership (TCO) to the TCO when running on AWS?
 
-- Software license costs
+- Software **license costs**
 - Data center cooling, power, and space requirements
 - Hardware and infrastructure
 
@@ -386,11 +386,11 @@ _How can a customer with the Enterprise Support plan get help with billing and a
 
 Question 60
 
-A company wants to ensure all AWS accounts in their environment conform to company-wide policies. Which services can help?
+_A company wants to ensure all AWS accounts in their environment conform to company-wide policies_. Which services can help?
 (Choose 2)
 
-- Organizations
-- Control Tower
+- **Organizations**
+- **Control Tower**
 
 Question 61
 
@@ -862,3 +862,15 @@ Question 65
 You have many database backups you need to store for an indefinite amount of time. If the backups are ever needed, they just need to be retrieved within 4 hours. What is the lowest-cost solution for this scenario?
 
 S3 Glacier Flexible Retrieval (formerly S3 Glacier)
+
+
+## Dumps 3
+
+Question 1
+
+A purchasing department staff member is set up as an AWS user in the company’s Procurement AWS account. At each month-end, the staff member needs access to an application running on EC2 in the company’s Accounts Payable AWS account to reconcile reports. Which of the following provides the most secure and operationally efficient way to give the staff member access to the Accounts Payable application?
+
+Question 2
+
+With which AWS service, coupled with EC2, can you implement elasticity by adding and removing instances as needed?
+
