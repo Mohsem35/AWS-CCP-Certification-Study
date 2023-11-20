@@ -868,9 +868,416 @@ S3 Glacier Flexible Retrieval (formerly S3 Glacier)
 
 Question 1
 
-A purchasing department staff member is set up as an AWS user in the company’s Procurement AWS account. At each month-end, the staff member needs access to an application running on EC2 in the company’s Accounts Payable AWS account to reconcile reports. Which of the following provides the most secure and operationally efficient way to give the staff member access to the Accounts Payable application?
+_Using Infrastructure as Code **(IaC)** is related to which cloud concept?_
+
+**Automation**
 
 Question 2
 
-With which AWS service, coupled with EC2, can you implement elasticity by adding and removing instances as needed?
+_A company has an application with user bases in both Canada and New Zealand. The company has deployed their application to servers currently provisioned in the Canada (Central) Region. Unfortunately, New Zealand users are experiencing high latency and slow download times. How can the **company reduce latency**?_
 
+Provision resources to the Australia (Sydney) Region
+
+Question 3
+
+_When might **Auto Scaling** be used?_
+
+When you require **scalable capacity to maintain service** levels in your environment
+
+Question 4
+
+_Where is the best place to **store your root user access key** so your application can use it to make requests to AWS?_
+
+**Nowhere** — you should not use the root user access keys for this
+
+Question 5
+
+_You have a web application that needs to run for a short period of time. It is all right if there are interruptions in the application. Which EC2 instance type would be best for this use case?_
+
+**Spot Instance**
+
+Question 6
+
+_Which of the following statements about AWS Regions is true?_
+(Choose 2)
+
+- Regions are generally specific geographical areas
+- Regions are made up of Availability Zones
+
+Question 7
+
+_What defines **long-term data protection**?_
+
+**Durability**
+
+Question 8
+
+Which of the following are valid EC2 pricing options?
+(Choose 2)
+
+- On-Demand
+- Reserved
+
+Question 9
+
+_Which of the following EC2 instance types will realize a savings over time in exchange for a contracted term-of-service?_
+
+Reserved Instances
+
+Question 10
+
+_When talking about AWS security, what does "**authorization**" refer to?_
+
+Evaluating what permissions a user has
+
+Question 11
+
+_A company has provisioned an EC2 instance as a web server. The web application on the server is running within a subnet within a VPC. For some reason, the **application is unable to access the internet**. Which component is missing?_
+
+**Internet gateway**
+
+Question 12
+
+_Your company is migrating its services to the AWS Cloud. The DevOps team has heard about **Infrastructure as Code** and wants to investigate this concept. Which AWS service would they investigate?_
+
+**AWS CloudFormation**
+
+Question 13
+
+_Which of the following are geographic areas that host 2 or more Availability Zones?_
+
+Regions
+
+Question 14
+
+_Which of the following is an **AWS global service?**_
+
+**CloudFront**
+
+Question 15
+
+_Which of the following is an **AWS global service**?_
+
+**IAM**
+
+Question 16
+
+_A company is launching a new product and needs help with assessing its operational readiness and identifying and mitigating risks. Which feature of the **Enterprise Support plan provides** this?_
+
+**Infrastructure Event Management**
+
+Question 17
+
+_A customer has multiple IAM users that need the same access permissions. How can the customer provide the same access permissions to all the users quickly and efficiently?_
+
+By **assigning users to an IAM group** that has the needed permissions
+
+Question 18
+
+_An organization needs to run a MySQL relational database on AWS. They plan to hire their own database administrators to manage their databases, including taking backups, using replication, and clustering. Which option provides the customer the control and flexibility needed?_
+
+Install the MySQL database directly on an EC2 instance
+
+Question 19
+
+_Which of the following is AWS' **data warehousing** service?_
+
+**Redshift**
+
+Question 20
+
+_Which AWS service provides **central governance** and management across **multiple AWS accounts**?_
+
+**AWS Organizations**
+
+Question 21
+
+_Which AWS design principle can be a **valuable feature when deploying applications**?_
+
+**Loose coupling**
+
+Question 22
+
+_Your company has decided to migrate entirely to the AWS Cloud. Which answers are a part of the 6 advantages of cloud computing?_
+(Choose 2)
+
+- Go global in minutes
+- Stop spending money running and maintaining data centers
+
+Question 23
+
+_A colleague tells you about a service that uses machine learning to **discover and protect sensitive data stored in S3** buckets. Which AWS service does this?_
+
+**Macie**
+
+Question 24
+
+_The Solutions Architect leading your project tells you the application your team is working on requires a managed **NoSQL database**. Which of the following AWS services best fits that description?_
+
+**DynamoDB**
+
+Question 25
+
+_Your team needs to begin **monitoring** the applications running in your AWS account by collecting **metrics, logs, and events.** Which AWS service can you use?_
+
+**Amazon CloudWatch**
+
+Question 26
+
+_A company is planning for a one-time sale of 75% off all products on its website. They expect to see a **short-term spike on** the sale day. Which EC2 instance type should the company use to meet its requirements and **maximize flexibility**?_
+
+**On-Demand**
+
+Question 27
+
+_A college student wants to quickly launch a **WordPress website** but doesn't have a lot of cloud experience. Which service will help the student launch the website with a **low, predictable monthly fee**?_
+
+**Lightsail**
+
+Question 28
+
+_Which of the following are focuses of the **operational excellence** pillar of the Well-Architected Framework?_
+(Choose 3)
+
+- **Plan for and anticipate failure**.
+- **Script operations as code**.
+- Deploy smaller reversible changes.
+
+This is a focus of the operational excellence pillar. This pillar focuses on creating applications that effectively support production workloads.
+
+
+Question 29
+
+_Which type of user is created when you **initially sign up** for an AWS account?_
+
+**Root user**
+
+Question 30
+
+_The load on your application fluctuates by day of the week. Wednesdays have the most traffic, and Saturdays have the least traffic. Which AWS service allows you to **ensure** you have the **correct amount of compute capacity** while also optimizing on a cost basis?_
+
+**Auto Scaling**
+
+Question 31
+
+_A company is considering the cloud deployment models when planning a new application. Which deployment model allows the company to **fully stop spending money running and maintaining data centers**?_
+
+**Public cloud**
+
+Question 32
+
+_What AWS service protects against distributed denial of service **(DDoS) attacks** at the network and transport layers (layer 3 and 4) and the application layer (layer 7)?_
+
+**AWS Shield Advanced**
+
+Question 33
+
+_You are concerned about access to your top-secret application by stolen passwords. What additional layer of security can you add for logging in to the AWS Management Console, in addition to user passwords?_
+
+**Multi-factor authentication**
+
+Question 34
+
+_Your company utilizes DNS and wants to **migrate DNS and management** of DNS to the cloud. Which AWS service would you use?_
+
+**Route 53**
+
+Question 35
+
+_A company with a popular website would like to **analyze website clickstreams in real time** to determine site usability. How can they obtain the data in real time for analysis?_
+
+**Kinesis**
+
+Question 36
+
+A customer provisioned an on-demand EC2 instance using a Linux AMI. The instance ran for 10 hours, 3 minutes, and 7 seconds before the user terminated it. How much time will the customer be billed for?
+
+10 hours, 3 minutes, and 7 seconds
+
+Question 37
+
+_Which statement is true regarding the AWS Global Infrastructure?_
+
+- Each AWS Region consists of multiple, isolated, and physically separate AZs within a geographic area.
+
+Question 38
+
+_Which service is used to manage the **encryption of EBS volumes** for Amazon EC2?_
+
+**Key Management Service (KMS)**
+
+Question 39
+
+_What AWS service lets you provision a **logically isolated section** of the AWS Cloud?_
+
+**Amazon Virtual Private Cloud**
+
+Question 40
+
+_Which of the following are steps you should take in **securing your AWS accoun**t?_
+(Choose 3)
+
+- Activate Multi-factor Authentication **(MFA)** on your root account
+- Use **groups to delegate access** to IAM users
+- Create **individual IAM users**
+
+Question 41
+
+_Under the shared responsibility model, for which of the following does **AWS NOT assume responsibility**?_
+
+Customer data
+
+Question 42
+
+_You work for a financial company that has several mission-critical workloads running on AWS. Which AWS Support plan should you use if you want response times in under 15 minutes when issues occur?_
+
+**Enterprise**
+
+Question 43
+
+_A company is configuring IAM for its new AWS account. There are **5 departments** with between 5 to 10 users in each department. How can they efficiently apply **access permissions** for each of these departments and simplify management of these users?_
+
+**Create policies for each department** that define the permissions needed. **Create an IAM group** for each department and attach the policy to each group. Add each department's members to their respective IAM group
+
+Question 44
+
+_A developer has noticed several **SQL injection attacks** against a web application running on an EC2 spot instance. What is the best way to prevent this type of attack?_
+
+**Web Application Firewall (WAF)**
+
+Question 45
+
+_Which credentials can you use to access the **AWS Management Console**?_
+
+Your **username and password**
+
+Question 46
+
+_You have 2 software systems that need to communicate, and you also need to **ensure messages are not lost between them**. Which AWS service can help meet these requirements?_
+
+**SQS**
+
+Question 47
+
+_A company with a business-critical application needs to ensure business continuity and that they will not be impacted by capacity restraints in a given Region. How can the company ensure this?_
+(Choose 3)
+
+- **Convertible Reserved Instance** (RI) with a capacity reservation    
+- **On-demand capacity reservation**
+- **Standard Reserved Instance** (RI) with a capacity reservation
+
+
+Question 48
+
+_A purchasing department staff member is set up as an AWS user in the company’s Procurement AWS account. At each month-end, the staff member needs access to an application running on EC2 in the company’s Accounts Payable AWS account to reconcile reports. Which of the following provides the most secure and operationally **efficient way to give the staff member access to the Accounts Payable application**?_
+
+Have the user request **temporary security credentials for the application** by assuming a role
+
+Question 49
+
+_Your company has decided to migrate a SQL Server database to a newly created AWS account. Which service can be used to **migrate the database**?_
+
+**Database Migration Service**
+
+Question 50
+
+_Why would you use **tags** in AWS?_
+
+To **organize your resources**
+
+Question 51
+
+_Which of the following support services do **all accounts receive** as part of the AWS Support Basic tier?_
+
+**Billing support**
+
+Question 52
+
+_Which of the following is correct regarding the number of Regions, Availability Zones, edge locations, and data centers?_
+
+There are more Availability Zones than Regions
+
+Question 53
+
+_A customer needs to **identify vulnerabilities** on their EC2 instances, such as unintended network access. Which services will provide a **report of findings**?_
+(Choose 2)
+
+- **Inspector**
+- **Trusted Advisor**
+
+Question 54
+
+_What can we do in AWS to receive the benefits of volume pricing for your multiple AWS accounts?_
+
+Use **consolidated billing** in AWS Organizations.
+
+Question 55
+
+_Which of the following are **characteristics of Regions**?_
+(Choose 3)
+
+- They are **grouped in geographic locations**.
+- They contain only the resources and services specifically deployed to them.
+- They are fully independent and isolated.
+
+
+
+Question 56
+
+_With which AWS service, **coupled with EC2**, can you implement elasticity by **adding and removing instances** as needed?_
+
+**Auto Scaling**
+
+Question 57
+
+_You would like to set up a **loosely coupled architecture**. Which service would allow you to send and receive messages and store them if they are not consumed immediately?_
+
+**AWS SQS**
+
+Question 58
+
+_A customer has decided to go with a 1-year Standard Reserved Instance (RI) for EC2 since their application has steady state and predictable usage. Which pricing option should they choose to earn the **  **?_
+
+**All upfront**
+
+Question 59
+
+_A company is trying to **visualize and forecast** its costs and usage over time. Which service can help them?_
+
+**AWS Cost Explorer**
+
+Question 60
+
+_When analyzing application performance, a developer realizes the queries to the database are taking a long time. What can the developer implement to **store common queries** and improve performance?_
+
+**ElastiCache**
+
+Question 61
+
+_When talking about AWS security, what does "authentication" refer to?_
+
+Identifying who is accessing the system
+
+Question 62
+
+_Which of the following is a design principle of the Well-Architected Framework's **reliability pillar**?_
+
+**Recover from failure automatically**
+
+Question 63
+
+_A customer is managing multiple AWS accounts using AWS Organizations. What can the customer use to **restrict the same permissions across all AWS accounts** managed under AWS Organizations using minimal effort?_
+
+**Service control policies**
+
+Question 64
+
+_You have an EC2 instance that contains a web application being put into operation. To prepare for the application going live for public use, you add a few **more instances in a distributed manner** in order to **handle an increase in load**. Which concept is used to measure a system's ability to grow to accommodate an increase in demand?_
+
+**Scalability**
+
+Question 65
+
+_A customer has set up an Amazon **S3 bucket** and wants to **limit access** to specific users. What is the most efficient way to do so?_
+
+**Bucket access policy**
