@@ -1281,3 +1281,114 @@ Question 65
 _A customer has set up an Amazon **S3 bucket** and wants to **limit access** to specific users. What is the most efficient way to do so?_
 
 **Bucket access policy**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+_Q1: A multi-national corporation wants to get expert professional advice on migrating to AWS and managing their applications on AWS Cloud. Which of the following entities would you recommend for this engagement?_
+
+**APN Consulting Partner**
+
+> _Note_: The AWS Partner Network (APN) is the global partner program for technology and consulting businesses that leverage Amazon Web Services to build solutions and services for customers. APN Consulting Partners are professional services firms that help customers of all types and sizes design, architect, build, migrate, and manage their workloads and applications on AWS, accelerating their migration to AWS cloud.
+
+
+Incorrect options:
+
+APN Technology Partner - APN Technology Partners provide hardware, connectivity services, or software solutions that are either hosted on or integrated with, the AWS Cloud. APN Technology Partners cannot help in migrating to AWS and managing applications on AWS Cloud.
+
+_Q2: Which of the following is a hybrid storage service that allows on-premises applications to access data on AWS Cloud?_
+
+**AWS Storage Gateway**
+
+> _Note:_ AWS Storage Gateway is a hybrid cloud storage service that connects your existing on-premises environments with the AWS Cloud. Customers use Storage Gateway to simplify storage management and reduce costs for key hybrid cloud storage use cases.
+
+_Q3: A financial services company wants to ensure that its AWS account activity meets the governance, compliance and auditing norms. As a Cloud Practitioner, which AWS service would you recommend for this use-case?_
+
+**CloudTrail**
+
+> _Note_: You can use CloudTrail to log, monitor and retain account activity related to actions across your AWS infrastructure. CloudTrail provides an event history of your AWS account activity, including actions taken through the AWS Management Console, AWS SDKs, command-line tools, and other AWS services.
+
+_Q4: The DevOps team at an e-commerce company is trying to debug performance issues for its serverless application built using a microservices architecture. As a Cloud Practitioner, which AWS service would you recommend addressing this use-case?_
+
+**AWS X-Ray**
+
+
+> _Note:_ You can use AWS X-Ray to analyze and debug serverless and distributed applications such as those built using a microservices architecture. With X-Ray, you can understand how your application and its underlying services are performing to identify and troubleshoot the root cause of performance issues and errors.
+
+_Q5: A silicon valley based healthcare startup stores anonymized patient health data on Amazon S3. The CTO further wants to ensure that any sensitive data on S3 is discovered and identified. As a Cloud Practitioner, which AWS service would you recommend addressing this use-case?_
+
+**Amazon Macie**
+
+> _Note:_ Amazon Macie is a fully managed data security and data privacy service that uses machine learning and pattern matching to discover and protect your sensitive data in AWS. Macie automatically provides an inventory of Amazon S3 buckets including a list of unencrypted buckets, publicly accessible buckets, and buckets shared with AWS accounts outside those you have defined in AWS Organizations. Then, Macie applies machine learning and pattern matching techniques to the buckets you select to identify and alert you to sensitive data, such as personally identifiable information (PII).
+
+_Q6: A unicorn startup is building an analytics application with support for a speech-based interface. The application will accept speech-based input from users and then convey results via speech. As a Cloud Practitioner, which solution would you recommend for the given use-case?_
+
+Use Amazon **Transcribe to convert speech to text** for downstream analysis. Then use Amazon **Polly to convey the text results via speech**
+
+_Q7: A company uses reserved EC2 instances across multiple units with each unit having its own AWS account. However, some of the units under-utilize their reserved instances while other units need more reserved instances. As a Cloud Practitioner, which of the following would you recommend as the most cost-optimal solution?_
+
+**Use AWS Organizations to manage AWS accounts of all units and then share the reserved EC2 instances amongst all units**
+
+_Q8: A startup wants to provision an EC2 instance for the lowest possible cost for a long-term duration but needs to make sure that the instance would never be interrupted. As a Cloud Practitioner, which of the following options would you recommend?_
+
+**Reserved Instance**
+
+_Q9: Which of the following S3 storage classes takes the most time to retrieve data (also known as first byte latency)?_
+
+**S3 Glacier Deep Archive**
+
+_Q10: An intern at an IT company provisioned a Linux based On-demand EC2 instance with per-second billing but terminated it within 30 seconds as he wanted to provision another instance type. What is the duration for which the instance would be charged?_
+
+**60 seconds**
+
+> _Note:_  There is a one-minute minimum charge for Linux based EC2 instances, so this is the correct option.
+
+_Q11: A data analytics company is running a proprietary batch analytics application on AWS and wants to use a storage service which would be accessed by hundreds of EC2 instances simultaneously to append data to existing files. As a Cloud Practitioner, which AWS service would you suggest for this use-case?_
+
+**EFS**
+
+> _Note:_ Amazon EFS is a file storage service for use with Amazon EC2. Amazon EFS provides a file system interface, file system access semantics, and concurrently-accessible storage for up to thousands of Amazon EC2 instances. Amazon EFS uses the Network File System protocol.
+
+_Q12: Which AWS Route 53 routing policy would you use to route traffic to multiple resources and also choose how much traffic is routed to each resource?_
+
+**Weighted routing policy**
+
+
+
+> _Note_: Amazon Route 53 is a highly available and scalable cloud Domain Name System (DNS) web service. It is designed to give developers and businesses an extremely reliable and cost-effective way to route end users to Internet applications by translating names like www.example.com into the numeric IP addresses like 192.0.2.1 that computers use to connect to each other.
+Weighted routing lets you associate multiple resources with a single domain name (example.com) or subdomain name (acme.example.com) and choose how much traffic is routed to each resource. This can be useful for a variety of purposes, including load balancing and testing new versions of software. To configure weighted routing, you create records that have the same name and type for each of your resources. You assign each record a relative weight that corresponds with how much traffic you want to send to each resource. Amazon Route 53 sends traffic to a resource based on the weight that you assign to the record as a proportion of the total weight for all records in the group.
+
+_Q13: Which of the following AWS Support plans provides access to online training with self-paced labs?_
+
+**Enterprise**
+
+_Q14: Due to regulatory and compliance reasons, an organization is supposed to use a hardware device for any data encryption operations in the cloud. Which AWS service can be used to meet this compliance requirement?_
+
+**AWS CloudHSM**
+
+> _Note_: AWS CloudHSM is a cloud-based Hardware Security Module (HSM) that enables you to easily generate and use your encryption keys on the AWS Cloud. With CloudHSM, you can manage your encryption keys using FIPS 140-2 Level 3 validated HSMs. It is a fully-managed service that automates time-consuming administrative tasks for you, such as hardware provisioning, software patching, high-availability, and backups.
+
+_Q15: Which AWS service can be used to review the compliance and governance-related documents on AWS?_
+
+
+**Artifact**
+
+> _Note_: AWS Artifact is your central resource for compliance-related information on AWS Cloud. It provides on-demand access to AWS’ security and compliance reports and select online agreements. Reports available in AWS Artifact include the Service Organization Control (SOC) reports, Payment Card Industry (PCI) reports, and certifications from accreditation bodies across geographies. Agreements available in AWS Artifact also include the Business Associate Addendum (BAA) and the Nondisclosure Agreement (NDA).
+
+_Q16: A photo sharing web application wants to store thumbnails of user-uploaded images on Amazon S3. The thumbnails are rarely used but need to be immediately accessible from the web application. The thumbnails can be regenerated easily if they are lost. Which is the most cost-effective way to store these thumbnails on S3?_
+
