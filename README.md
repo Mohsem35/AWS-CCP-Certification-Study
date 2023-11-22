@@ -394,7 +394,9 @@ EC2 instances offer
 1. **`load balancing`** and
 2. **`Auto Scaling`**
 
+#### Elastic Load Balancer
 
+![AWS-Elastic-Load-Balancing-AWS-ELB](https://github.com/Mohsem35/AWS-Learning/assets/58659448/4e9a843b-5243-4c0a-890d-cf7a41f474b0)
 
 
 **_Elastic Load Balancing_** automatically distributes your **`incoming application traffic`** across multiple EC2 instances
@@ -410,6 +412,9 @@ Four types of load balancers are available
 
 ![download](https://github.com/Mohsem35/AWS-Learning/assets/58659448/72d61e38-f1f2-4ce7-92fa-89a1ecd38bf7)
 
+#### EC2 Auto Scaling
+
+![1_9ke2MJPI9vy034alPKJk7A](https://github.com/Mohsem35/AWS-Learning/assets/58659448/7933549a-a99b-4d4c-abca-db538738a7e9)
 
 **_EC2 Auto Scaling_** adds or replaces EC2 instances automatically across AZs, **`based on need and changing demand`**
 
