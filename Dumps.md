@@ -1,168 +1,185 @@
+Links
+
+- [Dumps 1](#dumps-1)
+- [Dumps 2](#dumps-2)
+- [Dumps 3](#dumps-3)
+
+
 ### Dumps 1
 
-
-
-Question 1
-
-A large manufacturing company would like to provide real-time feedback to machine operators regarding optimum machine speeds enabling less experienced operators to detect breaks earlier and maintain quality._Which service will allow the company to train and deploy a machine learning model that can detect machine issues early?_
+_Q1: A large manufacturing company would like to provide real-time feedback to machine operators regarding optimum machine speeds enabling less experienced operators to detect breaks earlier and maintain quality.Which service will allow the company to train and deploy a machine learning model that can detect machine issues early?_
 
 **SageMaker**
+> SageMaker helps you build, train, and deploy machine learning models quickly
 
-Question 2
 
-A solutions architect wants to design an application architecture that reduces the risk of cascading failures between components._Which design principles should be considered when planning the cloud architecture?_
+Q2: A solutions architect wants to design an application architecture that reduces the risk of cascading failures between components. _Which design principles should be considered when planning the cloud architecture?_
 (Choose 2)
 
-- Utilize loosely coupled components
-- Design the architecture to reduce inter-dependencies
+- **Utilize loosely coupled components**
+- **Design the architecture to reduce inter-dependencies**
 
-Question 3
+> Loosely coupled components are connected but not dependent on each other. Loose coupling reduces the risk of cascading failures and can be achieved through asynchronous integration
 
-A company that owns several warehouses (used to store and resell millions of like-new, open-box, and pre-owned items) would like to analyze images from their on-premises cameras to automatically detect if employees are wearing head covers (helmets) and other protective equipment. _Which service can be used to perform the image analysis?_
+> Architectures should be designed in a way that reduces inter-dependencies and the risk of cascading failures between components
+
+
+Q3: A company that owns several warehouses (used to store and resell millions of like-new, open-box, and pre-owned items) would like to analyze images from their on-premises cameras to automatically detect if employees are wearing head covers (helmets) and other protective equipment. _Which service can be used to perform the image analysis?_
 
 **Rekognition**
 
-Question 4
+> The company can use Rekognition to identify objects like protective equipment in their images and detect if employees are wearing the required protective equipment
 
-In order to maintain HIPAA (Health Insurance Portability and Accountability Act) compliance, insurance providers and health plans must archive past patients' personal health information. The data will be accessed, at most, once or twice a year when requested by the Office for Civil Rights to ensure compliance. _Which AWS service will provide the most cost-effective solution for storage and retrieval of these files?_
+
+_Q4: In order to maintain HIPAA (Health Insurance Portability and Accountability Act) compliance, insurance providers and health plans must archive past patients' personal health information. The data will be accessed, at most, once or twice a year when requested by the Office for Civil Rights to ensure compliance. Which AWS service will provide the most cost-effective solution for storage and retrieval of these files?_
 
 **S3 Glacier Deep Archive**
 
-Question 5
+> S3 Glacier Deep Archive is used for long-term data archival that only needs to be accessed once or twice a year. It is often used to store data for regulatory compliance. If faster access times are needed, there is also S3 Glacier.
 
-_You need to stream data in real time for a dashboard application_. Which AWS service would you use?
+_Q5: You need to stream data in real time for a dashboard application_. Which AWS service would you use?
 
 **AWS Kinesis**
 
-Question 6
+> Kinesis allows you to analyze data and video streams in real time
 
-_Where would you find the AWS Attestation of Compliance Documentation for PCI DSS?_
+
+_Q6: Where would you find the AWS Attestation of Compliance Documentation for PCI DSS?_
 
 **AWS Artifact**
 
-Question 7
+> AWS Artifact is your go-to, central resource for compliance-related information that matters to you. It provides on-demand access to AWS' security and compliance reports and select online agreements. AWS Support's site provides general information about compliance, but it does not hold the secure reports or certificates. AWS IAM is used to control security within your AWS Account. Amazon Macie is a data security classification service
 
-In order to improve fault tolerance, you would like to begin using services that provide fault tolerance. _Which AWS services provide automatic replication across Availability Zones?_
+Q7: In order to improve fault tolerance, you would like to begin using services that provide fault tolerance. _Which AWS services provide automatic replication across Availability Zones?_
 
 - **DynamoDb**
 - **S3**
 
-Question 8
+_Q8: Under the AWS shared responsibility model, who is responsible for the configuration of infrastructure devices?_
 
-Under the AWS shared responsibility model, _who is responsible for the configuration of infrastructure devices?_
+**AWS is responsible for the configuration of infrastructure devices.**
 
-AWS is responsible for the configuration of infrastructure devices.
+> AWS maintains the configuration of its infrastructure devices. Don't forget AWS is responsible for its global infrastructure elements: Regions, edge locations, and Availability Zones
 
-Question 9
 
-Your organization is multi-national and uses multiple AWS Regions. _Which AWS service can be used to route users to the nearest data center to reduce latency?_
+
+_Q9: Your organization is multi-national and uses multiple AWS Regions. Which AWS service can be used to route users to the nearest data center to reduce latency?_
 
 **AWS Route 53**
 
-Question 10
+> Route 53 is a DNS service that routes users to applications. Amazon Route 53 effectively connects user requests to infrastructure running in AWS (e.g., Amazon EC2 instances, Elastic Load Balancing load balancers, or Amazon S3 buckets) and can also be used to route users to infrastructure outside of AWS
 
-A company has underutilized servers in its on-premises data center. Unfortunately, they are still required to pay for idle resources. Which benefit of the cloud can help the company solve this problem?
+
+_Q10: A company has underutilized servers in its on-premises data center. Unfortunately, they are still required to pay for idle resources. Which benefit of the cloud can help the company solve this problem?_
 
 **Elasticity**
 
-Question 11
+> With elasticity, the company doesn't have to plan ahead of time how much capacity they'll need - elasticity allows them to match the supply of resources with changing workload demands
 
-A customer set up an Amazon S3 bucket to accept downloads from their mobile application users. _Due to data privacy requirements, the customer needs to automatically and continually scan S3 for the users' addresses. Which service can do this?_
+_Q11: A customer set up an Amazon S3 bucket to accept downloads from their mobile application users. Due to data privacy requirements, the customer needs to automatically and continually scan S3 for the users' addresses. Which service can do this?_
 
 **Macie**
 
-Question 12
+> Macie uses machine learning to discover sensitive data stored on Amazon S3. Macie automatically detects a large and growing list of sensitive data types, including personally identifiable information (PII) such as names, addresses, and credit card numbers
 
-A financial company needs to migrate large amounts of data, at a petabyte scale, to AWS. Which AWS service can perform this type of migration?
+
+_Q12: A financial company needs to migrate large amounts of data, at a petabyte scale, to AWS. Which AWS service can perform this type of migration?_
 
 **AWS Snowball**
 
-Question 13
+> Snowball is a petabyte-scale data transport solution
 
-_Which of the following services helps you deliver content to your customers faster?_
+_Q13: Which of the following services helps you deliver content to your customers faster?_
 
 **CloudFront**
 
-Question 14
+> Amazon CloudFront is a content delivery network that speeds up the delivery of content to your users
 
-A DevOps engineer is planning for the deployment of an application that can't be impacted if an entire geographic location is affected by a disaster. How can the engineer deploy this application?
+_Q14: A DevOps engineer is planning for the deployment of an application that can't be impacted if an entire geographic location is affected by a disaster. How can the engineer deploy this application?_
 
-Deploy the application to multiple Regions
+**Deploy the application to multiple Regions**
 
-Question 15
+> AWS logically groups its Regions into geographic locations. Each Region is spread out and fully independent and isolated from other Regions. If there's a flood, tsunami or earthquake in 1 Region, the other Regions will not be impacted. Because of this, it makes sense to deploy your application to multiple Regions
 
-_When you upload an object to S3 storage, where will AWS keep it?_
+
+
+_Q15: When you upload an object to S3 storage, where will AWS keep it?_
 
 In **multiple Availability Zones** within the Region you select
 
-Question 16
+> Any object uploaded to S3 is automatically stored in multiple Availability Zones in the Region in which it was uploaded. This means that if any single AZ in a Region is experiencing issues, objects stored in S3 will still be available. Although objects in S3 can be made to be accessible globally, by default they are always stored in a redundant fashion in only the Region they were uploaded, ruling out the other answers
 
-You're hosting a web application on EC2. After a few days of production usage, you notice the traffic to the web application far exceeds what was expected. _You've decided to move to a larger instance type. What AWS principle does this represent?_
+_Q16: You're hosting a web application on EC2. After a few days of production usage, you notice the traffic to the web application far exceeds what was expected. You've decided to move to a larger instance type. What AWS principle does this represent?_
 
 **Vertical scaling**
 
+> Vertical scaling is increasing the size and computing power of a single instance or node without increasing the number of nodes or instances.
 
-Question 17
 
-_What is a geographical area of the world that is a collection of logically grouped data centers?_
+_Q17: What is a geographical area of the world that is a collection of logically grouped data centers?_
 
-Region
+**Region**
 
-Question 18
+> A Region is a geographical area of the world that is a collection of data centers logically grouped into Availability Zones
 
-How can a _customer on the Developer Support plan open a system impaired support case?_
+
+_Q18: How can a customer on the Developer Support plan open a system impaired support case?_
 
 Open a technical **support case via email**.
 
-Question 19
+> Customers on the Developer Support plan can submit support cases for account and billing questions, service limit increases, and technical support cases via email only
 
-Which service allows users to _record software configuration changes within servers running on-premises over time?_
+_Q19: Which service allows users to record software configuration changes within servers running on-premises over time?_
 
 **Config**
 
-Question 20
+> Config allows you to assess, audit, and evaluate the configurations of your resources over time. Config works with EC2 instances, servers running on-premises, and servers and VMs in environments provided by other cloud providers
 
-_You have just created a new bucket and uploaded a file into it. Will this be automatically viewable by anyone on the internet?_
+_Q20: You have just created a new bucket and uploaded a file into it. Will this be automatically viewable by anyone on the internet?_
 
-No - by default, **buckets and their contents are private**
+No - **by default, buckets and their contents are private**
 
-Question 21
+> By default, all data stored in S3 is not viewable by the public. If you want a bucket or object to be accessible by the public, you must explicitly make it so. NAT gateways and internet gateways are needed to allow communications between VPCs and the internet, but they are not required when it comes to S3.
 
-A startup is developing a new application. They don't know how to anticipate the usage or workload demands for the application. Which benefit of cloud computing will allow the startup to automatically adjust compute capacity based on demand?
+_Q21: A startup is developing a new application. They don't know how to anticipate the usage or workload demands for the application. Which benefit of cloud computing will allow the startup to automatically adjust compute capacity based on demand?_
 
-Elasticity
+**Elasticity**
 
-Question 22
+> With elasticity, the startup doesn't have to plan ahead of time how much capacity they'll need. Elasticity allows them to match the supply of resources with changing workload demands.
 
-A customer has an on-premises 5-gigabyte Oracle database that needs to be migrated to AWS and converted to Aurora. The customer requires minimal downtime to the database. Which service is the best option for migration and conversion?
+
+
+_Q22: A customer has an on-premises 5-gigabyte Oracle database that needs to be migrated to AWS and converted to Aurora. The customer requires minimal downtime to the database. Which service is the best option for migration and conversion?_
 
 **Database Migration Service**
 
-Question 23
+> DMS supports homogeneous migrations like Oracle to Oracle and heterogeneous migrations like Oracle to Aurora, with minimal downtime
 
-_A solutions architect is designing a system to withstand the failure of one or more components. What type of system is able to withstand failure?_
+_Q23: A solutions architect is designing a system to withstand the failure of one or more components. What type of system is able to withstand failure?_
 
-Highly available    
+**Highly available** 
 
-Question 24
+> Highly available systems are designed to operate continuously without failure for a long time. These systems avoid loss of service by reducing or managing failures.
 
-A customer would like to store secondary backup copies of on-premises data to the cloud. The customer is _not concerned about an extra level of protection by geographic redundancy_ but requires rapid access to the data when it is needed. _Which Amazon S3 storage class should be used as the lowest cost option with rapid access?_
+Q24: A customer would like to store secondary backup copies of on-premises data to the cloud. The customer is _not concerned about an extra level of protection by geographic redundancy_ but requires rapid access to the data when it is needed. _Which Amazon S3 storage class should be used as the lowest cost option with rapid access?_
 
 **S3 One Zone-Infrequent Access**
 
-Question 25
+> S3 One Zone-Infrequent Access is designed for customers who want a lower cost option for infrequently accessed data but do not require the multiple Availability Zone data resilience model of the S3 Standard or S3 Standard-Infrequent Access storage classes. S3 One Zone-Infrequent Access provides millisecond access when the data is needed
 
-A company wants to provide access to an Amazon S3 bucket to all applications running on a Reserved Instance (RI) that's been assigned to a specific Availability Zone. _What's the best way to give S3 access to all applications running on the EC2 instance?_
+Q25: A company wants to provide access to an Amazon S3 bucket to all applications running on a Reserved Instance (RI) that's been assigned to a specific Availability Zone. _What's the best way to give S3 access to all applications running on the EC2 instance?_
 
-Use an **instance profile to pass an IAM role** with Amazon S3 permissions to the EC2 instance
+Use an **instance profile to pass an IAM role with Amazon S3 permissions to the EC2 instance**
 
-Question 26
+> The company will need to create a role that grants access to S3 and associate it with the instance
 
-A company is in the process of migrating its workloads to AWS, and they want to develop and implement security policies. _What are some of the recommended best practices for Identity and Access Management (IAM) they can put in place to make sure their accounts are secure?_
+
+
+_Q26: A company is in the process of migrating its workloads to AWS, and they want to develop and implement security policies. What are some of the recommended best practices for Identity and Access Management (IAM) they can put in place to make sure their accounts are secure?_
 (Choose 3)
 
-- Enable **MFA** for privileged users
-- Create **individual users** instead of using root.
+- Enable **MFA for privileged users**
+- **Create individual users instead of using root**
 - **Do not share access keys**.
 
 
@@ -172,19 +189,19 @@ _You need to visualize, understand, and identify trends for future charges, as w
 
 **AWS Cost Explorer**
 
-Question 28
+> Cost Explorer allows you to visualize and forecast your costs and usage over time.
 
-For which of the below is S3 a suitable storage solution?
+_Q28: For which of the below is S3 a suitable storage solution?_
 (Choose 2)
 
-- Pictures
-- Documents
+**Pictures**, **Documents**
 
-Question 29
 
-AWS purchases computing resources in large quantities at lower costs and then _passes volume discounts on to their customers. Which benefit of cloud computing does this demonstrate?_
+_Q29: AWS purchases computing resources in large quantities at lower costs and then passes volume discounts on to their customers. Which benefit of cloud computing does this demonstrate?_
 
 **Lower pay-as-you-go prices due to massive economies of scale**
+
+> Customers benefit from massive economies of scale and achieve lower variable costs than they can get on their own due to volume discounts
 
 Question 30
 
@@ -192,46 +209,51 @@ Which of the following is an _AWS Well-Architected Framework design principle re
 
 **Deploy smaller, reversible changes**
 
-Question 31
 
-AWS VPC is a component of which of the following overall service categories?
+_Q31: AWS VPC is a component of which of the following overall service categories?_
 
-Networking and Content Delivery
+**Networking and Content Delivery**
 
-Question 32
+> Amazon Virtual Private Cloud (Amazon VPC) gives you full control over your virtual networking environment, including resource placement, connectivity, and security. VPC can be found under the Networking and Content Delivery category of services in the AWS Management Console
 
-_An on-premises application requires a consistent, high-speed connection to the AWS Cloud environment that is better than an internet-based connection. Which AWS service can provide this connection?_
+
+_Q32: An on-premises application requires a consistent, high-speed connection to the AWS Cloud environment that is better than an internet-based connection. Which AWS service can provide this connection?_
 
 **Direct Connect**
 
-Question 33
+> Direct Connect is a private (bypasses the public internet), dedicated physical network connection from your on-premises data center to AWS. Since the connection is private, it is extremely fast.
 
-_Which of the following is used to secure Amazon S3 buckets?_
+
+
+_Q33: Which of the following is used to secure Amazon S3 buckets?_
 
 **Bucket access policy**
 
-Question 34
+> A bucket access policy can be attached directly to an S3 bucket to limit access to specific users
 
-A company is developing a new web application that has high availability requirements. How can the company increase availability when deploying the application?
+
+_Q:34 A company is developing a new web application that has high availability requirements. How can the company increase availability when deploying the application?_
 (Choose 2)
 
+- Deploy the application to span across **multiple Availability Zones (AZs)**.
+- Utilize a **multi-Region deployment** when deploying the application.
+
+> Although deploying applications closer to users reduces latency, this alone doesn't ensure high availability
 
 
-- Deploy the application to span across multiple Availability Zones (AZs).
-- Utilize a multi-Region deployment when deploying the application.
-
-
-Question 35
-
-_You need to set a number range of EC2 instances to be made available to handle the load for your application. Which AWS service should you use?_
+_Q35: You need to set a number range of EC2 instances to be made available to handle the load for your application. Which AWS service should you use?_
 
 **AWS Auto Scaling**
 
-Question 36
+> AWS Auto Scaling will ensure you have the optimal number of EC2 instances to handle your application's load, based on rules you specify. The other services mentioned can help distribute load amongst existing resources, but they do not have the ability by themselves to create new resources.
 
-_A customer wants access to the full set of Trusted Advisor checks. What's the minimum support plan they need to have access to?_
+> Elastic Load Balancing automatically distributes your incoming application traffic across multiple EC2 instances
+
+_Q36: A customer wants access to the full set of Trusted Advisor checks. What's the minimum support plan they need to have access to?_
 
 **Business Support**
+
+> Business Support is the minimum plan that provides access to the full set of Trusted Advisor checks
 
 Question 37
 
@@ -239,23 +261,22 @@ A company is contemplating a move to the AWS Cloud. What benefits can be gained 
 
 The company can focus on its business rather than managing a data center
 
-Question 38
 
-_Which of the following are classified as migration services?_
+
+_Q38: Which of the following are classified as migration services?_
 (Choose 2)
 
-- AWS Snowball
+- **AWS Snowball**
 - **AWS Application Discovery Service**
 
-Question 39
+> AWS Application Discovery Service helps you gather information about your on-premises environment and is considered a migration tool
 
-A company is considering a _serverless architecture_ and wants to _build and run applications without having to manage infrastructure_. _Which AWS services should the company consider using when building applications?_
+> Snowball helps you migrate massive amounts of data into cloud, so it is considered a migration tool.
+
+_Q39: A company is considering a serverless architecture_ and wants to _build and run applications without having to manage infrastructure_. _Which AWS services should the company consider using when building applications?_
 (Choose 4)
 
-- **DynamoDB**
-- **Lambda**
-- **Fargate**
-- **S3**
+**DynamoDB**, **Lambda**, **Fargate**, **S3**
 
 Question 40
 
@@ -263,34 +284,34 @@ _Which is the most efficient AWS feature that allows a company to restrict IAM u
 
 **Service control policies (SCPs)**
 
-Question 41
 
-A company is considering migrating its applications to AWS. Which costs should the company consider when comparing its on-premises total cost of ownership (TCO) to the TCO when running on AWS?
+_Q41: A company is considering migrating its applications to AWS. Which costs should the company consider when comparing its on-premises total cost of ownership (TCO) to the TCO when running on AWS?_
 
 - Software **license costs**
-- Data center cooling, power, and space requirements
-- Hardware and infrastructure
+- **Data center cooling, power, and space requirements**
+- **Hardware and infrastructure**
 
 
-Question 42
 
-_Configuring user permissions so that users can access only the resources they need to do their job follows what principle?_
+
+_Q42: Configuring user permissions so that users can access only the resources they need to do their job follows what principle?_
 
 **Principle of least privilege**
 
-Question 43
+> The principle of least privilege involves giving a user the minimum access required to get the job done
 
-A developer is building a new application and is given the option to deploy the application on-premises or to the AWS Cloud. _What benefits does the AWS Cloud provide over an on-premises deployment?_
+_Q43: A developer is building a new application and is given the option to deploy the application on-premises or to the AWS Cloud. What benefits does the AWS Cloud provide over an on-premises deployment?_
 
 - Ability to **grow and shrink** computing capacity based on demand
-- Ability to **focus on building** the application instead of managing servers
-- Ability to **pay-as-you-go** without upfront contracts or long-term commitments
+- Ability to **focus on building the application** instead of managing servers
+- Ability to **pay-as-you-go without upfront contracts** or long-term commitments
 
-Question 44
 
-A security administrator is setting up a new IAM user and has decided to grant the least privilege. _What does the principle of least privilege mean?_
+_Q44:A security administrator is setting up a new IAM user and has decided to grant the least privilege. What does the principle of least privilege mean?_
 
-Granting the **minimum requirement** to perform a task
+Granting the **minimum requiremen to perform a task** 
+
+> The principle of least privilege means granting only the minimum requirements to perform a job or task
 
 Question 45
 
@@ -298,59 +319,64 @@ _Which AWS service can help you optimize your AWS environment by giving recommen
 
 **AWS Trusted Advisor**
 
-Question 46
+> Trusted Advisor provides real-time guidance to help you provision your resources following AWS best practices
 
-_A company would like someone to help them coordinate access to AWS subject matter experts when they need help. Which support plan do they need to have?_
+_Q46: A company would like someone to help them coordinate access to AWS subject matter experts when they need help. Which support plan do they need to have?_
 
-**Business**
+**Enterprise**
 
-Question 47
+> Enterprise Support provides access to a Technical Account Manager (TAM) who helps coordinate access to subject matter experts among other things
 
-As an IT support center team member, you begin receiving calls from users about problems they're experiencing with your company's AWS-based point-of-sale system. _You want to begin your investigation by checking with AWS for any service alerts they may be communicating. Which AWS tool will you give you the information you seek?_
+_Q47: As an IT support center team member, you begin receiving calls from users about problems they're experiencing with your company's AWS-based point-of-sale system. You want to begin your investigation by checking with AWS for any service alerts they may be communicating. Which AWS tool will you give you the information you seek?_
 
 **AWS Personal Health Dashboard**
 
-Question 48
+> The AWS Personal Health Dashboard publishes alerts and remediation guidance when issues with AWS services arise. Notifications are also provided for scheduled events that may impact AWS customers
 
-You have upgraded your AWS Support plan to the Business Support level. _What is true of the Business Support plan?_
+
+
+Q48: You have upgraded your AWS Support plan to the Business Support level. _What is true of the Business Support plan?_
 
 **< 1 hour response time** support when your production system goes down.
 
-Question 49
+> The Business level support plan provides 1 hour or less response time support for production-level failures
 
-_How would you create and manage access keys for users that need to access AWS services from the AWS Command Line Interface (CLI)?_
+_Q49: How would you create and manage access keys for users that need to access AWS services from the AWS Command Line Interface (CLI)?_
 
 **Identity and Access Management (IAM)**
 
-Question 50
+> IAM allows you to create and manage access keys for an IAM user
 
-A company is hosting a public-facing static website out of an S3 bucket. When reviewing website analytics and traffic, the company is surprised to learn the website is accessed by millions of users around the globe. The company wants to ensure all its users are seeing fast response times. _Which AWS service will help to deliver this website globally with low latency?_
+
+Q50: A company is hosting a public-facing static website out of an S3 bucket. When reviewing website analytics and traffic, the company is surprised to learn the website is accessed by millions of users around the globe. The company wants to ensure all its users are seeing fast response times. _Which AWS service will help to deliver this website globally with low latency?_
 
 **CloudFront**
 
-Question 51
+> CloudFront is a CDN that delivers data and applications globally with low latency.
 
-_What pillar of the Well-Architected Framework would include the use of information gathered through a workload process evaluation to drive adoption of new services or resources when they become available?_
+_Q51: What pillar of the Well-Architected Framework would include the use of information gathered through a workload process evaluation to drive adoption of new services or resources when they become available?_
 
 **Performance Efficiency**
 
-Question 52
+> This Performance Efficiency pillar focuses on the effective use of resources to meet demand. In this pillar, you would use the information gathered through the evaluation process to actively drive adoption of new services or resources. You would also define a process to improve workload performance, and you would need to stay up-to-date on new resources and services
 
-_Which of the following allows you to make entire buckets (like 1 hosting an S3 website) public?_
+_Q52: Which of the following allows you to make entire buckets (like 1 hosting an S3 website) public?_
 
 **Bucket policies**
 
-Question 53
+> Bucket policies allow you to control access to entire buckets, whereas access control lists let you control access to individual objects within an S3 bucket.
 
-_A company has designed a hybrid architecture and needs to connect its on-premises database to an application running on an EC2 instance in the AWS cloud using a fast, private, and secure manner. Which method allows the company to securely connect on-premises to the cloud?_
+_Q53: A company has designed a hybrid architecture and needs to connect its on-premises database to an application running on an EC2 instance in the AWS cloud using a fast, private, and secure manner. Which method allows the company to securely connect on-premises to the cloud?_
 
 **Direct Connect**
 
-Question 54
+> Direct Connect is a private (bypasses the public internet), dedicated physical network connection from your on-premises data center to AWS. Since the connection is private, it is extremely fast
 
-_Which AWS tool is specifically designed to help a company estimate their potential cloud bill for migrating workloads and calculate the overall total cost of ownership (TCO) based on their proposed workloads?_
+
+_Q54: Which AWS tool is specifically designed to help a company estimate their potential cloud bill for migrating workloads and calculate the overall total cost of ownership (TCO) based on their proposed workloads?_
 
 The company can use the **AWS Pricing Calculator**
+> The Pricing Calculator provides an estimate of AWS fees and charges. Since the company knows the workload details, the AWS Pricing Calculator can also help with calculating the total cost of ownership
 
 Question 55
 
@@ -358,63 +384,74 @@ A large company is using multiple AWS accounts and would like to benefit from av
 
 Use AWS Organizations and its **consolidated billing feature** to consolidate billing and payment for multiple AWS accounts
 
-Question 56
+> Consolidated billing has the benefit of combining usage across all accounts in the organization to share the volume pricing discounts, Reserved Instance discounts, and Savings Plans. This can result in a lower charge for your project, department, or company than with individual standalone accounts
 
-The AWS Cloud spans multiple Regions, Availability Zones (AZs), edge locations, and more. _How would you best describe an Availability Zone?_
+_Q56: The AWS Cloud spans multiple Regions, Availability Zones (AZs), edge locations, and more. How would you best describe an Availability Zone?_
 
-One or more discrete data centers with redundant power, networking, and connectivity in an AWS Region
+**One or more discrete data centers with redundant power, networking, and connectivity in an AWS Region**
 
-Question 57
-
-A customer has created an Administrators group in IAM containing 5 users. _What does the customer attach to the group to ensure all the users have the needed administrative access?_
+_Q57: A customer has created an Administrators group in IAM containing 5 users. What does the customer attach to the group to ensure all the users have the needed administrative access?_
 
 **IAM policy**
 
-Question 58
+> Policies can be attached to a group to ensure all users in the group have the same access. AWS even has a managed policy, Administrator Access, you can use.
 
-Under the shared responsibility model for EC2, _who is responsible for patching the guest operating system?_
 
-The customer is responsible for patching the guest operating system
+Q58: Under the shared responsibility model for EC2, _who is responsible for patching the guest operating system?_
 
-Question 59
+**The customer is responsible for patching the guest operating system**
 
-_How can a customer with the Enterprise Support plan get help with billing and account questions?_
+_Q59: How can a customer with the Enterprise Support plan get help with billing and account questions?_
 (Choose 2)
 
 - Contact the **Support Concierge team**.
-- Use the **AWS Support API** to programmatically open a case with AWS Support.
+- Use the **AWS Support API to programmatically open a case with AWS Support.**
 
-Question 60
+> The Concierge agent is the primary point of contact for billing or account inquiries
 
-_A company wants to ensure all AWS accounts in their environment conform to company-wide policies_. Which services can help?
+> Customers on the Enterprise Support plan have access to the AWS Support API to create, manage, and close support cases
+
+
+
+_Q60: A company wants to ensure all AWS accounts in their environment conform to company-wide policies_. Which services can help?
 (Choose 2)
 
 - **Organizations**
 - **Control Tower**
+> Organizations allows you to centrally manage multiple AWS accounts under 1 umbrella. You can allocate resources and apply policies across accounts
 
-Question 61
+> Control Tower helps you ensure your accounts conform to company-wide policies. Control Tower actually sits on top of Organizations.
 
-A company is receiving automated alerts notifying them that their only production EC2 instance is continuously reaching 100% CPU utilization. When this happens, customers cannot make purchases and receive error messages stating they should try again later because all the company's servers are busy. _As part of the solution, what could be used to add or replace EC2 instances of the same size automatically across AZs?_
+
+ _Q61: A company is receiving automated alerts notifying them that their only production EC2 instance is continuously reaching 100% CPU utilization. When this happens, customers cannot make purchases and receive error messages stating they should try again later because all the company's servers are busy. As part of the solution, what could be used to add or replace EC2 instances of the same size automatically across AZs?_
+
 
 **Horizontal scaling**
 
-Question 62
+> Horizontal scaling (or scaling out) adds or replaces EC2 instances automatically across AZs, based on need and changing demand, and is used in the design of systems with high availability.
 
-A solutions architect is designing a new application for a customer. In designing the system, the architect recommends that content be cached to reduce latency to the end user. _Which piece of the AWS global infrastructure allows for content to be cached and served from the nearest point to the user?_
+
+
+_Q62: A solutions architect is designing a new application for a customer. In designing the system, the architect recommends that content be cached to reduce latency to the end user. Which piece of the AWS global infrastructure allows for content to be cached and served from the nearest point to the user?_
 
 **Edge location**
 
-Question 63
+> An edge location uses cached copies of your content for fast delivery to users. Don't forget CloudFront speeds up delivery using edge locations.
 
-Your company would like to begin using _Auto Scaling to add servers when CPU utilization reaches a certain threshold (e.g., 70%). Which service can you use to trigger actions when CPU utilization crosses the threshold?_
+_Q63: Your company would like to begin using Auto Scaling to add servers when CPU utilization reaches a certain threshold (e.g., 70%). Which service can you use to trigger actions when CPU utilization crosses the threshold?_
 
 **CloudWatch Alarms**
 
-Question 64
+> A CloudWatch alarm can be set up to monitor CPU utilization and trigger further action. Further action could be an Auto Scaling group adding another EC2 instance and/or using SNS to notify team members of the occurrence.
 
-_A developer wants to be alerted when an EC2 running their application is approaching 100% CPU utilization_. Which service helps the developer do this in an automated way?
+> Simple Notification Service can be used with CloudWatch to notify team members when a CloudWatch event or alarm is triggered, but SNS is not monitoring resource utilization
+
+
+_Q64: A developer wants to be alerted when an EC2 running their application is approaching 100% CPU utilization_. Which service helps the developer do this in an automated way?
 
 **CloudWatch**
+
+> CloudWatch can monitor the state of your AWS resources and can notify you when an EC2 is approaching 100% utilization
 
 Question 65
 
@@ -425,13 +462,11 @@ _In which of the following is CloudFront content cached?_
 
 ## Dumps 2
 
-Question 1
-
-Select all the TRUE statements regarding the AWS Shared Responsibility Model. (Choose 3).
+_Q1: Select all the TRUE statements regarding the AWS Shared Responsibility Model._
 (Choose 3)
 
-- Customers are responsible for security "in" the cloud.
-- AWS manages the hardware and AWS Global Infrastructure.
+- **Customers are responsible for security "in" the cloud**.
+- **AWS manages the hardware and AWS Global Infrastructure**.
 - AWS is responsible for security "of" the cloud
 
 Question 2
@@ -440,20 +475,18 @@ _Which of the following tools provides a view of the performance and availabilit
 
 **AWS Health Dashboard**
 
-**Infrastructure as a Service (IaaS)**
+> Use the AWS Health Dashboard to learn about specific operational issues that affect your account. When you get an alert, it includes remediation details and specific guidance so that you can take action for events that affect your resources
 
-
-Question 3
-
-Which of the following can be used to author _CloudFormation templates_?
+_Q3: Which of the following can be used to author CloudFormation templates_?
 (Choose 2)
 
-- JSON
-- YAML
+**JSON**, **YAML**
 
-Question 4
+_Q4:When considering common cloud computing models, which model is Amazon Elastic Compute Cloud (AWS EC2) an example of?_
 
-When considering common cloud computing models, which model is Amazon Elastic Compute Cloud (AWS EC2) an example of?
+**Infrastructure as a Service (IaaS)**
+
+> IaaS includes the fundamental building blocks that can be rented from AWS. AWS manages the infrastructure and provides you a virtual machine that you can use however you'd like to meet your business requirements
 
 Question 5
 
@@ -461,29 +494,30 @@ _Your Finance Department has instructed you to save costs wherever possible when
 
 All Upfront
 
-Question 6
-
-You have been tasked with creating identical, repeatable infrastructure for your customers. Which service will you use?
+_Q6: You have been tasked with creating identical, repeatable infrastructure for your customers. Which service will you use?_
 
 **CloudFormation**
 
-Question 7
+> CloudFormation provides the ability to provision a repeatedly deployable environment for your customers.
 
-Upon attempting to create an additional S3 bucket, _you realize you have reached your S3 bucket limit in your AWS account. You anticipate creating even more S3 buckets in the future for your photos and documents. Which of the following is the best long-term solution?_
+
+_Q7: Upon attempting to create an additional S3 bucket, you realize you have reached your S3 bucket limit in your AWS account. You anticipate creating even more S3 buckets in the future for your photos and documents. Which of the following is the best long-term solution?_
 
 **Submit a service limit increase**
 
-Question 8
+> The best long-term solution is to request a service limit increase at the AWS Support Center
 
-_Which of the following is an AWS managed database service that is compatible with MySQL?_
+_Q8: Which of the following is an AWS managed database service that is compatible with MySQL?_
 
 **Aurora**
 
-Question 9
+> Aurora is an AWS managed database service that is up to five times faster than a traditional MySQL database.
 
-_Microsoft has announced a new patch for its operating system. For a platform-as-a-service solution, who would be responsible for applying the patch?_
+_Q9: Microsoft has announced a new patch for its operating system. For a platform-as-a-service solution, who would be responsible for applying the patch?_
 
-AWS
+**AWS**
+
+> The platform-as-a-service model removes the need for organizations to manage the underlying infrastructure (usually hardware and operating systems) and allows you to focus on the deployment and management of your applications
 
 Question 10
 
@@ -497,36 +531,37 @@ When AWS uses tape media to perform backups in their data centers, who would be 
 
 AWS
 
-Question 12
 
-_What benefits can CloudFront bring to your e-commerce website?_
+
+_Q12: What benefits can CloudFront bring to your e-commerce website?_
 (Choose 3)
 
-- Increased application **availability**
-- **Protection** against network and application layer attacks via WAF
-- **Lower latency** for customers of your e-commerce website
+- Increased **application availability**
+> You can improve resiliency and increase availability for specific scenarios by setting up CloudFront with origin failover.
+- **Protection against network and application layer attacks via WAF**
+> CloudFront provides protection with AWS WAF and AWS Shield.
+- **Lower latency for customers of your e-commerce website**
+> CloudFront provides the ability to cache both static and dynamic content around the world, ensuring quick response times for customers when retrieving cached website content.
 
 
-Question 13
-
-_Which of the following acts like built-in firewalls per instance for your virtual servers?_
+_Q13: Which of the following acts like built-in firewalls per instance for your virtual servers?_
 
 **Security groups**
 
-Question 14
+> Security groups act like built-in firewalls for your virtual servers — the rules you create define what is allowed to talk to your instances and how. Although network access control lists can be used to block or deny traffic, these operate at the subnet level (covering all instances in the subnet with the same ruleset), not per instance as the question specifies. Route tables tell traffic where it should go next to reach its destination, and an Availability Zone is a collection of data centers — which isn't relevant in this question
 
-_A user has created several IAM users in their account to perform administrative and general tasks. How can the user monitor and track the IP address of the users performing activities in their account?_
+_Q14: A user has created several IAM users in their account to perform administrative and general tasks. How can the user monitor and track the IP address of the users performing activities in their account?_
 
 **CloudTrail**
+
+> CloudTrail tracks user activity (along with the user's IP address) and API calls within your account
 
 Question 15
 
 _Which of the following are load balancer types offered by AWS?_
 (Choose 3)
 
-- **Network**
-- **Classic**
-- **Application**
+**Network**, **Classic**, **Application**
 
 Question 16
 
@@ -534,13 +569,17 @@ _Which security concept confirms that users are who they say they are, by presen
 
 **Authentication**
 
-Question 17
 
-A huge department store sells products online and in-person. Most of their customers use credit cards instead of cash when making purchases. For security purposes, the credit card data must be encrypted at rest. _Which services allow the department store to generate and store the encryption key used to secure the credit card numbers?_
+Q17: A huge department store sells products online and in-person. Most of their customers use credit cards instead of cash when making purchases. For security purposes, the credit card data must be encrypted at rest. _Which services allow the department store to generate and store the encryption key used to secure the credit card numbers?_
 (Choose 2)
 
 - **CloudHSM**
+
+> CloudHSM is a hardware security module (HSM) used to generate and store encryption keys
 - **Key Management Service (KMS)**
+> KMS allows you to generate and store encryption keys.
+
+> Macie uses machine learning to discover sensitive data stored on Amazon S3. Macie automatically detects a large and growing list of sensitive data types, including personally identifiable information (PII) such as names, addresses, and credit card numbers
 
 Question 18
 
@@ -548,24 +587,26 @@ Deploying your EC2 instances across multiple AZs will help address which cloud c
 
 High availability
 
-Question 19
+_Q19: A developer deployed an application that consisted of 1 Lambda function, a DynamoDB table, and a firewall using Web Application Firewall (WAF) via the AWS Command Line Interface (CLI). When attempting to access the application's resources via the AWS Management Console, the developer cannot find the Lambda function or DynamoDB table. What could be the problem?_
 
-A developer deployed an application that consisted of 1 Lambda function, a DynamoDB table, and a firewall using Web Application Firewall (WAF) via the AWS Command Line Interface (CLI). When attempting to access the application's resources via the AWS Management Console, the developer cannot find the Lambda function or DynamoDB table. What could be the problem?
+**The developer is probably in a different Region from where the resources were initially deployed.**
 
-The developer is probably in a different Region from where the resources were initially deployed.
+> Resources that aren't global are typically deployed to a specific Region. Since Regions are isolated and resources aren't automatically replicated across them, the developer needs to switch to the correct Region in order to find the resources.
 
-Question 20
 
-_Which type of Elastic Load Balancer is recommended for flexible application management and supports HTTP and HTTPS/2 traffic?_
+
+_Q20: Which type of Elastic Load Balancer is recommended for flexible application management and supports HTTP and HTTPS/2 traffic?_
 
 **Application Load Balancer**
 
+> Application Load Balancer is best suited for load balancing of HTTP and HTTPS (HTTPS/2) traffic and provides advanced request routing targeted at the delivery of modern application architectures, including microservices and containers. Operating at the individual request level (Layer 7), Application Load Balancer routes traffic to targets within Amazon Virtual Private Cloud (Amazon VPC) based on the content of the request.
 
-Question 21
 
-Your company is moving to the AWS Cloud and is reviewing the shared responsibility model. Which item is entirely the responsibility of AWS?
+_Q21: Your company is moving to the AWS Cloud and is reviewing the shared responsibility model. Which item is entirely the responsibility of AWS?_
 
-Physical and environmental controls
+**Physical and environmental controls**
+
+> AWS is responsible for protecting the physical infrastructure and environmental controls that run all of the services offered in the AWS Cloud. This infrastructure is composed of the hardware, software, networking, and facilities that run AWS Cloud services
 
 Question 22
 
@@ -578,8 +619,8 @@ Question 23
 _Which of the below is true about root accounts on AWS?_
 (Choose 2)
 
-- The root user should not be used for day-to-day activities.
-- The root user has full access to everything in the AWS account.
+- **The root user should not be used for day-to-day activities**.
+- **The root user has full access to everything in the AWS account**.
 
 Question 24
 
@@ -587,62 +628,66 @@ _A small software company is starting to work with the AWS Cloud. Which service 
 
 **AWS Marketplace**
 
-Question 25
 
-You are managing the company's AWS account. The current support plan is Basic, but you would like to begin using _Infrastructure Event Management_. What support plan (that already normally includes Infrastructure Event Management) should you upgrade to?
+
+Q25: You are managing the company's AWS account. The current support plan is Basic, but you would like to begin using _Infrastructure Event Management_. What support plan (that already normally includes Infrastructure Event Management) should you upgrade to?
 
 **Upgrade to the Enterprise plan**
 
-Question 26
+> AWS Infrastructure Event Management is a structured program available to Enterprise Support customers that helps you plan for large-scale events, such as product or application launches, infrastructure migrations, and marketing events. It is also available to Business Support customers, but they need to pay an additional fee to use this service and cannot use it normally as part of their plan
 
-A popular company that sells products online just experienced a distributed denial-of-service (DDoS) attack that consumed all available bandwidth on their network and didn't allow legitimate requests to be processed. _Which AWS services can the company integrate and combine going forward to prevent future attacks?_
+Q26: A popular company that sells products online just experienced a distributed denial-of-service (DDoS) attack that consumed all available bandwidth on their network and didn't allow legitimate requests to be processed. _Which AWS services can the company integrate and combine going forward to prevent future attacks?_
 (Choose 4)
 
 - **Web Application Firewall (WAF)**
-- **CloudFront**
-- **Route 53**
+- **CloudFront**, **Route 53**
+> DDoS protection via Shield Advanced is supported on several services, including CloudFront, Route 53
 - **AWS Shield**
+> Shield is a managed Distributed Denial of Service (DDoS) protection service. Shield Standard provides free protection against common and frequently occurring attacks. Shield Advanced provides enhanced protections and 24/7 access to AWS experts for a fee
 
-Question 27
+> GuardDuty is an intelligent threat detection system that uncovers unauthorized behavior.
 
-The CTO of a software company has requested an executive summary detailing the advantages of a potential move to the AWS Cloud. What can you say is an advantage of an RDS database over a traditional database?
+_Q27: The CTO of a software company has requested an executive summary detailing the advantages of a potential move to the AWS Cloud. What can you say is an advantage of an RDS database over a traditional database?_
 
-AWS maintains the underlying OS and performs software patching on the database
+**AWS maintains the underlying OS and performs software patching on the database**
 
-Question 28
+> RDS is a managed service that makes it easy to launch and manage relational databases. RDS does provide a lot of value, like automated backups and software patching, and frees you up to focus on your applications
 
-Which AWS service can provide a Desktop as a Service (DaaS) solution?
+_Q28: Which AWS service can provide a Desktop as a Service (DaaS) solution?_
 
 **Amazon WorkSpaces**
 
-Question 29
+> Amazon WorkSpaces is a managed, secure Desktop-as-a-Service (DaaS) solution. You can use Amazon WorkSpaces to provision either Windows or Linux desktops in just a few minutes and quickly scale to provide thousands of desktops to workers across the globe.
 
-A developer needs to provide version control for multiple Python source code files. Which service will provide source control for the files?
+
+
+_Q29: A developer needs to provide version control for multiple Python source code files. Which service will provide source control for the files?_
 
 **CodeCommit**
 
-Question 30
+> CodeCommit is a source control system for private Git repositories
 
-An independent developer needs help with _monitoring service limits to ensure they don't exceed free-tier usage on their account_. Which services will help them monitor service limits?
+Q30: An independent developer needs help with _monitoring service limits to ensure they don't exceed free-tier usage on their account_. Which services will help them monitor service limits?
 (Choose 2)
 
 - **Trusted Advisor**
+> Trusted Advisor has a service limit dashboard that helps you monitor service limits.
 - **CloudWatch**
+> CloudWatch Alarms can be used to determine the percentage of utilization versus the limit.
 
-Question 31
-
-A company has signed a 3-year contract with a school district to develop a Teacher Absence Management application. They anticipate consistent, daily development work throughout the duration of this project. Which type of EC2 instance would be best suited for this scenario?
+_Q31: A company has signed a 3-year contract with a school district to develop a Teacher Absence Management application. They anticipate consistent, daily development work throughout the duration of this project. Which type of EC2 instance would be best suited for this scenario?_
 
 - **Standard Reserved Instances**
+> Standard Reserved Instances are optimal for projects with predictable, consistent daily usage over an extended period, such as this 3-year contract. They offer significant cost savings, up to 72%, compared to On-Demand pricing. Given the long-term and steady nature of the development project, these instances ensure both capacity reservation and cost-effectiveness. In contrast, other instance types like On-Demand or Spot are better suited for short-term or unpredictable workloads
 
-Question 32
 
-A company has multiple AWS accounts across many departments. They are considering using Organizations to group all their accounts under 1 master payer account. What are the benefits of using Organizations?
+
+_Q32: A company has multiple AWS accounts across many departments. They are considering using Organizations to group all their accounts under 1 master payer account. What are the benefits of using Organizations?_
 (Choose 3)
 
-- They can reduce costs by sharing resources across accounts
-- They can easily add new accounts or create new accounts.
-- They can receive 1 bill for all their AWS accounts
+- They can **reduce costs by sharing resources across accounts**
+- They can **easily add new accounts or create new accounts**
+- They can **receive 1 bill for all their AWS accounts**
 
 Question 33
 
@@ -650,20 +695,23 @@ You are reviewing the AWS Shared Responsibility model to present an overview to 
 
 Customer data   
 
-Question 34
 
-Under the shared responsibility model, which of the following is an example of _security of the cloud?_
+
+_Q34: Under the shared responsibility model, which of the following is an example of security of the cloud?_
 (Choose 3)
 
-- Maintaining networking components
-- Managing the AWS global infrastructure
-- Protecting the data center infrastructure
-
+- **Maintaining networking components**
+> AWS maintains networking components: generators, uninterruptible power supply (UPS) systems, computer room air conditioning (CRAC) units, fire suppression systems, and more
+- **Managing the AWS global infrastructure**
+> AWS is responsible for the security of the cloud. AWS is responsible for its global infrastructure elements: Regions, edge locations, and Availability Zones.
+- **Protecting the data center infrastructure**
+> AWS is responsible for protecting the infrastructure that runs all of the services offered in the AWS Cloud. This infrastructure is composed of the hardware, software, networking, and facilities that run AWS Cloud services
 Question 35
 
 _Which storage service can provide very high durability storage for objects?_
 
 **Amazon S3**
+> S3 provides high durability storage of objects
 
 Question 36
 
@@ -671,13 +719,17 @@ _Your company is considering migrating its data center to the cloud. Which of th
 
 Replace upfront capital expenses with low variable costs
 
-Question 37
 
-A company is using CloudTrail to simplify operational analysis and troubleshooting. _When tracking user activity, which content fields does CloudTrail track when a user accesses the AWS Management Console?_
+
+Q37: A company is using CloudTrail to simplify operational analysis and troubleshooting. _When tracking user activity, which content fields does CloudTrail track when a user accesses the AWS Management Console?_
 (Choose 2)
 
-- Region
-- Username
+**Region**, **Username**
+
+> CloudTrail tracks the AWS Region that the request was made to, such as us-east-1.
+
+> CloudTrail allows you to track the username.
+
 
 Question 38
 
@@ -685,83 +737,81 @@ Which statement below is one of the 6 advantages of cloud computing?
 
 **Benefit from increased speed and agility**
 
-Question 39
-
-_A company needs to use a load balancer that can serve traffic at the TCP and UDP layers. Additionally, it needs to handle millions of requests per second at very low latencies. Which load balancer should they use?_
+_Q39: A company needs to use a load balancer that can serve traffic at the TCP and UDP layers. Additionally, it needs to handle millions of requests per second at very low latencies. Which load balancer should they use?_
 
 **Network Load Balancer**
 
-Question 40
+> Network Load Balancer is best suited for load balancing of Transmission Control Protocol (TCP), User Datagram Protocol (UDP), and Transport Layer Security (TLS) traffic where extreme performance is required. Operating at the connection level (Layer 4), Network Load Balancer routes traffic to targets within Amazon Virtual Private Cloud (Amazon VPC) and is capable of handling millions of requests per second while maintaining ultra-low latencies
 
-_You need to allow IPv4 resources in a private subnet to connect to services outside your VPC, but you can't allow external services to initiate a connection with those private IPv4 resources. Which of the following must be present to enable this access?_
+
+_Q40: You need to allow IPv4 resources in a private subnet to connect to services outside your VPC, but you can't allow external services to initiate a connection with those private IPv4 resources. Which of the following must be present to enable this access?_
 
 **NAT gateway**
 
-Question 41
+> A NAT gateway is required to allow resources in a private subnet to access the internet
 
-You are a Systems Administrator who has just started adding IAM users to your company’s AWS account. However, you worry that the users will not create passwords strong enough to prevent unauthorized access. _What is the most reliable way to ensure that users are using strong passwords?_
+_Q41: You are a Systems Administrator who has just started adding IAM users to your company’s AWS account. However, you worry that the users will not create passwords strong enough to prevent unauthorized access. What is the most reliable way to ensure that users are using strong passwords?_
 
 **Apply an IAM password policy to ensure users create appropriately strong passwords**.
 
+> Use Identity and Access Management (IAM) to apply an IAM password policy. While awareness and training are critical to developing good security practices, the most reliable option is to use an IAM password policy, which won't allow users to use lower-strength passwords
 
-Question 42
+_Q42: Broadly speaking, as a customer of AWS, you are responsible for:_
 
-Broadly speaking, as a customer of AWS, you are responsible for:
+**Security IN the Cloud**
 
-Security IN the Cloud
 
-Question 43
-
-You just had a Data Analyst join the company, and you have been tasked with creating a new IAM user accordingly. Although the user has received all the necessary credentials, _she realized that she cannot perform any Amazon RDS actions on the Clients table. Which of the following are possible solutions to this issue?_
+_Q43: You just had a Data Analyst join the company, and you have been tasked with creating a new IAM user accordingly. Although the user has received all the necessary credentials, she realized that she cannot perform any Amazon RDS actions on the Clients table. Which of the following are possible solutions to this issue?_
 (Choose 2)
 
-- Create an **identity-based policy**
-- Add the user to the group that has the **necessary permission policy**
+- **Create an identity-based policy**
+> By default, an IAM user can’t access anything in the AWS account. So, the inability to perform the RDS actions on the Clients table is not a technical or password issue. To grant access, you would need to create an identity-based policy. However, if there is a group in the account with the permission policy that will grant such access, you can add the user to that group instead
+- **Add the user to the group that has the necessary permission policy**
 
-Question 44
 
-You have a MySQL database that you want to migrate to the cloud, and you need it to be significantly faster there. You are looking for a speed increase up to 5 times the current performance. Which AWS offering could you use?
+_Q44: You have a MySQL database that you want to migrate to the cloud, and you need it to be significantly faster there. You are looking for a speed increase up to 5 times the current performance. Which AWS offering could you use?_
 
 **Amazon Aurora**
 
-Question 45
+> Aurora is a relational database compatible with MySQL and PostgreSQL that was created by AWS
 
-A company is using Trusted Advisor to ensure they are following AWS best practices. _What real-time guidance does Trusted Advisor provide?_
+_Q45: A company is using Trusted Advisor to ensure they are following AWS best practices. What real-time guidance does Trusted Advisor provide?_
 (Choose 3)
 
 - **Open-access permissions for S3 buckets**
+> Trusted Advisor checks Amazon S3 buckets for open-access permissions, which allow anyone to access the bucket's contents. It also checks for bucket policies that might override these permissions, giving unintended users access to the bucket.
 - **Low utilization on EC2 instances**
+> Trusted Advisor checks this for all customers
 - **Exposed access keys**
+> Trusted Advisor checks this for Enterprise and Business Support customers.
 
-Question 46
-
-Which of the following are focuses of the _performance efficiency pillar of the Well-Architected Framework?_
+_Q46: Which of the following are focuses of the performance efficiency pillar of the Well-Architected Framework?_
 (Choose 2)
 
 - Use a **serverless architecture** first.
 - Use **multi-region deployments**.
 
-Question 47
+_Q47: What is the maximum number of objects you can store in S3 per AWS account?_
 
-What is the maximum number of objects you can store in S3 per AWS account?
+**Unlimited**
 
-Question 48
+> You can store an essentially unlimited number of objects in S3 - either in a single bucket or across multiple in your account
 
-Which are focuses of the security pillar of the Well-Architected Framework?
+_Q48: Which are focuses of the security pillar of the Well-Architected Framework?_
 (Choose 2)
 
-- Track who did what and when
-- Assign only the least privilege required
+- **Track who did what and when**
+- Assign **only the least privilege required**
 
-Question 49
 
-A small company has purchased a new system which they want to deploy in the AWS Cloud _but does not have anyone with the required AWS skill set to perform the deployment. Which service can help with this?_
+_Q49: A small company has purchased a new system which they want to deploy in the AWS Cloud but does not have anyone with the required AWS skill set to perform the deployment. Which service can help with this?_
 
 **AWS Partner Network (APN) Consulting Partners**
 
-Question 50
+> APN Consulting Partners include professional services organizations like system integrators, strategic consultancies, agencies, managed service providers (MSPs), and value-added resellers. In this case, we would engage a Consulting Partner to help us deploy a new system to the AWS Cloud.
 
-Which of the below are TRUE when running a database in an EC2 instance?
+
+_Q50: Which of the below are TRUE when running a database in an EC2 instance?_
 (Choose 3)
 
 - The customer is responsible for managing access to the database
@@ -774,38 +824,38 @@ _Which is a core design principle for deploying resources in AWS?_
 
 Deploy in multiple Availability Zones.
 
-Question 52
-
-A new web application is getting much more traffic than expected. You decide to add another EC2 instance to share the load. _Which AWS concept best describes the act of changing the number of instances using the same instance size?_
+_Q52: A new web application is getting much more traffic than expected. You decide to add another EC2 instance to share the load. Which AWS concept best describes the act of changing the number of instances using the same instance size?_
 
 **Horizontal scaling**
 
-Question 53
+> Horizontal scaling is the act of changing the number of nodes in a computing system without changing the size of any individual node. So, with horizontal scaling, we would add instances
 
-Which of the following database migrations are classified as heterogeneous?
+
+
+_Q53: Which of the following database migrations are classified as **heterogeneous**?_
 (Choose 2)
 
-- Microsoft SQL Server to Amazon Aurora PostgreSQL
-- Oracle to Amazon Aurora PostgreSQL
+- **Microsoft SQL Server to Amazon Aurora PostgreSQL**
+- **Oracle to Amazon Aurora PostgreSQL**
 
 
-Question 54
-
-_Your company is migrating to the AWS Cloud. For servers, your company has existing per-core licenses they would like to continue to use. Which EC2 purchasing option allows this? (Subject to your license terms)._
+_Q54: Your company is migrating to the AWS Cloud. For servers, your company has existing per-core licenses they would like to continue to use. Which EC2 purchasing option allows this? (Subject to your license terms)._
 
 **Dedicated Host**
 
-Question 55
+> Dedicated Hosts allow you to use your existing per-socket, per-core, or per-VM software licenses, subject to your license terms.
 
-_You are trying out AWS on a trial basis and need to deploy a web application without having to configure servers. Which AWS service can you use?_
+_Q55: You are trying out AWS on a trial basis and need to deploy a web application without having to configure servers. Which AWS service can you use?_
 
 - **Elastic Beanstalk**
 
-Question 56
+> Elastic Beanstalk allows you to deploy your web applications and web services to AWS
 
-_Which of the following data archival services is extremely inexpensive but can have a multi-hour data-retrieval window?_
+
+_Q56: Which of the following data archival services is extremely inexpensive but can have a multi-hour data-retrieval window?_
 
 **Glacier**
+> Glacier offers extremely inexpensive data archival, but requires a 3- to 5-hour data-retrieval window for standard retrievals - though this time can be reduced for a price
 
 Question 57
 
@@ -813,49 +863,54 @@ A company is _rearchitecting its monolithic application using a microservices ar
 
 **Implement loose coupling**
 
-Question 58
+> Loose coupling helps reduce the risk of cascading failures between components
 
-A recent audit has dictated that a _company begin keeping a log of AWS Management Console actions and API calls. Which AWS service can help with this?_
+Q58: A recent audit has dictated that a _company begin keeping a log of AWS Management Console actions and API calls. Which AWS service can help with this?_
 
 **AWS CloudTrail**
 
-Question 59
+> CloudTrail tracks user activity and API calls within your account
 
-Your company has decided to use Amazon WorkSpaces. _They can use Amazon WorkSpaces to provision either Windows or Linux desktops in just a few minutes. What type of solution is this?_
+> AWS Inspector: Inspector works with EC2 instances to uncover and report vulnerabilities
+
+Q59: Your company has decided to use Amazon WorkSpaces. _They can use Amazon WorkSpaces to provision either Windows or Linux desktops in just a few minutes. What type of solution is this?_
 
 **DaaS**
 
-Question 60
+> Amazon WorkSpaces provides a Desktop as a Service (DaaS) solution
 
-A company is considering moving their critical applications and databases to the cloud. _They want to ensure their data never becomes corrupted or lost due to a system malfunction_. A system that reliably stores data without loss is considered to be what?
+_Q60: A company is considering moving their critical applications and databases to the cloud. They want to ensure their data never becomes corrupted or lost due to a system malfunction. A system that reliably stores data without loss is considered to be what?_
 
 **Durable**
 
-Question 61
+> A system that stores data without loss is a durable one. Durability is all about long-term data protection. This means your data will remain intact without corruption.
 
-A company would like to _reduce operational overhead when operating AWS infrastructure_. Which service can help them do this?
+
+_Q61: A company would like to reduce operational overhead when operating AWS infrastructure_. Which service can help them do this?
 
 **Managed Services**
 
-Question 62
+> Managed Services helps you efficiently operate your AWS infrastructure and reduces operational risks and overhead
 
-A company is considering moving its data and applications to the cloud. What are some of the benefits of moving to the cloud?
+_Q62: A company is considering moving its data and applications to the cloud. What are some of the benefits of moving to the cloud?_
 (Choose 2)
 
 - Operate production workloads that are more highly available, fault tolerant, and scalable
 - Provision exactly the right type and size of computing resources you need
 
-Question 63
-
-Which of the following allows you to restrict access to an entire S3 bucket?
+_Q63: Which of the following allows you to restrict access to an entire S3 bucket?_
 
 **Bucket policies**
+
+> Bucket policies allow you to control access to entire buckets
 
 Question 64
 
 _You suspect that 1 of the AWS services your company is using has gone down. How can you check on the status of this service?_
 
 **AWS Personal Health Dashboard**
+
+> AWS Personal Health Dashboard provides alerts and guidance for AWS events that might affect your environment
 
 Question 65
 
@@ -866,17 +921,19 @@ S3 Glacier Flexible Retrieval (formerly S3 Glacier)
 
 ## Dumps 3
 
-Question 1
 
-_Using Infrastructure as Code **(IaC)** is related to which cloud concept?_
+_Q1: Using Infrastructure as Code **(IaC)** is related to which cloud concept?_
 
 **Automation**
+> Infrastructure as Code is a key implementation of automation in cloud - using Infrastructure as Code allows you to quickly and easily deploy and manage your environment without reliance on humans to complete all the tasks.
 
 Question 2
 
 _A company has an application with user bases in both Canada and New Zealand. The company has deployed their application to servers currently provisioned in the Canada (Central) Region. Unfortunately, New Zealand users are experiencing high latency and slow download times. How can the **company reduce latency**?_
 
-Provision resources to the Australia (Sydney) Region
+**Provision resources to the Australia (Sydney) Region**
+
+> A multi-Region deployment solves the issue by deploying the application closest to the user base
 
 Question 3
 
@@ -884,11 +941,11 @@ _When might **Auto Scaling** be used?_
 
 When you require **scalable capacity to maintain service** levels in your environment
 
-Question 4
 
-_Where is the best place to **store your root user access key** so your application can use it to make requests to AWS?_
 
-**Nowhere** — you should not use the root user access keys for this
+_Q4: Where is the best place to **store your root user access key** so your application can use it to make requests to AWS?_
+
+**Nowhere— you should not use the root user access keys for this**
 
 Question 5
 
@@ -936,11 +993,11 @@ _A company has provisioned an EC2 instance as a web server. The web application 
 
 **Internet gateway**
 
-Question 12
-
-_Your company is migrating its services to the AWS Cloud. The DevOps team has heard about **Infrastructure as Code** and wants to investigate this concept. Which AWS service would they investigate?_
+_Q12: Your company is migrating its services to the AWS Cloud. The DevOps team has heard about Infrastructure as Code and wants to investigate this concept. Which AWS service would they investigate?_
 
 **AWS CloudFormation**
+
+> AWS CloudFormation is a service that helps you model and set up your Amazon Web Services resources so you can spend less time managing those resources and more time focusing on your applications that run in AWS
 
 Question 13
 
@@ -948,23 +1005,25 @@ _Which of the following are geographic areas that host 2 or more Availability Zo
 
 Regions
 
-Question 14
-
-_Which of the following is an **AWS global service?**_
+_Q14: Which of the following is an **AWS global service?**_
 
 **CloudFront**
 
-Question 15
+> Amazon CloudFront is a fast content delivery network (CDN) service that securely delivers data, videos, applications, and APIs to customers globally with low latency and high transfer speeds, all within a developer-friendly environment.
 
-_Which of the following is an **AWS global service**?_
+
+_Q15: Which of the following is an **AWS global service**?_
 
 **IAM**
+> Identity and Access Management is a global service
 
 Question 16
 
 _A company is launching a new product and needs help with assessing its operational readiness and identifying and mitigating risks. Which feature of the **Enterprise Support plan provides** this?_
 
 **Infrastructure Event Management**
+
+> Infrastructure Event Management provides support for planning and running business-critical events
 
 Question 17
 
@@ -984,11 +1043,12 @@ _Which of the following is AWS' **data warehousing** service?_
 
 **Redshift**
 
-Question 20
 
-_Which AWS service provides **central governance** and management across **multiple AWS accounts**?_
+_Q20: Which AWS service provides central governance and management across multiple AWS accounts?_
 
 **AWS Organizations**
+
+> AWS Organizations allows you to centrally manage multiple AWS accounts under one umbrella
 
 Question 21
 
@@ -1034,16 +1094,16 @@ _A college student wants to quickly launch a **WordPress website** but doesn't h
 
 **Lightsail**
 
-Question 28
 
-_Which of the following are focuses of the **operational excellence** pillar of the Well-Architected Framework?_
+
+_Q28: Which of the following are focuses of the operational excellence pillar of the Well-Architected Framework?_
 (Choose 3)
 
-- **Plan for and anticipate failure**.
-- **Script operations as code**.
-- Deploy smaller reversible changes.
+- **Plan for and anticipate failure**
+- **Script operations as code**
+- **Deploy smaller reversible changes**
 
-This is a focus of the operational excellence pillar. This pillar focuses on creating applications that effectively support production workloads.
+> This is a focus of the operational excellence pillar. This pillar focuses on creating applications that effectively support production workloads.
 
 
 Question 29
@@ -1100,11 +1160,12 @@ _Which statement is true regarding the AWS Global Infrastructure?_
 
 - Each AWS Region consists of multiple, isolated, and physically separate AZs within a geographic area.
 
-Question 38
 
-_Which service is used to manage the **encryption of EBS volumes** for Amazon EC2?_
+
+_Q38: Which service is used to manage the **encryption of EBS volumes** for Amazon EC2?_
 
 **Key Management Service (KMS)**
+> When you create an encrypted Amazon EBS volume, you're able to specify a KMS customer master key
 
 Question 39
 
@@ -1151,11 +1212,11 @@ _Which credentials can you use to access the **AWS Management Console**?_
 
 Your **username and password**
 
-Question 46
-
-_You have 2 software systems that need to communicate, and you also need to **ensure messages are not lost between them**. Which AWS service can help meet these requirements?_
+_Q46: You have 2 software systems that need to communicate, and you also need to **ensure messages are not lost between them**. Which AWS service can help meet these requirements?_
 
 **SQS**
+
+> Amazon SQS is a message queue service used by distributed applications to exchange messages through a polling model and can be used to decouple sending and receiving components. Amazon SQS also provides extremely high message durability, ensuring messages are not lost if your software systems fail.
 
 Question 47
 
@@ -1163,15 +1224,17 @@ _A company with a business-critical application needs to ensure business continu
 (Choose 3)
 
 - **Convertible Reserved Instance** (RI) with a capacity reservation    
+> A Reserved Instance is a reservation of resources and capacity for either 1 or 3 years. A capacity reservation offers assurance that the customer will be given preference if there is ever a capacity constraint in a Region
 - **On-demand capacity reservation**
-- **Standard Reserved Instance** (RI) with a capacity reservation
+> On-Demand Capacity Reservations enable you to reserve compute capacity for your Amazon EC2 instances for any duration.
+- **Standard Reserved Instance (RI) with a capacity reservation**
 
 
-Question 48
+_Q48: A purchasing department staff member is set up as an AWS user in the company’s Procurement AWS account. At each month-end, the staff member needs access to an application running on EC2 in the company’s Accounts Payable AWS account to reconcile reports. Which of the following provides the most secure and operationally efficient way to give the staff member access to the Accounts Payable application**?_
 
-_A purchasing department staff member is set up as an AWS user in the company’s Procurement AWS account. At each month-end, the staff member needs access to an application running on EC2 in the company’s Accounts Payable AWS account to reconcile reports. Which of the following provides the most secure and operationally **efficient way to give the staff member access to the Accounts Payable application**?_
+**Have the user request temporary security credentials for the application by assuming a role**
 
-Have the user request **temporary security credentials for the application** by assuming a role
+> The staff member should be given the ability to assume a role programmatically with the permissions necessary to run the Accounts Payable application
 
 Question 49
 
@@ -1197,13 +1260,14 @@ _Which of the following is correct regarding the number of Regions, Availability
 
 There are more Availability Zones than Regions
 
-Question 53
-
-_A customer needs to **identify vulnerabilities** on their EC2 instances, such as unintended network access. Which services will provide a **report of findings**?_
+_Q53: A customer needs to identify vulnerabilities on their EC2 instances, such as unintended network access. Which services will provide a report of findings?_
 (Choose 2)
 
 - **Inspector**
 - **Trusted Advisor**
+> Inspector works with EC2 instances to uncover and report vulnerabilities.
+
+> Trusted Advisor is a tool that provides real-time guidance to help you provision resources following AWS best practices. It will check security groups for rules that allow unrestricted access (0.0.0.0/0) to specific ports
 
 Question 54
 
@@ -1217,7 +1281,9 @@ _Which of the following are **characteristics of Regions**?_
 (Choose 3)
 
 - They are **grouped in geographic locations**.
-- They contain only the resources and services specifically deployed to them.
+- **They contain only the resources and services specifically deployed to them.**
+
+> Regions are isolated, and resources that are uploaded are not automatically replicated across them.
 - They are fully independent and isolated.
 
 
@@ -1228,11 +1294,11 @@ _With which AWS service, **coupled with EC2**, can you implement elasticity by *
 
 **Auto Scaling**
 
-Question 57
-
-_You would like to set up a **loosely coupled architecture**. Which service would allow you to send and receive messages and store them if they are not consumed immediately?_
+_Q57: You would like to set up a loosely coupled architecture. Which service would allow you to send and receive messages and store them if they are not consumed immediately?_
 
 **AWS SQS**
+
+> SQS is a message queuing service that allows you to build loosely coupled systems
 
 Question 58
 
@@ -1246,11 +1312,12 @@ _A company is trying to **visualize and forecast** its costs and usage over time
 
 **AWS Cost Explorer**
 
-Question 60
 
-_When analyzing application performance, a developer realizes the queries to the database are taking a long time. What can the developer implement to **store common queries** and improve performance?_
+_Q60: When analyzing application performance, a developer realizes the queries to the database are taking a long time. What can the developer implement to **store common queries** and improve performance?_
 
 **ElastiCache**
+
+> ElastiCache helps you alleviate database load for data that is accessed often. ElastiCache is a great way to cache common queries.
 
 Question 61
 
@@ -1264,17 +1331,18 @@ _Which of the following is a design principle of the Well-Architected Framework'
 
 **Recover from failure automatically**
 
-Question 63
 
-_A customer is managing multiple AWS accounts using AWS Organizations. What can the customer use to **restrict the same permissions across all AWS accounts** managed under AWS Organizations using minimal effort?_
+_Q63: A customer is managing multiple AWS accounts using AWS Organizations. What can the customer use to restrict the same permissions across all AWS accounts managed under AWS Organizations using minimal effort?_
 
 **Service control policies**
 
-Question 64
+> AWS Organizations provides central governance and management for multiple accounts. Organization service control policies (SCPs) allow you to create permissions guardrails that apply to all accounts within a given organization.
 
-_You have an EC2 instance that contains a web application being put into operation. To prepare for the application going live for public use, you add a few **more instances in a distributed manner** in order to **handle an increase in load**. Which concept is used to measure a system's ability to grow to accommodate an increase in demand?_
+_Q64: You have an EC2 instance that contains a web application being put into operation. To prepare for the application going live for public use, you add a few **more instances in a distributed manner** in order to **handle an increase in load**. Which concept is used to measure a system's ability to grow to accommodate an increase in demand?_
 
 **Scalability**
+
+> Scalability means the systems can adapt to meet new levels of demand. There are both horizontal and vertical scaling in regards to compute resources. Horizontal scaling involves the adding of instances of the same size. Vertical scaling is typically a manual process where the size of the instance is changed
 
 Question 65
 
