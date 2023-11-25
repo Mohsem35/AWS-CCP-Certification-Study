@@ -410,17 +410,21 @@ Four types of load balancers are available
 4. Network
 
 
+
+
+#### Amazon EC2 Auto Scaling
+
 ![download](https://github.com/Mohsem35/AWS-Learning/assets/58659448/72d61e38-f1f2-4ce7-92fa-89a1ecd38bf7)
 
-#### EC2 Auto Scaling
+**`EC2 Auto Scaling`** 
+1. **adds or replaces EC2 instances automatically** across **AZs** 
+2. **based on need and changing demand**
 
-![1_9ke2MJPI9vy034alPKJk7A](https://github.com/Mohsem35/AWS-Learning/assets/58659448/7933549a-a99b-4d4c-abca-db538738a7e9)
-
-**_EC2 Auto Scaling_** adds or replaces EC2 instances automatically across AZs, **`based on need and changing demand`**
+Amazon EC2 Auto Scaling helps you maintain application availability and allows you to automatically add or remove EC2 instances according to conditions you define.
 
 <img width="349" alt="Screenshot 2023-10-10 at 5 51 47 PM" src="https://github.com/Mohsem35/AWS-Learning/assets/58659448/3ad0ebce-5043-4730-8d4e-e47a69a0f318">
 
-Auto Scaling reduces the impact of system failures and improves the availability of your applications.
+Auto Scaling **reduces the impact of system failures** and improves the availability of your applications.
 
 > **_Note_** : Do not confuse horizontal scaling with vertical scaling (or scaling up), which upgrades an EC2 instance by adding more power (CPU, RAM) to an existing server.
 
@@ -1529,25 +1533,24 @@ MyBucket:
 > _Note_: There's no need to use the S3 Management Console to create a bucket
 
 
-#### CloudFormation
+#### AWS CloudFormation
 
-CloudFormation allows you to **`provision AWS resources`** using Infrastructure as Code (**`IaC`**)
+CloudFormation allows you to **provision and update AWS resources** using Infrastructure as Code (**IaC**)
 
 
-- Provides a **`repeatable process`** for provisioning resources
--  Works with **`most`** AWS services 
-- Create **`templates`** for the resources you want to **`provision`**
+- Provides a **repeatable process** for provisioning resources
+-  **Works with most AWS services** 
+- Create **templates** for the resources you want to **provision**
 
 
 ##### Use cases
 
-_Automate the infrastructure-provisioning process for EC2 servers:_ You can use CloudFormation to **`automate the creation of EC2 instances`** in your AWS account.
-
+_Automate the infrastructure-provisioning process for EC2 servers:_ You can use CloudFormation to **automate the creation of EC2 instances** in your AWS account.
 
 
 #### Elastic Beanstalk
 
-
+আমার কাজ শুধু code upload দেয়া, বাকি যা কিছু আছে provisioning, scaling, monitoring সবকিছু Beanstalk সামলে নিবে 
 
 Elastic Beanstalk is an easy-to-use service for **deploying** and **scaling web applications and services** developed with Java, .NET, PHP, Node.js, Python, Ruby, Go, and Docker on familiar servers such as Apache, Nginx, Passenger, and Internet Information Services (IIS)..
 
@@ -1567,12 +1570,14 @@ _Quickly deploy a scalable Java-based web application to AWS_
 
 
 
-#### OpsWorks
+#### AWS OpsWorks
 
-OpsWorks allows you to use **`Chef`** or **`Puppet`** to _automate the configuration_ of your servers and deploy code.
+AWS OpsWorks is a **configuration management service** that provides managed instances of Chef and Puppet. **`Chef`** and **`Puppet`** are automation platforms that allow you to **use code to automate the configurations of your servers**.
 
-- **`Deploy`** code and **`manage`** applications
-- Manage **`on-premises`** servers or **`EC2 instances`** in AWS Cloud
+
+
+- **Deploy code** and **manage applications**
+- Manage both **on-premise servers and EC2 instances** in AWS Cloud
 
 
 ##### Use cases
@@ -2327,13 +2332,15 @@ GuardDuty is an **intelligent threat detection** system that **`uncovers unautho
 _Detect unusual API calls in your account_: GuardDuty's anomaly detection feature **`evaluates all API requests`** in your account and identifies events that are associated with common techniques used by **`attackers`** 
 
 
-#### Inspector
+#### Amazon Inspector
 
-Inspector **`works with EC2`** instances to **`uncover and report`** **vulnerabilities**
+EC2 instance এর সাথে কাজ করে এবং report vulnerabilities
+
+Inspector **works with EC2** instances to **uncover and report vulnerabilities**. Amazon Inspector can be used across all accounts in your organization. Inspectort continually scans AWS workloads for **software vulnerabilities** and **unintended network exposure**
 
 - Agent installed on EC2 instance 
-- **`Reports vulnerabilities`** found
-- **`Checks`** access from the **`internet`**, **`remote root login`**, **`vulnerable software versions`**, etc.
+- **Reports vulnerabilities found**
+- **Checks** access from the **`internet`**, **`remote root login`**, **`vulnerable software versions`**, etc.
 
 ##### Inspector in the Real World
 
@@ -2716,31 +2723,33 @@ Cost Allocation Tags: Don't forget that tags can help you track spend.
 
 **`Governance`** and management services help you **`maintain control`** over **cost**, **compliance**, and **security** **`across`** your AWS accounts.
 
-#### Organizations
+#### AWS Organizations
 
 ![images](https://github.com/Mohsem35/AWS-Learning/assets/58659448/9fac1156-57e0-442e-944b-04f3b4047d5e)
 
 
-Organizations allows you to centrally **`manage multiple AWS accounts under one umbrella`** 
+AWS Organizations helps you 
+1. **centrally manage and govern** your environment as you grow and 
+2. **scale your AWS resources**.
 
-- Group **`multiple`** accounts
-- **`Single payment`** for all accounts
-- **`Automate`** account creation
-- _Allocate resources and apply policies_ **`across accounts`**
+Organizations allows you to **centrally manage multiple AWS accounts** 
 
-
-
-
-1. **Master Payer/Root Organization**: An organization is an entity that allows you to **`consolidate multiple AWS accounts into one`**. And that root account is called the master payer account, and it _pays for all member accounts using what's called consolidated billing._
-
+- Group **multiple accounts under one umbrella** 
+- **Single payment** for all accounts
+- **Automate account creation**
+- _Allocate resources and apply policies_ **across accounts**
 
 
 
-2. **Service control policies(SCP)**: are a _type of organization policy_ that you can use to manage permissions in your organization. They are used to **`enforce permissions`** that you want **`everyone`** in the organization to follow.
 
-3. **Organization units(OUs)**: Are a **`groupings of AWS accounts`** that are similar. In this example, **`accounts are grouped by departmental area`**. We have the _IT organization_, we have the _Shared Services organization_ and we have the _Marketing organization_
+1. **`Master Payer/Root Organization`**: An organization is an entity that allows you to **consolidate multiple AWS accounts into one**. And that root account is called the master payer account, and it pays for all member accounts using what's called **consolidated billing**
 
-4. **Member accounts**: Member accounts are the standard **`individual AWS accounts`**
+
+2. **`Service control policies(SCP)`**: are a type of **organization policy** that you can use to **manage permissions** in your organization. They are used to **enforce permissions** that you want everyone in the organization to follow.
+
+3. **`Organization units(OUs)`**: Are a **groupings of AWS accounts** that are similar. In this example, **accounts are grouped by departmental area**. We have the _IT organization_, we have the _Shared Services organization_ and we have the _Marketing organization_
+
+4. **`Member accounts`**: Member accounts are the standard **individual AWS accounts**
 that contain your AWS resources
 
 
@@ -2748,47 +2757,61 @@ that contain your AWS resources
 
 Organizations offers many benefits
 
-1. _Consolidated Billing_: The advantage of consolidated **`billing`** is that you receive **`one bill`** for multiple accounts.
+1. **Consolidated Billing**: The advantage of consolidated billing is that you receive one bill for multiple accounts.
 
-2. _Cost Savings_: You'll receive **`volume discounts`** since usage is combined across accounts. 
+2. **Cost Savings**: You'll receive **volume discounts** since usage is combined across accounts. 
 
-3. _Account Governance_: You have a quick and automated way to **`create`** accounts or **`invite`** existing accounts. 
-
-
-##### Organizations in the Real World
+3. **Account Governance**: You have a quick and automated way to **create accounts** or **invite existing accounts** 
 
 
-_Reduce costs by sharing resources across accounts_: Organizations allows you to save money using **`Reserved Instance (RI) sharing`**. RI sharing allows all accounts in the organization to receive the **`hourly cost-benefit of RIs`** purchased by any other account. You can always _turn off RI sharing using the master payer (or root) organization_
+##### Use cases of Organizations
+
+
+_Reduce costs by sharing resources across accounts_: Organizations allows you to save money using **`Reserved Instance (RI)`** sharing. RI sharing allows all accounts in the organization to receive the **hourly cost-benefit of RIs** purchased by any other account. You can always _turn off RI sharing using the master payer (or root) organization_
 
 
 #### Control Tower
 
-Control Tower helps you ensure your accounts **`conform`** to _company-wide policies_
+Control Tower helps you ensure your accounts **conform  to company-wide policies**
 
-- Helps set up **`new accounts`** using a multi-account strategy
-- **`Works`** directly with **AWS Organizations**
-- Enforces the **`best use of services`** across accounts
-- Provides a **`dashboard`** to manage accounts
+- Helps set up **new accounts** using a **multi-account strategy**
+- **Works directly with AWS Organizations**
+- Enforces the **best use of services** across accounts
+- Provides a **dashboard to manage accounts**
+
+As **enterprises migrate to AWS**, they typically have a large number of applications and distributed teams. They often want to create multiple accounts to allow their teams to work independently, while still **maintaining a consistent level of security and compliance**. In addition, they use AWS management and security services, such as AWS Organizations, Service Catalog and AWS Config, that provide very granular controls over their workloads. They want to maintain this control, but they also want a way to centrally **govern and enforce the best use of AWS services across all the accounts** in their environment.
+
+AWS Control Tower **automates the set-up** of their landing zone and configures AWS management and security services based on established best practices in a **secure, compliant, multi-account environment**.
 
 ##### Control Tower in the Real World
 
-_Disallow public write access to all S3 buckets across your accounts:_ Control Tower allows you to **`govern your multi-account`** environment by enabling **`cross-account security audits`** or preventing or detecting security issues through mandatory or optional **`guardrails`**
+_Disallow public write access to all S3 buckets across your accounts:_ Control Tower allows you to **govern your multi-account** environment by enabling **`cross-account security audits`** or **preventing or detecting security issues** through mandatory or optional **`guardrails`**
 
 
 
-#### Systems Manager
+#### AWS Systems Manager
 
-Systems Manager gives you **`visibility`** and **`control`** over your **`AWS resources`**
+আমার AWS তে existing যে system and resource আছে , সেইটা দেখার জন্য একটা dashboard থাকবে। তাতে operational tasks গুলো automate করতে পারব 
 
-- **`Automate`** operational **`tasks`** on your resources
-- **`Group resources`** and take **`action`**
-- **`Patch`** and **`run commands`** on multiple EC2 instances or manage RDS instances
+Systems Manager gives you **visibility** and **control** over your **AWS resources**
+
+Systems Manager provides a **unified user interface** so you can **view operational data from multiple AWS services** and allows you to automate operational tasks across your AWS resources.
+
+- **Automate operational tasks** on your resources
+- **Group resources** and take **action**
+- **Patch and run commands** on multiple **EC2 instances** or **manage RDS instances**
 
 
 ##### Systems Manager in the Real World
 
+**Deploy operating system and software patches automatically across a large group of instances**: Systems Manager allows you to auto-patch software running on EC2 instances according to a schedule.
 
-_Deploy operating system and software patches automatically across a large group of instances:_ Systems Manager allows you to auto-patch software running on EC2 instances according to a schedule.
+AWS Systems Manager contains the following tools:
+1. Resource groups
+2. Insights dashboard
+3. Run command
+4. Patch Manager
+5. Automation
 
 
 #### Trusted Advisor
