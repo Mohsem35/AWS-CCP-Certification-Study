@@ -394,20 +394,20 @@ EC2 instances offer
 1. **`load balancing`** and
 2. **`Auto Scaling`**
 
-#### Elastic Load Balancer
+#### Elastic Load Balancing
 
 ![AWS-Elastic-Load-Balancing-AWS-ELB](https://github.com/Mohsem35/AWS-Learning/assets/58659448/4e9a843b-5243-4c0a-890d-cf7a41f474b0)
 
 
-**_Elastic Load Balancing_** automatically distributes your **`incoming application traffic`** across multiple EC2 instances
+**_Elastic Load Balancing_** automatically distributes your **incoming application traffic's** across multiple targets, such as Amazon EC2 instances, containers, and IP addresses.
 
 <img width="387" alt="Screenshot 2023-10-10 at 5 42 21 PM" src="https://github.com/Mohsem35/AWS-Learning/assets/58659448/a3e03089-161c-4eea-83e6-5672b2220308">
 
 Four types of load balancers are available
-1. Classis
-2. Application
-3. Gateway
-4. Network
+1. **`Classis`**: load balancing across multiple Amazon EC2 instances
+2. **`Application`**: load balancing of **HTTP and HTTPS** traffic
+3. **`Gateway`**: well suited for **working with third-party** appliances
+4. **`Network`**: load balancing of **TCP traffic**
 
 
 
@@ -2005,23 +2005,22 @@ Well-Architected Framework: Going into the exam, remember the 6 pillars and thei
 
 
 
-#### IAM Users 
 
+#### AWS Identity and Access Management (IAM)
 
-#### 1. Identity and Access Management (IAM)
+AWS Identity and Access Management (IAM) enables you to **securely control access to AWS services and resources** for your **AWS users, groups, and roles**
 
 ![AWS-Identity-and-Access-Management_IAM](https://github.com/Mohsem35/AWS-Learning/assets/58659448/b3776656-39b0-48cc-a618-03ae81699ce9)
 
 
-IAM allows you to **`control`** access to your **`AWS services`** and **`resources`** 
+IAM allows you to **control access** to your **AWS services and resources** 
 
-- Helps you **`secure`** your cloud resources
-- You define **`who`** has access
-- You define **`what`** they can do
-- A **`free global service`**
+- Helps you **secure** your **cloud resources**
+- You define **who** has access
+- You define **what** they can do
+- A **free global service**
 
 <img width="361" alt="Screenshot 2023-10-24 at 7 09 21 PM" src="https://github.com/Mohsem35/AWS-Learning/assets/58659448/dddcf3d6-f59b-4930-b26c-1d4b579586bf">
-
 
 
 ##### Identities vs. Access 
@@ -2030,15 +2029,15 @@ _Identities_: **Who** can access your resources
 
 - _Root user_
 - _Individual users_
-- _Groups_
-- _Roles_
+- **Groups**
+- **Roles**
 
 
 _Access_: **What** resources they can access
 
-- Policies
-- AWS managed policies
-- Customer managed policies
+- **Policies**
+- **AWS managed policies**
+- **Customer managed policies**
 - Permissions boundaries
 
 
@@ -2047,10 +2046,9 @@ _Access_: **What** resources they can access
 Authentication is where you present your identity (_username_) and provide verification (_password_) where Authorization determines _which services and resources the authenticated identity has access to_
 
 
-#### 2. Users
+#### IAM Users
 
-Users are entities you create in IAM to represent the **`person`** or **`application`** _needing to access your AWS resources_
-
+Users are entities you create in IAM to represent the **person** or **application** needing to access your AWS resources
 
 
 **1. ROOT USER**
@@ -2058,9 +2056,9 @@ Users are entities you create in IAM to represent the **`person`** or **`applica
 The root user is created when you _first open your AWS account_
 
 What can only the root user do?
-- Close your account
-- Change email address 
-- Modify your support plan
+- **Close your account**
+- **Change email address**
+- **Modify your support plan**
 
 **2. INDIVIDUAL USER**
 
@@ -2070,7 +2068,7 @@ What can individual users do?
 
 - Perform **administrative tasks** 
 - Access application code
-- Launch EC2 instances
+- **Launch EC2 instances**
 - **Configure databases**
 
 Don't forget activity performed by users in your account is **`billed`** to your account!
@@ -2080,7 +2078,7 @@ Don't forget activity performed by users in your account is **`billed`** to your
 
 Did you know applications can be users?
 
-You'll create a user in IAM so you can generate access keys for an _application running on-premises that needs access to your cloud resources_
+You'll create a user in IAM so you can **generate access keys for an application running on-premises** that **needs access to your cloud resources**
 
 _Applications can also be user_
 
@@ -2095,15 +2093,15 @@ The principle of least privilege involves giving a user the **`minimum access`**
 
 
 
-#### 3. GROUP 
+#### IAM GROUP 
 
-**GROUPS**: A group is a **`collection of IAM users`** that helps you apply common access controls to all group members.
+A group is a **collection of IAM users** that helps you apply **common access controls** to all group members.
 
-`Administrators`: Administrators perform administrative tasks such as **`creating new users`**
+`Administrators`: Administrators perform administrative tasks such as **creating new users**
 
-`Developers`: Developers use **`compute and database services`** to build applications.
+`Developers`: Developers use **compute and database services** to build applications.
 
-`Analysts`: Analysts run **`budget and usage reports`**
+`Analysts`: Analysts run **budget and usage reports**
 
 > **_Note:_** Do not confuse security **groups for EC2 with IAM groups**. EC2 security groups act as **firewalls**, while IAM groups are **collections of users**.
 
@@ -2128,21 +2126,18 @@ _Principle of least privilege_: Don't forget about the principle of least privil
 _Real-world use cases_: Don't forget the real-world use cases for IAM.
 
 
+#### IAM Roles
 
-#### IAM Permissions
-
-#### Roles
-
-Roles define **access permissions** and are _temporarily assumed by an IAM user or service_
+Roles define **access permissions** and are **temporarily assumed** by an IAM user or service
 
 ##### KEY TAKEAWAYS
  
 Roles
 
-1. You assume a role to perform a task in a **`single session`**
-2. Assumed by any **`user or service`** that needs it.
-3. Access is assigned **`using policies`**
-4. You grant **`users in one AWS account`** access 
+1. You assume a role to **perform a task** in a **single session**
+2. **Assumed by** any **user or service** that needs it.
+3. **Access** is assigned **using policies**
+4. You grant **users in one AWS account** access 
 
 <img width="750" alt="Screenshot 2023-10-24 at 8 33 50 PM" src="https://github.com/Mohsem35/AWS-Learning/assets/58659448/168b501b-9c3d-4660-bc2a-6b93acd5b1d7">
 
@@ -2153,23 +2148,23 @@ Roles
 | Lambda  | Lambda-Execution Role | S3, DynamoDB 
 
 
-##### Roles in Real World
+##### IAM Roles in Real World
 
-**`Attach a role to an EC2 instance for access to S3`**: You can attach a role to an instance that provides privileges (e.g., uploading files to S3) to applications running on the instance. Roles help you avoid sharing long-term credentials like access keys and protect your instances from unauthorized access.
+**Attach a role to an EC2 instance for access to S3**: You can attach a role to an instance that provides privileges (e.g., uploading files to S3) to applications running on the instance. **Roles help you avoid sharing long-term credentials** like access keys and protect your instances from unauthorized access.
 
 <img width="500" alt="Screenshot 2023-10-24 at 8 35 10 PM" src="https://github.com/Mohsem35/AWS-Learning/assets/58659448/e3d05220-091f-44e2-8f3d-26428a1f5b6d">
 
 
 #### Policies
 
-You _manage permissions for IAM users, groups, and roles_ by **creating a policy document** in **`JSON format`** and attaching it.
+You manage **permissions for IAM users, groups, and roles** by **creating a policy document** in **`JSON format`** and attaching it.
 
-1. **`Custom policy`** for User
+1. **Custom policy** for User
 
 <img width="500" alt="Screenshot 2023-10-24 at 8 40 28 PM" src="https://github.com/Mohsem35/AWS-Learning/assets/58659448/e0447371-d23c-49b2-b3dd-3c53e72ee8be">
 
 
-2. **`Managed Policy`** for Developer Group & Role
+2. **Managed Policy** for Developer Group & Role
 
 <img width="500" alt="Screenshot 2023-10-24 at 8 40 41 PM" src="https://github.com/Mohsem35/AWS-Learning/assets/58659448/77167f0c-350a-4744-98c1-dc993729c0b2">
 
