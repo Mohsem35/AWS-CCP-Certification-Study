@@ -336,20 +336,24 @@ You can save up to **`90% off`** On-Demand prices. You pay the spot price that's
 
 
 ##### 3. Reserved Instances (RIs)
-RIs allow you to **`commit`** to a _specific instance type_ in a **`particular Region for 1 or 3 years`**.
+RIs allow you to **commit** to a specific instance type in a **particular region for 1 or 3 years**.
+
+Convertible Reserved Instances ব্যবহার করার কারণে আমি instances গুলোর সবকিছু change করতে পারব
+
+You have the **flexibility to change** families, operating system types, and tenancies while benefiting from Reserved Instance pricing when you use **Convertible Reserved Instances**
 
 Use Reserved Instances when:
 
-1. Your application has **`steady state usage`**, and you can commit to 1 or 3 years.
-2. You can pay money **`upfront`** in order to receive a discount on On-Demand prices.
-3. Your application requires a **`capacity reservation`**
+1. Your application has **steady state usage**, and you can commit to 1 or 3 years.
+2. You can **pay** money **upfront** in order to receive a **discount on On-Demand prices**.
+3. Your application requires a **capacity reservation**
 
 
 Fun facts:
 - You can save up to 75% off On-Demand prices.
-- You are **`required to sign a contract`**.
-- You can **`reserve capacity`** in an **`Availability Zone`** _for any duration_   
-- You can pay **`All Upfront`**, Partial Upfront, or No Upfront. All Upfront for the max term earns the highest discount.
+- You are **required to sign a contract**.
+- You can **reserve capacity** in an **Availability Zone for any duration** 
+- You can pay **All Upfront, Partial Upfront, or No Upfront**. All Upfront for the max term earns the highest discount.
 - Provides convertible types at **`54%`** discount.
 
 
@@ -1248,11 +1252,13 @@ Kinesis allows you to _analyze data_ and **`video streams`** in real time.
 
 #### Elastic MapReduce (EMR)
 
-EMR helps you **`process large`** amounts of data
+Big data, Hadooo এইসব মানেই EMR 
 
-- Process **`big data`**
+EMR helps you **process large amounts of data**
+
+- **Process big data**
 - Analyze data using **`Hadoop`**
-- Works with **`big data`** frameworks
+- Works with big data frameworks
 
 
 
@@ -2181,13 +2187,13 @@ and you understand everything that it really gives access to.
 
 ##### IAM Best Practices
 
-1. **`Enable MFA for privileged users`**: You should enable multi-factor authentication (MFA) for the root user and other administrative users.
+1. **Enable MFA for privileged users**: You should enable multi-factor authentication (MFA) for the root user and other administrative users.
 
-2. **`Implement strong password policies`**: You should require _IAM users to change their passwords after a specified period of time_, _prevent users from reusing previous passwords_, and _rotate security credentials regularly_
+2. **Implement strong password policies**: You should require _IAM users to change their passwords after a specified period of time_, _prevent users from reusing previous passwords_, and _rotate security credentials regularly_
 
-3. **`Create individual users instead of using root`**: You _shouldn't use the root user for daily tasks_
+3. **Create individual users instead of using root**: You _shouldn't use the root user for daily tasks_
 
-4. **`Use roles for Amazon EC2 instances`**: You should _use roles for applications_ that run on EC2 instances _instead of long-term credentials like access keys_
+4. **Use roles for Amazon EC2 instances**: You should _use roles for applications_ that run on EC2 instances _instead of long-term credentials like access keys_
 
 
 #### IAM Credential Report
@@ -2315,11 +2321,17 @@ _Identify system-level configuration changes made to your EC2 instances_: Config
 
 #### GuardDuty
 
-GuardDuty is an **intelligent threat detection** system that **`uncovers unauthorized behavior`**
+machine learnig টেকনোলজি use করে threat detect করে. API call এর দিকে নজর বেশি 
+
+Amazon GuardDuty is a threat detection service that continuously monitors for malicious activity and anomalous behavior to protect your AWS accounts, workloads, Kubernetes clusters, and data stored in Amazon Simple Storage Service (Amazon S3). The GuardDuty service monitors for activity such as **unusual API calls**, **unauthorized deployments**, and **exfiltrated credentials** that indicate a possible account reconnaissance or compromise.
+
+GuardDuty is an **intelligent threat detection system** that **uncovers unauthorized behavior**
+
+
 
 - Uses **`machine learning`**
-- **`Built-in detection`** for EC2, S3, and IAM 
-- Reviews CloudTrail, VPC Flow Logs, and DNS **`logs`**
+- **Built-in detection** for **`EC2`**, **`S3`**, and **`IAM`**
+- **Reviews CloudTrail**, **VPC Flow Logs**, and **DNS logs**
 
 
 ##### GuardDuty in the Real World
@@ -2343,21 +2355,23 @@ _Identify unintended network access to an EC2 instance via a detailed report of 
 
 
 
-#### Artifact
+#### AWS Artifact
 
 ![pict--aws-artifact-aws-security,-identity-and-compliance-vector-stencils-library](https://github.com/Mohsem35/AWS-Learning/assets/58659448/0680d2c8-12ac-405a-a1ed-01bd84b3751e)
 
+একটা report generate করে দিবে **security and compliance** এর উপড়ে এবং **জমা থাকবে একটা central reposotory** তে 
 
-Artifact offers on-demand access to **`AWS security and compliance reports`**
+Artifact offers on-demand access to **AWS security and compliance reports**
 
-- Central repository for **`compliance reports`** from third-party auditors
-- _Service Organization Controls_ (**`SOC`**) reports
-- _Payment Card Industry_ (**`PCI`**) reports
+- **Central repository** for compliance reports **from third-party auditors**
+- _Service Organization Controls_ (**SOC**) reports
+- _Payment Card Industry_ (**PCI**) reports
+- **Certifications from accreditation bodies** across geographies and compliance verticals
 
 
 ##### Artifact in the Real World
 
-_You need to access AWS' certification for ISO compliance:_ Artifact provides a central repository for AWS' security and compliance reports via a **`self-service portal`**
+**You need to access AWS certification for ISO compliance**: Artifact provides a central repository for AWS security and compliance reports via a **self-service portal**
 
 
 #### Cognito
@@ -2413,20 +2427,21 @@ _Data at Rest_: Data that is **`inactive or stored`** for later use
 
 
 
-#### Key Management Service (KMS)
+#### AWS Key Management Service (KMS)
 
-KMS allows you to generate and store encryption keys
+
+নিজে নিজে key তৈরি করে আবার নিজেই save করে রাখে সেইসব keys
+
+KMS allows you to **generate and store encryption keys**
 
 - **`Key generator`**
 - **`Store`** and **`control`** keys
 - **`AWS manages`** encryption keys
 - Automatically **`enabled`** for certain services like **CloudTrail logs**, **S3 Glacier**, and **Storage Gateway**
 
-
-
 ##### KMS in the Real World
 
-_Create encrypted Amazon EBS volumes:_ When you create an encrypted Amazon **`EBS`** volume, you're able to specify a KMS customer **`master key`**
+**Create encrypted Amazon EBS volumes**: When you create an encrypted Amazon **`EBS`** volume, you're able to specify a KMS customer **master key**
 
 
 
@@ -2813,41 +2828,47 @@ AWS Systems Manager contains the following tools:
 
 ![AWS-Trusted-Advisor](https://github.com/Mohsem35/AWS-Learning/assets/58659448/11189983-2504-403b-9e78-68d504f12f97)
 
+best practice দিতে advice করে 
+- **reduce cost**,
+- **increase performance**, and
+- **improve security** 
 
-Trusted Advisor provides **`real-time guidance`** to help you **`provision your resources`** following AWS best practices. 
+by optimizing your AWS environment.
+
+Trusted Advisor provides **`real-time guidance`** to help you **provision your resources** following AWS best practices. 
 
 - Helps you understand **`best practices`**
 
 Here are a few popular recommendations made by Trusted Advisor
 
-_Free Check_
+***Free Check***
 
-_EC2_: Checks for unrestricted access for specific **`ports`** on EC2 instances
+EC2, S3, RDS, Root User
 
-_S3_: Checks S3 **`bucket permissions`** to determine if public access
+_EC2_: Checks for unrestricted access for specific **ports** on EC2 instances
 
-_Root User_: Checks for multi-factor authentication (**`MFA`**) on root account 
+_S3_: Checks S3 **bucket permissions** to determine if public access
 
-_RDS_: Checks for RDS **`public snapshots`**
+_Root User_: Checks for multi-factor authentication (**MFA**) on root account 
+
+_RDS_: Checks for RDS **public snapshots**
 
 
-_Enterprise or Business support required_
+***Enterprise or Business support required***
 
-_IAM_: Checks IAM **`password policy`**
+_IAM_: Checks IAM **password policy**
 
-Checks for service usage greater than **`80% over service limit`**
+Checks for service usage greater than **80% over service limit**
 
-_Keys_: Checks for **`exposed access keys`**
+_Keys_: Checks for **exposed access keys**
 
-_CloudFront_: Checks for CloudFront content delivery **`optimization`**
+_CloudFront_: Checks for CloudFront **content delivery optimization**
 
 
 ##### Trusted Advisor in the Real World
 
 
-
-_Check read and write capacity service limits for DynamoDB:_ Trusted Advisor helps **`reduce your overall costs by monitoring service limits`**
-
+**Check read and write capacity service limits for DynamoDB**: Trusted Advisor helps **`reduce your overall costs by monitoring service limits`**
 
 
 #### License Manager
@@ -2913,17 +2934,19 @@ _Get help with evaluating an application for migration to the cloud_: You can qu
 
 #### AWS Partner Network (APN)
 
-APN is a **global community** of approved partners that offer software solutions and consulting services for AWS
+টেকনোলজি পার্টনার, কন্সাল্টিং পার্টনার 
 
-- Offers **technology** partners that provide **software solutions**
-- Provides **consulting** partners that offer **professional services**
-- Find **approved vendors** with deep AWS expertise
+APN is a **global community** of approved partners that offer **software solutions and consulting services** for AWS
+
+- Offers **technology partners** that provide **software solutions**
+- Provides **consulting partners** that offer **professional services**
+- Find **approved vendors** with **deep AWS expertise**
 
 
 
 ##### APN in the Real World
 
-_You need help designing and building a new application_: If your team lacks the technical expertise to build and deploy cloud applications, the APN could help you get up and running quickly.
+You **need help designing and building a new application**: If your **team lacks the technical** expertise to build and deploy cloud applications, the APN could help you get up and running quickly.
 
 
 
