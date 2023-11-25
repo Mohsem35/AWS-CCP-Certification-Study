@@ -45,7 +45,7 @@ Databases | RDS, DynamoDB
 
 
 
-**`Virtualization`** is at the **`heart`** of _cloud computing_. Virtualization lets you _divide hardware resources_ on a single physical server into **`smaller units`** called _Virtual Machines_
+**Virtualization** is at the **heart** of cloud computing. Virtualization lets you divide hardware resources on a single physical server into **smaller units** called Virtual Machines
 
 
 
@@ -58,28 +58,28 @@ Databases | RDS, DynamoDB
 
 #### There are 6 advantages to cloud computing
 
-1. **`Go global in minutes`**: Deploy your apps around the world at the click of a button.
+1. **Go global in minutes**: Deploy your apps around the world at the click of a button.
 
-2. **`Stop spending money running and maintaining data centers`**: You can focus on building your applications instead of managing hardware.
+2. **Stop spending money running and maintaining data centers**: You can focus on building your applications instead of managing hardware.
 
-3. **`Benefit from massive economies of scale`**: Volume discounts are passed on to you, which provides lower pay-as-you-go prices.
+3. **Benefit from massive economies of scale**: **Volume discounts are passed on to you**, which provides lower **pay-as-you-go** prices.
 
-4. **`Increase speed and agility`**: The provided services allow youto innovate more quickly and deliver your applications faster.
+4. **Increase speed and agility**: The provided services allow you to **innovate** more quickly and **deliver your applications faster**.
 
-5. **`Stop guessing capacity`**: Your capacity is matched exactly to your demand.
+5. **Stop guessing capacity**: Your capacity is matched exactly to your demand.
 
-6. **`Trade capital expense for variable expense`**: You pay for what you use instead of making huge upfront investments
+6. **Trade capital expense for variable expense**: You **pay for what you use** instead of making huge upfront investments
 
 
 #### Cloud computing terminology
 
-- **`High Availability`**:  Highly available systems are designed to _operate continuously without failure for a long time_. These systems avoid loss of service by reducing or managing failures.
+- **`High Availability`**:  Highly available systems are designed to **operate continuously without failure for a long time**. These systems avoid loss of service by reducing or managing failures.
 
-- **`Elasticity`**: With elasticity, you _don't have to plan ahead of time how much capacity you need_. You can provision only what you need, and then _grow and shrink based on demand_.
+- **`Elasticity`**: With elasticity, you don't have to plan ahead of time how much capacity you need_. You can provision only what you need, and then **grow and shrink based on demand**.
 
-- **`Agility`**: The cloud gives you increased agility. All the services you have access to help you _innovate faster, giving you speed to market_.
+- **`Agility`**: The cloud gives you increased agility. All the services you have access to help you **innovate faster, giving you speed to market**.
 
-- **`Durability`**: Durability is all about long-term data protection. This means your _data will remain intact without corruption_.
+- **`Durability`**: Durability is all about **long-term data protection**. This means your **data will remain intact without corruption**.
 
 
 
@@ -1016,13 +1016,14 @@ DocumentDB is a **`fully managed document database`** that supports **`MongoDB`*
 
 #### Amazon ElastiCache
 
-ElastiCache is a fully managed **`in-memory datastore`** compatible with Redis or Memcached.
+ElastiCache is a fully managed **in-memory datastore** compatible with Redis or Memcached.
 
 - In-memory datastore
 - Compatible with **`Redis`** or **`Memcached`** engines
-- Data can be **`lost`**
-- Offers **`high`** performance and **`low latency`**
+- **Data can be lost**
+- Offers **high** performance and **low latency**
 
+Amazon ElastiCache for Redis is fully managed, scalable, and secure. This makes it an **ideal candidate to power high-performance use cases** such as web, mobile apps, gaming, ad-tech, and IoT
 
 
 #### Amazon Neptune
@@ -1546,20 +1547,24 @@ _Automate the infrastructure-provisioning process for EC2 servers:_ You can use 
 
 #### Elastic Beanstalk
 
-Elastic Beanstalk allows you to **`deploy`** your **`web applications`** and **`web services`** to AWS.
 
 
+Elastic Beanstalk is an easy-to-use service for **deploying** and **scaling web applications and services** developed with Java, .NET, PHP, Node.js, Python, Ruby, Go, and Docker on familiar servers such as Apache, Nginx, Passenger, and Internet Information Services (IIS)..
+
+You can **simply upload your code**, and AWS Elastic **Beanstalk automatically handles the deployment**, from **capacity provisioning**, load balancing, and **auto scaling** to **application health monitoring**. At the same time, you retain full control over the AWS resources powering your application and can access the underlying resources at any time.
 
 - Orchestration service that **`provisions`** resources
 - Automatically handles the **`deployment`**
 - **`Monitors`** application health via a **`health dashboard`**
+
+In reality, Elastic Beanstalk is a **compute service**, but it's used when you are ready to deploy your application
 
 
 _Quickly deploy a scalable Java-based web application to AWS_
 
 <img width="764" alt="Screenshot 2023-10-20 at 8 54 19 PM" src="https://github.com/Mohsem35/AWS-Learning/assets/58659448/2818c4ba-69c5-4aab-873e-3915ddf5eb6f">
 
-> _Note_ : In reality, Elastic Beanstalk is a compute service, but it's used when you are ready to deploy your application
+
 
 
 #### OpsWorks
@@ -1702,17 +1707,18 @@ _Receive a notification when root user activity is detected in your account:_ Cr
 #### CloudTrail
 
 
-CloudTrail tracks **`user activity`** and **`API`** calls within your account
+CloudTrail tracks **user activity** and **API calls within your account** 
 
-- **`Log`** and **`retain`** account activity
+- **Log** and **retain** account activity
 - Track activity through the **`console`**, **`SDKs`**, and **`CLI`**
-- Identify **`which user made changes`**
-- **`Detect`** unusual **`activity`** in your account
+- Identify **which user made changes**
+- **Detect unusual activity** in your account
+- The AWS API call history produced by CloudTrail enables _security analysis_, _resource change tracking_, and _compliance auditing_
 
-##### Use cases
+##### Use cases of CloudTrail
 
 _Track the time a particular event occurred in your account:_ 
-You can troubleshoot events over the past 90 days using the **`CloudTrail event history log`** to find the **`specific time`** an event occurred on a **`per-Region`** basis. You can create a custom trail to extend past 90 days
+You can troubleshoot events over the **past 90 days** using the **`CloudTrail event history log`** to find the **specific time** an event occurred on a **per-Region** basis. You can create a custom trail to extend past 90 days
 
 
 ##### Things You Can Track with CloudTrail
@@ -1964,7 +1970,7 @@ Physically destroying storage media at end of life - AWS
 
 #### Well-Architected Framework
 
-The **`6 pillars`** of the Well-Architected Framework describe **`design principles`** and best practices for **`running workloads`** in the cloud.
+The **`6 pillars`** of the Well-Architected Framework describe **key concepts**, **design principles** and **best practices for running workloads** in the cloud.
 
 <img width="301" alt="Screenshot 2023-10-24 at 6 44 56 PM" src="https://github.com/Mohsem35/AWS-Learning/assets/58659448/2052e08d-d5b8-407b-a5ed-75805489ced0">
 
@@ -1972,23 +1978,21 @@ The **`6 pillars`** of the Well-Architected Framework describe **`design princip
 ##### Real-world use cases of well-architected framework
 
 
-OC PR SS
+OS RP CS
 
-1. **Operational Excellence**: You can use AWS **`CodeCommit`** for _version control to enable tracking of code changes_ and to _version-control CloudFormation templates_ of your infrastructure
+1. **`Operational Excellence`**: The operational excellence pillar focuses on **running and monitoring systems**, and **continually improving processes and procedures**. You can use AWS **`CodeCommit`** for version control to enable tracking of code changes and to version-control **`CloudFormation`** templates of your infrastructure
 
-5. **Cost Optimization**: You can use **`S3 Intelligent-Tiering`** to _automatically move your data between access tiers based on your usage patterns_
+2. **`Security`**: The security pillar focuses on **protecting information and systems**. You can configure **central logging** of all actions performed in your account using **`CloudTrail`**
 
+3. **`Reliability`**: The reliability pillar focuses on workloads **performing their intended functions** and how to **recover quickly from failure** to meet demands. You can use Multi-AZ deployments for enhanced availability and reliability of **`RDS databases`**
 
-4. **Performance Efficiency**: You can use AWS **`Lambda`** to _run code with zero administration_
-
-
-3. **Reliability**: You can use _Multi-AZ deployments_ for enhanced availability and reliability of **`RDS databases`**
+4. **`Performance Efficiency`**: The performance efficiency pillar focuses on **structured** and **streamlined allocation of IT and computing resources**. You can use AWS **`Lambda`** to run code with zero administration
 
 
+5. **`Cost Optimization`**: The cost optimization pillar focuses on **avoiding unnecessary costs**.You can use **`S3 Intelligent-Tiering`** to automatically move your data between access tiers based on your usage patterns
 
-2. **Security**: You can _configure central logging of all actions_ performed in your account using **`CloudTrail`**
 
-6. **Sustainability**:  You can use **`EC2 Auto Scaling`** to ensure you are _maximizing utilization_
+6. **`Sustainability`**: The sustainability pillar focuses on **minimizing the environmental impacts of running cloud workloads**. You can use **`EC2 Auto Scaling`** to ensure you are _maximizing utilization_
 
 > _Note_: Things to Remember
 
@@ -2922,11 +2926,14 @@ _Try out an application before making a long-term commitment_: Some products lis
 
 #### Personal Health Dashboard
 
-Personal Health Dashboard **alerts you to events** that might impact your AWS environment
+Personal Health Dashboard **alerts you to events** that might impact your AWS environment and remediation guidance
 
-- Provides **troubleshooting** guidance
-- Feedback tailored to your **specific** environment
+- Provides **troubleshooting guidance** 
+- Feedback tailored to your **specific environment**
 
+While the **Service Health Dashboard** displays the **general status of AWS services**, AWS Health Dashboard gives you a **personalized view** into the performance and availability of the AWS services underlying your AWS resources
+
+With AWS Health Dashboard, **alerts are automatically triggered by changes** in the health of AWS resources, giving you **event visibility and guidance** to help quickly diagnose and resolve issues.
 
 > _Note:_ Things to Remember
 
