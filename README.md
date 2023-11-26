@@ -1709,12 +1709,14 @@ SES: Remember that SES sends HTML-formatted emails for marketing campaigns.
 
 #### CloudWatch
 
-CloudWatch is a **`collection of services`** that help you **`monitor and observe`** your cloud resources
+সবগুলো service গুলো একত্রে collect করে monitoring করতে থাকে 
+
+CloudWatch is a **collection of services** that help you **monitor and observe your cloud resources**
 
 - Collects **`metrics`**, **`logs`**, and **`events`**
-- Detect **`anomalies`** in your environment
-- Set **`alarms`**
-- **`Visualize`** logs
+- **Detect anomalies** in your environment
+- **Set alarms**
+- **Visualize logs**
 
 
 _CloudWatch Alarms_: Set high resolution alarms
