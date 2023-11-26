@@ -758,6 +758,8 @@ Recommended for: Main directories for **business-critical apps**, **Lift-and-shi
 
 #### Storage Gateway
 
+FTP সার্ভারের মত, যেখানে সবাই মুভি জমা করে রাখহে এবং যার দরকার সে download করে নেয় 
+
 Storage Gateway is a **hybrid storage service**
 
 - Connect **on-premises** and **cloud** data 
@@ -771,10 +773,10 @@ Recommended for: **Moving backups to the cloud**, Reducing costs for hybrid clou
 
 #### AWS Backup
 
-AWS Backup helps you manage **data backups across multiple AWS services**
+AWS Backup helps you **manage data backups** across **multiple AWS services**
 
 - Integrates with resources like **`EC2`**, **`EBS`**, **`EFS`**, and more
-- Create a backup plan that includes **`frequency`** and **`retention`**
+- Create a **backup plan** that includes **frequency** and **retention**
 
 
 
@@ -784,57 +786,56 @@ AWS Backup helps you manage **data backups across multiple AWS services**
 ##### What is a content delivery network (CDN)?
 
 
-Well, the **`internet`** is all about **`delivering content`**, like websites and images and apps, and there are so many requests for massive amounts of data, like high-definition videos, large downloads, and more. Wouldn't it be nice if there were a **`service`** that ensured **`fast download times`**? Well, that's where a content delivery network comes into play.
+Well, the **internet** is all about **delivering content**, like websites and images and apps, and there are so many requests for massive amounts of data, like high-definition videos, large downloads, and more. Wouldn't it be nice if there were a **service** that ensured **fast download times**? Well, that's where a content delivery network comes into play.
 
-A CDN is a mechanism to **`deliver content quickly`** and efficiently based on **`geographic location`**. Low latency is good!
+A CDN is a mechanism to **deliver content quickly** and efficiently based on **geographic location**. Low latency is good!
 
 
-**`Amazon CloudFront is a CDN`** that delivers data and applications globally with low latency.
+**`Amazon CloudFront`** is a CDN that **delivers data and applications globally** with low latency.
 
-- Makes content available **`globally`** or restricts it based on location
-- **`Speeds up`** delivery of  static and dynamic web content
-- Uses **`edge locations`** to **`cache`** content
-- Even if your app is in a single Region, it can still be **`delivered globally`** because of CloudFront
+- **Makes content available globally** or **restricts it based on location**
+- **Speeds up** delivery of **static and dynamic web content**
+- Uses **`edge locations`** to **cache** content
+- Even if your app is in a single Region, it can still be **delivered globally** because of CloudFront
 
 > _Note_: Did you know that if the content is already in the edge location, CloudFront delivers it immediately? If not, CloudFront retrieves the files from the origin.
 
 
-- **`CloudFront distribution cache`** is just the name given to a **`collection of edge locations`** and remember, an 
-- edge location is like a **`mini data center`** where files are cached.
+- **`CloudFront distribution cache`** is just the name given to a **collection of edge locations**
+- edge location is like a **mini data center** where files are cached.
 
 <img width="800" alt="Screenshot 2023-10-15 at 1 40 35 PM" src="https://github.com/Mohsem35/AWS-Learning/assets/58659448/c0947378-734f-487b-a411-ed90df358566">
 
 
+##### Amazon CloudFront Use cases
 
-##### Use cases
+1. **S3 static websites**: CloudFront is often used with S3 to deploy content globally.
 
-1. **`S3 static websites`**: CloudFront is often used with S3 to deploy content globally.
-
-2. **`Prevent attacks`**: CloudFront can stop certain web attacks, like _DDoS_. 
-3. **`IP addresses blocking`**: Geo-restriction prevents users in certain countries from accessing content.
+2. **Prevent attacks**: CloudFront can **stop** certain web attacks, like **DDoS**. 
+3. **IP addresses blocking**: Geo-restriction prevents users in certain countries from accessing content.
 
 
 
 
 #### Amazon Global Accelerator
 
-Global Accelerator  **`sends your users`** through the **`AWS global network`** when _accessing your content, speeding up delivery_
+Global Accelerator  **sends your users** through the **`AWS global network`** when accessing your content, **speeding up delivery**
 
-- _Improves latency and availability_ of **`single-Region applications`**
-- Sends traffic through the AWS global network infrastructure
+- _Improves latency and availability_ of **single-Region applications**
+- **Sends traffic through** the AWS global network infrastructure
 - **`60%`** performance boost
-- **`Automatically re-routes traffic`** to healthy available **`regional endpoints`**
+- **Automatically re-routes traffic** to healthy available **regional endpoints**
 
 
 
 
 #### Amazon S3 Transfer Acceleration
 
-S3 Transfer Acceleration improves content **`uploads and downloads to and from S3 buckets`**
+S3 Transfer Acceleration improves content **uploads and downloads to and from S3 buckets**
 
-- **`Fast transfer`** of files over **`long distances`**
-- **`Uses`** CloudFront’s globally distributed **`edge locations`**
-- Customers around the world can upload to a **`central bucket`**
+- **Fast transfer** of files over **long distances**
+- **Uses CloudFront’s** globally distributed **edge locations**
+- Customers around the world can **upload** to a **central bucket**
 
 
 > Note: Things to Remember  
@@ -851,12 +852,12 @@ S3 Transfer Acceleration: Remember S3 Transfer Acceleration provides fast transf
 <img width="600" alt="1687361452587" src="https://github.com/Mohsem35/AWS-Learning/assets/58659448/22bda7cc-5127-4a6a-9bbf-00fdcc527f27">
 
 
-VPC is a foundational service that allows you to create a **`secure private network`** in the AWS cloud where you launch your resources.
+VPC is a foundational service that allows you to create a **secure private network** in the AWS cloud where you launch your resources.
 
-- **`Private`** virtual network
-- **`Launch`** resources like EC2 instances inside the VPC
-- Isolate and **`protect resources`**
-- A VPC **`spans Availability Zones`** in a Region
+- **Private virtual network**
+- Launch resources like EC2 instances inside the VPC
+- Isolate and protect resources
+- A VPC **spans Availability Zones in a Region**
 
 ![Screenshot from 2023-10-17 19-15-35](https://github.com/Mohsem35/AWS-Learning/assets/58659448/96d53108-312d-4ee0-ae01-88c9257c8a54)
 
@@ -866,16 +867,18 @@ VPC is a foundational service that allows you to create a **`secure private netw
 ![Screenshot from 2023-10-17 19-18-04](https://github.com/Mohsem35/AWS-Learning/assets/58659448/bc11a2fe-b59e-4aca-8bf8-66c4e990083c)
 
 
-First, we have a **`NACL (or network access control list)`**. This ensures the **`proper traffic`** is allowed into the **`subnet`** and you can use it to block traffic to a particular instance.
+##### VPC Components
+
+**`NACL (or network access control list)`**: This ensures the **proper traffic** is allowed into the **`subnet`** and you can use it to **block traffic** to a particular instance.
 
 **`Router & Route Table`**: Defines where network traffic is routed
 
-**`Internet Gateway`**: allows public traffic to the internet from a VPC
+**`Internet Gateway`**: allows **public traffic to the internet** from a VPC
 
 ![Screenshot from 2023-10-17 19-22-50](https://github.com/Mohsem35/AWS-Learning/assets/58659448/6ccb378c-c100-441f-a107-0d004bcefddb)
 
 
-Now _behind the scenes, the wizard is doing a lot for you_  . It's creating a VPC with a range of IP addresses, it's **`attaching an internet gateway to the VPC`**, creating a **`subnet`** creating a **`custom route table`**, and associating it with the subnet, and that basically allows the traffic to flow between the subnet and the internet gateway.
+Now _behind the scenes, the wizard is doing a lot for you_  . It's creating a VPC with a range of IP addresses, it's **attaching an internet gateway to the VPC**, creating a **subnet** creating a **custom route table**, and associating it with the subnet, and that basically allows the traffic to flow between the subnet and the internet gateway.
 
 > **_Note_**: Things to Remember When
 Don't forget an _internet gateway allows traffic to the public internet_ and _peering connects 2 VPCs together_
@@ -887,15 +890,17 @@ create a VPC(only) -> create public subnet -> Enable auto-assign public IPv4 add
 
 Q: What Is DNS?
 
-DNS stands for **`Domain Name System`** and directs internet traffic by connecting domain names with web servers.
+DNS stands for **Domain Name System** and directs internet traffic by **connecting domain names** with web servers.
 
 ![Amazon-Route-53](https://github.com/Mohsem35/AWS-Learning/assets/58659448/4ee3bbb9-6dad-41a5-aa8d-bc8a2ec35ce8)
 
 #### Amazon Route 53
 
-- Domain name registration
-- Performs **`health checks`** on AWS resources
-- Supports **`hybrid`** cloud architectures
+AWS resource গুলোর health check করতে পারে Route 53
+
+- **Domain name registration**
+- Performs **health checks on AWS resources**
+- Supports **hybrid** cloud architectures
 
 
 
@@ -905,31 +910,30 @@ DNS stands for **`Domain Name System`** and directs internet traffic by connecti
 
 
 
-Direct Connect is a **`dedicated physical network connection`** from your on-premises data center to AWS.
+Direct Connect is a **dedicated physical network connection** from your **on-premises data center to AWS**.
 
-- Dedicated **`physical`** network connection
-- Connects your **`on-premises`** data center to **`AWS`**
-- Data travels over a **`private network`** (over the public internet দিয়ে data travel করে না )
-- Supports a **`hybrid`** environment
+- Dedicated **physical** network connection
+- Connects your on-premises data center to AWS
+- **Data travels over a private network** (over the public internet দিয়ে data travel করে না )
+- Supports a **hybrid** environment
 
-A hybrid cloud is a combination of public and private clouds.
 
 ![Screenshot from 2023-10-18 18-40-35](https://github.com/Mohsem35/AWS-Learning/assets/58659448/65b8fa56-6fc1-4b0a-86d6-5ee63a152a82)
 
 
 ##### Use cases of Direct Connect
 
-1. **`Large datasets`**: Transfer large datasets to AWS 
-2. **`Business-critical data`**: Transfer internal data directly to AWS, bypassing your internet service provider
-3. **`Hybrid model`**: Build hybrid environments
+1. **Large datasets**: Transfer large datasets to AWS 
+2. **Business-critical data**: **Transfer internal data directly to AWS**, bypassing your internet service provider
+3. **Hybrid model**: Build hybrid environments
 
 
 #### AWS VPN
 
-**`Site-to-Site VPN`** creates a secure connection between your internal networks and your AWS VPCs. 
+**Site-to-Site VPN** creates a secure connection **between your internal networks and AWS VPCs**. 
 
-- **`Similar to Direct Connect`**, but data travels over the **`public internet`** 
-- **`Data`** is automatically **`encrypted`**
+- **Similar to Direct Connect**, but data travels over the **public internet** 
+- **Data** is **automatically encrypted**
 
 
 **Moving Applications**: A **`Site-to-Site`** VPN makes moving applications to the cloud easier.
@@ -939,19 +943,20 @@ Site-to-Site VPN in the Real World
 
 ![Screenshot from 2023-10-18 18-55-24](https://github.com/Mohsem35/AWS-Learning/assets/58659448/dea8be83-b874-4c9e-b802-f90d62be59d0)
 
-**`Virtual Private Gateway`**: The VPN connector on the AWS side
-**`Customer Gateway`**: The VPN connector on the customer side
+**Virtual Private Gateway**: The VPN connector on the **AWS side**
 
-AWS VPN is **`slightly cheaper`** than AWS Direct Connect
+**Customer Gateway**: The VPN connector on the **customer side**
+
+AWS VPN is **slightly cheaper** than AWS Direct Connect
 
 
 
 #### API Gateway
 
-API Gateway allows you to build and manage APIs
+API Gateway allows you to **build and manage APIs**
 
-- **`Share`** data between systems
-- **`Integrate`** with services like **`Lambda`**
+- **Share data between systems**
+- **Integrate** with services like **`Lambda`**
 
 API Gateway in the Real World
 
@@ -975,13 +980,13 @@ API Gateway in the Real World
 ![Amazon-RDS](https://github.com/Mohsem35/AWS-Learning/assets/58659448/274a3c6d-b07d-4e68-a940-994dbc52a0ce)
 
 
-RDS is a **`service`** that makes it easy to **`launch and manage relational`** databases
+RDS is a **service** that makes it easy to **launch and manage relational databases**
 
 
-- Supports popular **`database engines`**
-- Offers **`high availability`** and fault tolerance using **`Multi-AZ`** deployment option
-- **`AWS manages`** the database with _automatic software patching,  automated backups, operating system maintenance,_ and more.
-- Launch **`read replicas`** across Regions in order to provide enhanced **`performance`** and **`durability`**
+- Supports popular **database engines**
+- **Offers high availability** and **fault tolerance** using **`Multi-AZ`** deployment option
+- **AWS manages** the database with _automatic software patching,  automated backups, operating system maintenance,_ and more.
+- Launch **`read replicas`** across Regions in order to provide **enhanced performance** and **durability**
 
 
 
@@ -991,8 +996,8 @@ Aurora is a relational database compatible with **`MySQL`** and **`PostgreSQL`**
 
 - Supports MySQL and PostgreSQL database engines
 - **`5x`** faster than normal MySQL and **`3x`** faster than normal PostgreSQL
-- **`Scales automatically`** while  providing durability and high availability 
-- Managed by **`RDS`**
+- **Scales automatically** while  providing durability and high availability 
+- **Managed by RDS**
 
 #### Amazon DynamoDB
 
@@ -1000,22 +1005,22 @@ Aurora is a relational database compatible with **`MySQL`** and **`PostgreSQL`**
 ![amazondynamodb](https://github.com/Mohsem35/AWS-Learning/assets/58659448/293e472c-fb5b-4d79-99ca-13dff8c3fe85)
 
 
-DynamoDB is a fully managed _NoSQL_ **`key-value`** and **`document`** database.
+DynamoDB is a fully managed **NoSQL** **`key-value`** and **`document`** database.
 
 - **`NoSQL`** key-value database
-- Fully managed and **`serverless`**
+- Fully managed and **serverless**
 - Non-relational
-- Scales automatically to massive workloads with fast performance
+- Scales automatically to **massive workloads with fast performance**
 
 
 
 #### Amazon DocumentDB
 
-DocumentDB is a **`fully managed document database`** that supports **`MongoDB`**
+DocumentDB is a fully managed **document database** that supports **`MongoDB`**
 
 - Document database
 - **`MongoDB`** compatible
-- Fully managed and **`serverless`**
+- Fully managed and **serverless**
 - Non-relational
 
 
@@ -1029,15 +1034,15 @@ ElastiCache is a fully managed **in-memory datastore** compatible with Redis or 
 - **Data can be lost**
 - Offers **high** performance and **low latency**
 
-Amazon ElastiCache for Redis is fully managed, scalable, and secure. This makes it an **ideal candidate to power high-performance use cases** such as web, mobile apps, gaming, ad-tech, and IoT
+Amazon ElastiCache for Redis is fully managed, scalable, and secure. This makes it an **ideal candidate to power high-performance use cases** such as **web**, **mobile apps**, **gaming**, **ad-tech**, and **IoT**
 
 
 #### Amazon Neptune
 
-Neptune is a fully managed **`graph database service`** that supports highly connected datasets.
+Neptune is a fully managed **graph database service** that supports highly connected datasets.
 
 
-- Supports highly connected datasets like **`social media`** networks
+- Supports highly connected datasets like **social media** networks
 - Fully managed and **`serverless`**
 - Fast and reliable
 
@@ -1053,14 +1058,14 @@ _Q2: Migrate an on-premises PostgreSQL database to the cloud._
 
 - RDS & Aurora
 
-_Q3. Alleviate database load for data that is accessed often_
+_Q3. **Alleviate database load** for data that is accessed often_
 - ElastiCache
 
-_Q4. Process large sets of user profiles and social interactions _
+_Q4. Process large sets of user profiles and social interactions_
 
 - Neptune
 
-_Q5. NoSQL database fast enough to handle millions of requests per second._
+_Q5. NoSQL database fast enough to **handle millions of requests per second**._
 
 - DynamoDB
 
@@ -1094,12 +1099,12 @@ A lot of companies are migrating to the cloud, and they need inexpensive, fast, 
 <img width="461" alt="Screenshot 2023-10-20 at 6 32 54 PM" src="https://github.com/Mohsem35/AWS-Learning/assets/58659448/52ad948d-1363-494f-8685-22085119c0aa">
 
 
-DMS helps you **`migrate databases to or within AWS`**
+DMS helps you **migrate databases to or within AWS**
 
 - Migrate on-premises databases to AWS
-- **`Continuous`** data replication
-- Supports **`homogeneous`** and **`heterogeneous`** migrations
-- Virtually **`no downtime`**
+- **Continuous data replication**
+- Supports **homogeneous** and **heterogeneous** migrations
+- **Virtually no downtime**
 
 
 
@@ -1117,32 +1122,32 @@ Let's discuss when you would use DMS in the real world.
 
 <img width="371" alt="Screenshot 2023-10-20 at 6 33 05 PM" src="https://github.com/Mohsem35/AWS-Learning/assets/58659448/c2a2f068-aff1-442d-a54e-5786ee366fc3">
 
-SMS allows you to **`migrate on-premises servers to AWS`**
+SMS allows you to **migrate on-premises servers to AWS**
 
-- Migrates **`on-premises`** servers to AWS
+- Migrates **on-premises** servers to AWS
 - Server saved as a new **`Amazon Machine Image (AMI)`**
-- Use **`AMI`** to launch servers as **`EC2`** instances
+- Use **`AMI`** to **launch servers** as **`EC2`** instances
 
 ![Screenshot from 2023-10-18 20-45-46](https://github.com/Mohsem35/AWS-Learning/assets/58659448/aa81be60-e429-4bb2-b05b-cd2806ec2150)
 
 ##### Snow Family
 
-The Snow Family allows you to transfer **`large`** amounts of on-premises data to AWS using a **`physical device`**
+The Snow Family allows you to transfer **large amounts of on-premises data to AWS** using a  **physical device**
 
 
 **Showcone**
 
-- The **`smallest`** member of data transport devices
+- The **smallest** member of data transport devices
 - **`8 terabytes`** of usable storage
-- **`Offline`** shipping
-- **`Online`** with **`DataSync`**
+- **Offline shipping**
+- **Online with DataSync**
 
 
 **Showball & Snowball Edge**
 
 - **`Petabyte`**-scale data transport solution 
 - Transfer data **`in`** and **`out`**
-- **`Cheaper`** than internet transfer
+- **Cheaper than internet transfer**
 - Snowball Edge supports **`EC2`** and **`Lambda`**
 
 
@@ -1150,21 +1155,21 @@ The Snow Family allows you to transfer **`large`** amounts of on-premises data t
 
 
 - **`Multi-petabyte`** or **`exabyte`** scale
-- Data loaded to **`S3`**
-- **`Securely`** transported
+- **Data loaded to `S3`**
+- **Securely transported**
 
 
 
 
 
-#### DataSync
+#### AWS DataSync
 
-DataSync allows for **`online data transfer`** from on-premises to AWS storage services like **`S3 or EFS`**
+DataSync allows for **online data transfer** from on-premises to AWS storage services like **`S3 or EFS`**
 
-- Migrates data from **`on-premises`** to AWS
-- Copy data over **`Direct Connect`** or the **`internet`**
-- Copy data **`between`** _AWS storage services_
-- Replicate data **`cross-Region`** or **`cross-account`**
+- Migrates data from **on-premises to AWS**
+- Copy data over **`Direct Connect`** or the **internet**
+- Copy data between AWS storage services
+- **Replicate data cross-Region or cross-account**
 
 
 
@@ -1187,11 +1192,11 @@ DataSync allows for **`online data transfer`** from on-premises to AWS storage s
 
 Q: What is a data warehouse?
 
-A data warehouse is a **`data storage`** solution that **`aggregates`** massive amounts of historical data from **`disparate sources`**.
+A data warehouse is a **data storage solution** that **aggregates massive amounts of historical data** from **disparate sources**.
 
 Q: What are the benefits of a data warehouse?
 
-Data warehouses support _querying, reporting, analytics, and business intelligence_. They are _not used for transaction processing_
+Data warehouses support **querying, reporting, analytics, and business intelligence**. They are **not** used for transaction processing
 
 
 #### Amazon Redshift
@@ -1200,16 +1205,16 @@ Data warehouses support _querying, reporting, analytics, and business intelligen
 
 Redshift is a scalable data warehouse solution
 
-- **`Data warehousing`** solution
+- **Data warehousing** solution
 - Improves **`speed`** and **`efficiency`**
-- Handles **`exabyte`**-scale data
+- Handles **exabyte**-scale data
 
 
-##### Use Cases
+##### Amazon Redshift Use Cases
 
-1. _Data consolidation_: When you need to consolidate **`multiple data sources`** for reporting
+1. **Data consolidation**: When you need to consolidate multiple data sources for reporting
 
-2. _Relational databases_: When you want to run a database that **`doesn't`** require **`real-time transaction`** processing (insert, update, and delete)
+2. **Relational databases**: When you want to run a database that **doesn't** require **real-time transaction** processing (insert, update, and delete)
 
 
 
@@ -1218,20 +1223,22 @@ Redshift is a scalable data warehouse solution
 <img width="352" alt="Screenshot 2023-10-20 at 7 06 39 PM" src="https://github.com/Mohsem35/AWS-Learning/assets/58659448/4250f5ad-abec-4e0c-8d57-490597894232">
 
 
-Athena is a **`query service`** for Amazon S3
+Athena is a **query service for Amazon S3**
 
-- Analyze **`S3`** data using **`SQL`**
-- Pay **`per query`**
-- Considered **`serverless`**
+- **Analyze `S3`** data **using `SQL`**
+- **Pay per query**
+- Considered **serverless**
 
 
 
 #### Glue
 
-Glue **`prepares and load your data for analytics`**
+ETL এর কাজ করে সে 
+
+Glue **prepares and load your data for analytics**
 
 - Extract, transform, load (**`ETL`**) service
-- Helps to **`better understand`** your data
+- Helps to **better understand your data**
 
 
 
@@ -1240,11 +1247,11 @@ Glue **`prepares and load your data for analytics`**
 <img width="378" alt="Screenshot 2023-10-20 at 7 06 54 PM" src="https://github.com/Mohsem35/AWS-Learning/assets/58659448/eb838ed5-17c6-47b2-865d-30e2a80ad6f9">
 
 
-Kinesis allows you to _analyze data_ and **`video streams`** in real time.
+Kinesis allows you to **analyze data** and **video streams in real time**
 
 
-- Analyze real-time, **`streaming`** data
-- Supports **`video`**, **`audio`**, application logs, website clickstreams, and **`IoT`**
+- Analyze **real-time, streaming** data
+- Supports **video**, **audio**, **application logs**, **website clickstreams**, and **IoT**
 
 
 
@@ -1262,28 +1269,29 @@ EMR helps you **process large amounts of data**
 
 #### Data Pipeline
 
-Data Pipeline helps you **`move data between`** _compute and storage services_ running either on _AWS or on-premises_
+compute and storage service এর মধ্যে data transfer করে data pipeline
+
+Data Pipeline helps you **move data between compute and storage services** running either on _AWS or on-premises_
 
 
-- Moves data at specific **`intervals`**
-- Moves data based on **`conditions`**
-- Sends **`notifications`** on success or failure
+- **Moves data** at specific **intervals**
+- **Moves data** based on **conditions**
+- Sends **`notifications`** on **success or failure**
 
 
 #### QuickSight
 
-QuickSight helps you visualize your data.
+QuickSight helps you **visualize your data**
 
-- Build **`interactive dashboards`**
-- **`Embed`** dashboards in your applications
+- Build **interactive dashboards**
+- **Embed** dashboards in your applications
 
 
-
-Q: Search data in S3 ?
+_Q1: Search data in S3 ?_
  
 Athena
 
-Q: Log analytics?
+_Q2: Log analytics?_
 
 Kinesis
 
@@ -1293,12 +1301,12 @@ Kinesis
 
 #### Rekognition
 
-Rekognition allows you to **`automate your image and video analysis`**
+Rekognition allows you to **automate your image and video analysis**
 
 
 - Image and video analysis
-- Identify **`custom labels`** in images and videos
-- **`Face and text detection`** in images and videos
+- Identify **custom labels** in images and videos
+- **Face and text detection** in images and videos
 
 
 
@@ -1309,11 +1317,15 @@ _Analyze pizza images_: Rekognition could help Alfredo _identify the toppings_ o
 
 #### Comprehend
 
+NLP মানেই comprehend
+
+social media থেকে vulgar text খুঁজে বের করতে NLP লাগে 
+
 Comprehend is a natural-language processing (**`NLP`**) service that finds relationships in text.
 
 
-- Uncovers **`insights`** and **`relationships`**
-- **`Analyzes text`**
+- Uncovers **insights** and **relationships**
+- **Analyzes text**
 
 
 ##### Use cases
@@ -1323,10 +1335,10 @@ _Review social media posts_: Comprehend could help Alfredo process social media 
 
 #### Polly
 
-Polly **`turns text into speech`**
+Polly **turns text into speech**
 
-- **`Mimics`** natural-sounding **`human speech`**
-- **`Several voices`** across many languages
+- **Mimics** natural-sounding **human speech**
+- **Several voices** across many languages
 - Can create a **`custom voice`**
 
 
@@ -1339,47 +1351,49 @@ _Add complementary audio_: Polly could convert the text on a _blog post to speec
 
 #### SageMaker
 
-SageMaker helps you _build, train, and deploy_ machine learning **`models quickly`** 
+SageMaker helps you **build**, **train**, and **deploy** machine learning **`models quickly`** 
 
 
-- **`Prepare data`** for models
+- **Prepare data** for models
 - **`Train`** and **`deploy`** models
 - Provides Deep Learning Amazon Machine Learning Images(**`AMIs`**)
 
 
 ##### Use cases
 
-_Recommendation engine_: Companies like **`Netflix`** and **`Amazon`** use machine learning models to _recommend movies and products to buy_. SageMaker is a great tool for creating these models.
+**Recommendation engine**: Companies like **`Netflix`** and **`Amazon`** use machine learning models to r**ecommend movies and products to buy**. SageMaker is a great tool for creating these models.
 
 
 
 
 #### Translate
 
-Translate provides language translation.
+Translate provides **language translation**.
 
 - Provides **`real-time`** and batch language **`translation`**
-- Supports **`many languages`**
-- **`Translates`** many content formats
+- **Supports many languages**
+- **Translates** many content formats
 
-##### Use cases
+##### Use cases of translate
 
-_Add localization to websites or applications_: 
+**Add localization to websites or applications**: 
 Translate allows you to add localization to your applications to support your diverse user base. Translate supports several popular languages.
 
 
 
 #### Lex
 
-Lex helps you _build conversational interfaces_ like **`chatbots`**
+Chatbot মানেই lex
 
-- Recognizes speech and understands language
+Lex helps you **build conversational interfaces** like **`chatbots`**
+
+- **Recognizes speech** and understands language
 - Build highly engaging chatbots
 - Powers Amazon **`Alexa`**
 
 
-##### Use cases
-_Integrate voice into a device:_ Amazon used the **`same technologies`** that power Lex to integrate Amazon Alexa with the Echo device.
+##### Use cases of lex
+**Integrate voice into a device**: Amazon used the **same technologies** that power Lex to integrate Amazon Alexa with the Echo device.
 
 
 
@@ -1394,43 +1408,47 @@ Rekognition: Don't forget Rekognition processes videos and images.
 
 #### Cloud9
 
-Cloud9 allows you to write code within an integrated development environment (**`IDE`**) from within your **`web browser`** 
+platform as a service
 
-- **`Write`** and **`debug`** code
-- Supports popular **`programming languages`**
+Cloud9 allows you to write code within an integrated development environment (**`IDE`**) from **within your web browser** 
+
+- **Write and debug** code
+- **Supports  popular programming languages**
 
 
-##### Use cases
+##### Use cases of cloud9
 
-_Build serverless applications_: Cloud9 preconfigures the development environment with the needed **`SDKs and libraries`**. You can easily write the code for your **`Lambda`** function directly in your web browser. 
+_Build serverless applications_: Cloud9 **preconfigures** the development environment with the needed **`SDKs and libraries`**. You can easily write the code for your **Lambda function** directly in your web browser. 
 
 
 #### CodeCommit
 
-CodeCommit is a **`source control system`** for _private Git repositories_
+GitHub, GitLab বুঝতে আমরা যা বুঝি,তাই হল codecommit
 
-- Create **`repositories`** to store code
-- Commit, branch, and merge **`code`**
+CodeCommit is a **source control system** for **private Git repositories**
+
+- **Create repositories** to store code
+- **Commit, branch, and merge** code
 - Collaborate with other software developers
 
 
-##### Use cases
+##### Use cases of codecommit
 
 
-_Manage versions of source code files for your applications_: CodeCommit can be used to manage source code and the different versions of application files.  CodeCommit is **`similar to GitHub`**
+_Manage versions of source code files for your applications_: CodeCommit can be used to manage source code and the different versions of application files.  CodeCommit is **similar to GitHub**
 
 
 
 #### CodeBuild
 
-CodeBuild allows you to build and test your application source code. 
+CodeBuild allows you to **build and test your application source code**. 
 
-- **`Compiles`** source code and **`runs`** tests
-- Enables continuous **`integration`** and **`delivery`**
-- Produces **`build s`** ready to be deployed
+- Compiles source code and runs tests
+- Enables **continuous integration and delivery**
+- Produces **builds ready to be deployed**
 
 
-##### Use cases
+##### Use cases of codebuild
 
 _Run tests before deploying a new version of an application to production_: CodeBuild allows you to run as many parallel streams of tests as needed, allowing you to deploy your changes to production more quickly. 
 
@@ -1438,66 +1456,71 @@ _Run tests before deploying a new version of an application to production_: Code
 
 #### CodeDeploy
 
-CodeDeploy _manages_ the **`deployment of code`** to compute services in the cloud or on-premises.
+On-premise অথবা cloud তে কোড ডিপ্লয় দিতে গেলে এই সার্ভিস লাগবে এবং ডিপ্লয় হওয়ার সময় কোন downtime হবে না  
 
-- **`Deploys code`** to _EC2, Fargate, Lambda, and on-premises_
-- Maintains application **`uptime`**
+CodeDeploy manages the **deployment of code** to compute services **in the cloud or on-premises**.
 
-##### Use cases
+- Deploys code to _EC2, Fargate, Lambda, and on-premises_
+- Maintains application uptime
 
+##### Use cases of codedeploy
 
-_Maintain application uptime when rolling out a new version:_ CodeDeploy **`eliminates the downtime`** of your application when deploying a new version due to its rolling deployments.
+**Maintain application uptime when rolling out a new version**: CodeDeploy **eliminates the downtime** of your application when deploying a new version due to its rolling deployments.
 
 
 #### CodePipeline
 
-CodePipeline automates the **`software release process`**
+codecommit + codebuild + codedeploy  এই ৩ টা সম্বনয়ে যা হইত
 
-- **`Quickly`** deliver new features and updates
-- Integrates with **`CodeBuild`** to run builds and **`unit tests`**
-- Integrates with **`CodeCommit`** to retrieve source code
-- Integrates with **`CodeDeploy`** to deploy your changes
+CodePipeline automates the **software release process**
+
+- Quickly deliver new features and updates
+- Integrates with CodeBuild to run builds and unit tests
+- Integrates with CodeCommit to retrieve source code
+- Integrates with CodeDeploy to deploy your changes
 
 
 
-##### Use cases
+##### Use cases of codepipeline
 
-_Add automation to the building, testing, and deployment of your application:_ When combined with other developer tools, CodePipeline helps development teams implement **`DevOps`** practices that automate testing and the movement of code to production. 
+Add **automation to the building, testing, and deployment of your application**: When combined with other developer tools, CodePipeline helps development teams implement **`DevOps`** practices that **automate testing and the movement of code to production**. 
 
 
 #### X-Ray
 
-X-Ray helps you **`debug production applications`**
+পুরা application কে যদি analyze and debug করতে চাই, তাহলে x-ray লাগবে 
 
-- **`Analyze`** and **`debug`** production applications
-- **`Map`** application components
-- **`View requests`** end to end
+X-Ray helps you **debug production applications**
 
-##### Use cases
+- **Analyze** and **debug** production applications
+- **Map application components**
+- **View requests end to end**
 
-_Trace calls to an RDS database_: X-Ray can help you **`map requests made to your RDS database`** from within your application. You can track information about the SQL queries generated and more.
+##### Use cases of  X-Ray
+
+**Trace calls to an RDS database**: X-Ray can help you map requests made to your RDS database from within your application. You can track information about the SQL queries generated and more.
 
 
 
 #### CodeStar
 
+JIRA type solution এইটা 
+
 <img width="350" alt="Screenshot 2023-10-20 at 8 30 49 PM" src="https://github.com/Mohsem35/AWS-Learning/assets/58659448/fcceac00-6654-4403-a827-3c4717f3b032">
 
 
-CodeStar helps developers **`collaboratively`** work on development projects
+CodeStar helps **developers collaboratively work on development projects**
 
 
-- Developers **`connect`** their development environment
-- Integrates with **`CodeCommit, CodeBuild, and CodeDeploy`**
-- Contains **`issue tracking dashboard`**
+- Developers connect their development environment
+- Integrates with CodeCommit, CodeBuild, and CodeDeploy
+- Contains **issue tracking dashboard**
 
 
 
-##### Use cases
+##### Use cases of codestar
 
-_CodeStar can manage the development pipeline:_
-
-
+CodeStar can manage the development pipeline
 
 > _Note_: Things to Remember
 
@@ -1510,14 +1533,12 @@ Cloud9: Don't forget Cloud9 offers an integrated development environment (IDE) t
 CodePipeline: Don't forget CodePipeline allows you to implement a **`CI/CD`** pipeline.
 
 
-
-
 ### Deployment and Infrastructure Management Services
 
 These services help you _quickly stand up new applications_, _automate the management of infrastructure_, and _provide real-time visibility into system health_
 
 
-**`IaC`** allows you to write a **`script`** to provision AWS resources. The benefit is that you provision resources in a **`reproducible`** manner that saves time
+**`IaC`** allows you to write a **script to provision AWS resources**. The benefit is that you provision resources in a **reproducible manner** that saves time
 
 
 ```
@@ -1554,15 +1575,19 @@ _Automate the infrastructure-provisioning process for EC2 servers:_ You can use 
 
 #### Elastic Beanstalk
 
+
+
 আমার কাজ শুধু code upload দেয়া, বাকি যা কিছু আছে provisioning, scaling, monitoring সবকিছু Beanstalk সামলে নিবে 
+
+Resouce provisioning এর কাজ হল Elastic Beanstalk
 
 Elastic Beanstalk is an easy-to-use service for **deploying** and **scaling web applications and services** developed with Java, .NET, PHP, Node.js, Python, Ruby, Go, and Docker on familiar servers such as Apache, Nginx, Passenger, and Internet Information Services (IIS)..
 
 You can **simply upload your code**, and AWS Elastic **Beanstalk automatically handles the deployment**, from **capacity provisioning**, load balancing, and **auto scaling** to **application health monitoring**. At the same time, you retain full control over the AWS resources powering your application and can access the underlying resources at any time.
 
-- Orchestration service that **`provisions`** resources
-- Automatically handles the **`deployment`**
-- **`Monitors`** application health via a **`health dashboard`**
+- **Orchestration service** that **provisions resources**
+- **Automatically handles** the **deployment**
+- Monitors application health via a **health dashboard**
 
 In reality, Elastic Beanstalk is a **compute service**, but it's used when you are ready to deploy your application
 
@@ -1575,6 +1600,8 @@ _Quickly deploy a scalable Java-based web application to AWS_
 
 
 #### AWS OpsWorks
+
+Resouce configuration এর কাজ হল AWS OpsWorks
 
 AWS OpsWorks is a **configuration management service** that provides managed instances of Chef and Puppet. **`Chef`** and **`Puppet`** are automation platforms that allow you to **use code to automate the configurations of your servers**.
 
@@ -1601,25 +1628,25 @@ OpsWorks: Remember that OpsWorks can deploy applications on-premises, and it als
 
 
 
-### Utilizing Messaging and Integration Services: SQS
+### Utilizing Messaging and Integration Services
 
 #### Simple Queue Service (SQS)
 
-SQS is a message queuing service that allows you to build **`loosely coupled distributed systems`** with **`FIFO`**
+SQS is a **message queuing service** that allows you to build **loosely coupled distributed systems** with **`FIFO`**
 
 
-- Allows **`component-to-component`** communication using **`messages`**
+- Allows **component-to-component** communication using **messages**
 - Multiple components (or producers) can **`add`** messages to the **`queue`**
-- Messages are processed in an **`asynchronous`** manner
+- Messages are processed in an **asynchronous** manner
 
 
 
-##### Use cases
+##### Use cases of SQS
 
 <img width="800" alt="Screenshot 2023-10-21 at 8 08 03 AM" src="https://github.com/Mohsem35/AWS-Learning/assets/58659448/b50589f0-a14d-481d-b691-a996fd973547">
 
 
-_Build a money transfer app that performs well under heavy load:_ SQS lets you build an app that is loosely coupled, allowing components to send, store, and receive messages. The use of a messaging queue helps to improve performance and scalability. 
+**Build a money transfer app that performs well under heavy load**: SQS lets you build an app that is loosely coupled, allowing components to send, store, and receive messages. The use of a messaging queue helps to improve performance and scalability. 
 
 
 > _Note:_ Things to Remember
@@ -1636,15 +1663,15 @@ SQS:
 
 #### Simple Notification Service (SNS)
 
-SNS allows you to **`send emails and text messages`** from your applications.
+SNS allows you to **send emails and text messages** from your applications.
 
-- Publish messages to a **`topic`**
-- **`Subscribers`** receive messages
+- **Publish message**s to a **topic**
+- **Subscribers** receive messages
 
 
 ##### Use cases
 
-_Send an email when CPU utilization of an EC2 instance goes above 80%:_ SNS works with **`CloudWatch`** when an alarm's metric threshold is breached to send an email.
+**Send an email when CPU utilization of an EC2 instance goes above 80%**: SNS works with **`CloudWatch`** when an alarm's metric threshold is breached to send an email.
 
 <img width="442" alt="Screenshot 2023-10-21 at 8 17 43 AM" src="https://github.com/Mohsem35/AWS-Learning/assets/58659448/a3dd9875-65ce-4855-bbe5-09a2c4074237">
 
@@ -1652,9 +1679,9 @@ _Send an email when CPU utilization of an EC2 instance goes above 80%:_ SNS work
 
 #### Simple Email Service (SES)
 
-SES is an **`email service`** that allows you to send richly **`formatted HTML`** emails from your applications
+SES is an **email service** that allows you to send richly **`formatted HTML`** emails from your applications
 
-- Ideal choice for **`marketing campaigns`** or **`professional`** emails
+- Ideal choice for **marketing campaigns** or **professional** emails
 - Unlike SNS, SES sends **`HTML`** emails
 
 
@@ -3135,5 +3162,4 @@ _Q: Which features of AWS reduce your total cost of ownership (TCO)?_
 - Elastic computing
 - Pay-as-you-go pricing model
 - Multi-tenancy
-
 
