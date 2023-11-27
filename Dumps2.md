@@ -453,3 +453,776 @@ _Q65: According to the Shared Responsibility Model, which of the following is AW
 
 
 
+## Dump 5
+
+Question 1
+
+A company has developed a new web application that uses Amazon RDS MySQL as the backend database. The company wants to ensure the application is highly available. Which feature of RDS can ensure high availability?
+
+**Using Multi-AZ deployment**
+
+> RDS provides high availability and failover support for databases when using Multi-AZ deployments.
+
+
+Question 2
+
+VMware Cloud on AWS allows companies to migrate and extend their on-premises VMware vSphere-based environments to AWS Cloud using Amazon EC2. Which of the following choices accurately classifies this deployment model?
+
+**Hybrid**
+
+> Hybrid deployments connect infrastructure and applications between cloud-based resources and existing resources that are not located in the cloud. VMware Cloud on AWS is an example of a hybrid deployment, since it involves the on-premises environments of VMware and the cloud-based services of AWS.
+
+Question 3
+
+Which of the following are advantages of cloud computing?
+(Choose 3)
+
+- You can stop guessing capacity.
+- You can increase speed and agility
+- You can go global in minutes
+
+Question 4
+
+Which services can host a MariaDB database?
+(Choose 2)
+
+**EC2, RDS**
+
+> RDS supports several popular database engines: Amazon Aurora, PostgreSQL, MySQL, MariaDB, Oracle Database, and SQL Server.
+
+Question 5
+
+After configuring your VPC and all of the resources within it, you want to add an extra layer of security at the **subnet level**. Which will you use to add this security?
+
+**Network ACL**
+
+> A network access control list (NACL) is an optional layer of security for your VPC that ensures the proper traffic is allowed into the subnet
+
+Question 6
+
+Which of the following is correct regarding the number of Regions, Availability Zones, edge locations, and data centers?
+
+**There are more edge locations than Availability Zones**
+
+Question 7
+
+What is the most efficient intelligent threat detection service that can be used to analyze malicious or unauthorized activity and continuously monitor CloudTrail event logs, Amazon VPC Flow Logs, and DNS logs?
+
+**Amazon GuardDuty**
+> GuardDuty is an intelligent threat detection system that uncovers malicious or unauthorized activity.
+
+Question 8
+
+You are creating a few IAM policies. This is the first time you have worked with IAM policies. Which tool can you use to test IAM policies?
+
+**IAM policy simulator**
+
+> The IAM policy simulator allows you to test and troubleshoot identity-based policies, IAM permissions boundaries, service control policies (SCPs), and resource-based policies
+
+Question 9
+
+Which factors are required to sign in to the AWS Management Console using multi-factor authentication (MFA)?
+
+**Username and password + authentication code**
+
+Question 10
+
+You need to use an AWS service to assess software vulnerabilities and unintended network exposure of your Amazon EC2 instances. Which of the following services should you use?
+
+**Amazon Inspector**
+
+> Amazon Inspector is an automated vulnerability management service that continually scans Amazon Elastic Compute Cloud (EC2) and container workloads for software vulnerabilities and unintended network exposure.
+
+Question 11
+
+Which of the following services are available **24x7 for all AWS Support plans**?
+(Choose 3)
+- **Customer service**
+- **Storage costs**
+- **Data transfer costs**
+
+
+Question 12
+
+Which of the following is AWS responsible for in the Shared Responsibility Model?
+(Choose 3)
+- Availability Zones
+- Edge locations
+- Regions
+
+Question 13
+
+AWS Trusted Advisor provides checks and recommended actions. Which of the following is not one of those checks?
+
+**Checks to determine if an administrative user is used instead of the root account**
+
+> This is not a check provided in Trusted Advisor.
+
+
+Question 14
+
+A new application needs temporary access to resources in AWS. How can this best be achieved?
+
+**Create an IAM role and have the application assume the role.**
+
+> Roles define access permissions and are temporarily assumed by an IAM user or service.
+
+Question 15
+
+Which of the following can be used as a web-based interface to access and manage the AWS cloud?
+
+**AWS Management Console**
+
+Question 16
+
+A company would like to understand its total cost of ownership (TCO) when all workloads are moved to the cloud. Which should the company consider in their AWS TCO?
+(Choose 3)
+
+Question 17
+
+You want to define a secure private network in an AWS account where you launch your resources. What do you need to configure?
+
+**Virtual private cloud (VPC)**
+
+Question 18
+
+Which of the following are storage services?
+(Choose 2)
+
+**S3, AWS Elastic File System**
+
+Question 19
+
+Which cloud computing model offers fundamental building blocks that can be rented?
+
+**Infrastructure as a Service (IaaS)**
+> IaaS offers building blocks that can be rented. EC2 is an example of IaaS
+
+Question 20
+
+Which AWS service allows you to run code without having to worry about provisioning any underlying resources (such as virtual machines, databases, etc.)?
+
+**Lambda**
+
+> Lambda is the AWS Function as a Service (FaaS) offering that lets you run code without provisioning or managing servers
+
+Question 21
+
+Which of the following support plans features a < 4-hour response time in the event of an impaired production system?
+
+**Business**
+
+Question 22
+
+A fantasy sports company needs to run an application for the length of a football season (5 months). They will run the application on an EC2 instance and there can be no interruption. Which purchasing option best suits this use case?
+
+**On-Demand**
+
+Question 23
+
+Which of the following are common use cases for S3?
+(Choose 2)
+
+- Static web hosting
+- Storing application assets
+
+Question 24
+
+A healthcare company has nightly batch jobs that can afford to be interrupted. Which EC2 pricing model can meet this need and provide great savings by using a supply-and-demand model?
+
+**Spot Instances**
+
+Question 25
+
+A customer would like the ability to send HTML formatted emails from their application for marketing campaigns. Which service should the customer consider using?
+
+**Simple Email Service (SES)**
+
+Question 26
+
+You have a short-term computing task to complete. It is essential that this task run uninterrupted from start to finish. Which is the best EC2 option for this task?
+
+**On-Demand Instance**
+
+
+Question 27
+
+What are the 3 cloud computing models?
+(Choose 3)
+
+- Infrastructure as a Service (IaaS)
+- Software as a Service (SaaS)
+- Platform as a Service (PaaS)
+
+Question 28
+
+Which of the following statements are true about who can use IAM roles?
+(Choose 3)
+
+- A web service offered by AWS.
+- An IAM user in the same AWS account as the role.
+- An IAM user in a different AWS account than the role.
+
+
+Question 29
+
+Which of the following AWS services gives you a personalized view of the performance and availability of the AWS services underlying your AWS resources, alerting you and providing remediation guidance when AWS is experiencing events that may affect you?
+
+**AWS Personal Health Dashboard**
+
+> AWS Personal Health Dashboard gives you a personalized view of the performance and availability of the AWS services underlying your AWS resources.
+
+Question 30
+
+If you have a new application and you are not sure about future demand, which of the below characteristics of cloud make cloud an ideal place to host it?
+(Choose 3)
+
+**Scalability**
+
+> No upfront payment and pay as you go mean that you do not need an initial outlay of capital for resources to build in cloud. Rather, you only need to pay for what you use going forward. These combined with the ability to consume more resources when needed (scalability) mean that cloud is a great way to host applications that have dynamic requirements
+
+**No upfront payment**
+
+**Pay as you go**
+
+
+Question 31
+
+A healthcare agency needs to store certain patient information for up to 10 years. To save cost, they want to archive this data to cheaper storage. The data needs to be retrieved within 12 hours. Which is the cheapest option?
+
+**Glacier Deep Archive**
+
+Question 32
+
+Which of the following allows you to access AWS services from popular programming languages like Java, Python, and C#?
+
+**Software development kits**
+
+Question 33
+
+Which of the following AWS services is a fast, fully managed data warehouse that makes it simple and cost-effective to analyze all your data using standard SQL and your existing business intelligence tools.
+
+**Redshift**
+
+Question 34
+
+Which of the following is AWS' event-driven, serverless compute service?
+
+**Lambda**
+
+> Lambda is AWS' event-driven, serverless compute service that allows you to run code without having to deploy or manage any of the underlying resources such as EC2 instances.
+
+Question 35
+
+Which of the following are advantages of cloud computing?
+(Choose 3)
+
+- Elasticity
+- Agility
+- Variable expense
+
+Question 36
+
+A telecommunications company has hired you as a consultant to develop a business case for moving its IT applications and infrastructure to AWS. The company's leadership understands the agility value of the cloud, but the finance group is not interested in shifting capital expense to operating expense due to the company's tax structure. What will you include in the business case to attempt to satisfy everyone at the company?
+
+**Suggest that the company make Reserved Instance purchases and capitalize them.**
+
+Question 37
+
+How does AWS Shield Standard help protect your environment?
+
+**By blocking DDOS attacks**
+
+Question 38
+
+Which of the following are characteristics of Availability Zones?
+(Choose 3)
+
+- Contain redundant connectivity
+- Contain redundant networking
+- Contain physically separated data centers
+
+Question 39
+
+A customer has a complex multi-resource application environment containing multiple EC2 instances, load balancers, S3 buckets, and more. They'd like to provision these resources in an automated and repeatable manner from environment to environment using Infrastructure as Code (IaC). Which service achieves this?
+
+**CloudFormation**
+
+Question 40
+
+In Identity and Access Management (IAM), which term applies to a person or application that uses the AWS account root user, an IAM user, or an IAM role to sign in and make requests to AWS?
+
+**Principal**
+
+> A principal is a person or application that uses the AWS account root user, an IAM user, or an IAM role to sign in and make requests to AWS
+
+Question 41
+
+An EC2 instance in your VPC needs which of the following for the internet gateway to route its traffic to the internet?
+
+**Public IP address**
+
+> An EC2 instance in your VPC needs a public IP address for the internet gateway to route its traffic to the internet
+
+Question 42
+
+What type of long-term credentials for IAM users can be used to sign programmatic requests to the AWS CLI or AWS API (directly or using the AWS SDK)?
+
+**Access keys**
+
+> Access keys are long-term credentials for an IAM user or the AWS account root user. You can use access keys to sign programmatic requests to the AWS CLI or AWS API (directly or using the AWS SDK). Access keys consist of two parts: an access key ID (for example, AKIAIOSFODNN7EXAMPLE) and a secret access key (for example, wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY). Like a user name and password, you must use both the access key ID and secret access key together to authenticate your requests.
+
+Question 43
+
+You have a read-heavy application workload resulting in I/O-intensive Amazon RDS database queries. Which service is most suitable to improve performance?
+
+**ElastiCache**
+
+> You can use ElastiCache to store the results of often-used queries, and this will allow quicker retrieval of this data
+
+Question 44
+
+How does S3 Transfer Acceleration help you get your data into S3 quicker?
+
+**By using AWS' network of edge locations to upload to a location closest to you before taking the most optimal path within AWS' network**
+
+Question 45
+
+Which of the following are valid ways for an IAM user to manage AWS resources?
+(Choose 3)
+
+- AWS Management Console access
+- **Programmatic access via the command line**
+- Using the AWS SDK
+
+Question 46
+
+You need to store key-value pairs of users and their high scores for a gaming application. Which is the fastest and cheapest storage option for this type of data?
+
+**DynamoDB**
+
+Question 47
+
+Which of the following AWS Support pricing plans provides a Technical Account Manager (TAM) for proactive guidance on your AWS account?
+
+**Enterprise**
+
+Question 48
+
+Which of the following can you host on S3?
+
+**Static websites**
+
+Question 49
+
+Which of the following statements are true about the Amazon EC2 service?
+(Choose 3)
+
+- It supplies various configurations of CPU, memory, storage, and network capacity. You can use a preconfigured template called an Amazon Machine Image (AMI) to launch your instance.
+- It provides scalable computing capacity in the AWS cloud.
+- It provides virtual computing environments
+
+Question 50
+
+A company would like to automate the configuration of its servers and deploy code to servers in the cloud and on-premises. Which service meets the requirement?
+
+**OpsWorks**
+
+Question 51
+
+What can you do using AWS Budgets?
+
+**Track costs associated with your account and choose to be alerted when expenditures exceed your fixed target amount**
+
+Question 52
+
+What is the time that passes between a user request and the resulting response called?
+
+**Latency**
+
+> Latency is the time that passes between a user request and the resulting response
+
+Question 53
+
+When would you use the EC2 On-Demand pricing model?
+(Choose 2)
+
+- **No upfront payments required**
+- **Unpredictable workloads that cannot be interrupted**
+
+Question 54
+
+Broadly speaking, AWS is responsible for:
+
+**Security OF the Cloud**
+
+Question 55
+
+A company would like to implement a hybrid storage model where they connect on-premises data storage to storage in the AWS Cloud in order to move their backups to the cloud. What is the best and most efficient way to achieve this?
+
+**Storage Gateway**
+
+> Storage Gateway is a hybrid storage service that allows you to connect on-premises and cloud data.
+
+
+Question 56
+
+Which of the below statements are correct in relation to security responsibilities in AWS?
+(Choose 2)
+
+- As an AWS customer, you are responsible for the security IN the Cloud
+- AWS is responsible for the security OF the Cloud.
+
+
+Question 57
+
+A company runs workloads in the cloud with unknown and dynamic user demand. Which usage features make the cloud cost effective for this type of workload?
+(Choose 2)
+
+- Pay-as-you-go
+- On-demand
+
+Question 58
+
+The AWS global infrastructure includes Regions, Availability Zones, and edge locations. Which best describes the relationship between the infrastructure components?
+(Choose 2)
+
+- There are more edge locations than Regions
+- There are more Availability Zones than Regions
+
+Question 59
+
+Which of the following best describes an AWS Region?
+
+**A specific geographic location designed to provide high availability to a certain area**
+
+Question 60
+
+You want to streamline access management for your AWS administrators by assigning them permissions based on their job role. Which AWS features would you use to define and manage permissions for a set of users based on their roles?
+(Choose 2)
+
+**Use IAM groups**
+
+> Using IAM groups lets you create a list of pre-defined permissions that any user made a part of that group will be granted. Roles are primarily used to grant AWS resources permissions to other AWS resources and generally are not for end-users
+
+**Use IAM policies**
+> You manage permissions for IAM users, groups, and roles by creating a policy document in JSON format and attaching it
+
+Question 61
+
+Your design team has recommended the need to distribute incoming traffic across multiple EC2 instances and also across multiple Availability Zones. Which AWS service can accomplish this?
+
+**Elastic Load Balancing**
+
+> Elastic Load Balancing automatically distributes incoming application traffic across multiple targets, such as Amazon EC2 instances
+
+Question 62
+
+How can new AWS users easily search for and find services in their AWS accounts?
+
+**AWS Management Console**
+
+Question 63
+
+Which of the below are you responsible for when running an RDS database on AWS?
+
+**Controlling access to the database**
+
+Question 64
+
+Which security service provides enhanced protections and 24/7 access to AWS experts for a fee when issues arise?
+
+**AWS Shield Advanced**
+
+> AWS Shield Advanced provides enhanced protections and 24/7 access to AWS experts for a fee
+
+Question 65
+
+If you want access to all AWS Trusted Advisor checks, which of the AWS Support plans will provide that?
+(Choose 2)
+
+**Enterprise**, **Business**
+
+## Dunp 6
+
+Question 1
+
+Who are the main users of the AWS Command Line Interface (CLI)?
+
+Question 2
+
+Which of the following statements are true of Amazon Redshift?
+(Choose 2)
+
+Question 3
+
+You are leading a pilot program to try the AWS Cloud for 1 of your applications. You have been instructed to provide an estimate of your AWS bill. Which service will allow you to do this by manually entering your planned resources by service?
+
+Question 4
+
+You have been tasked with going into the AWS company account and getting information on saving money, improving system performance and reliability, and closing security gaps. Which tool can you use to get this information?
+
+Question 5
+
+Which benefit of cloud computing allows you to avoid planning ahead of time for how much capacity you need?
+
+Question 6
+
+Which of the following AWS services controls authentication and authorization within an AWS account?
+
+Question 7
+
+Which of the following provides the least expensive Amazon S3 storage?
+
+Question 8
+
+Which defines one or more discrete data centers with redundant power, networking, and connectivity?
+
+Question 9
+
+Which of the following best describes Availability Zones (AZs)?
+
+Question 10
+
+An auditor is conducting an audit of your IT operations for compliance. The auditor requests visibility to logs of event history across your AWS-based employee expense system infrastructure. Which AWS service will record and provide you the information you need?
+
+Question 11
+
+You have used On-Demand Instances for a month but have met unexpected costs with this choice. Which EC2 option provides up to 90% discount on On-Demand Instances while taking advantage of AWS unused EC2 capacity?
+
+Question 12
+
+Users need to access AWS resources from the Command Line Interface. Which IAM option can be used for authentication?
+
+Question 13
+
+Which of the following statements is true of AWS CloudTrail?
+(Choose 3)
+
+Question 14
+
+You are using your corporate directory to grant your users access to AWS services. What is this called?
+
+Question 15
+
+You need to set up a virtual firewall for your EC2 instance. Which would you use?
+
+Question 16
+
+Which term refers to the Identity and Access Management (IAM) resource objects that AWS uses for authentication?
+
+Question 17
+
+ElastiCache is an example of what type of AWS service?
+
+Question 18
+
+Which of the following services does the AWS Shield Standard plan provide?
+(Choose 2)
+
+Question 19
+
+Trusted Advisor is classified as what type of AWS service?
+
+Question 20
+
+Which of the following engines are classified as relational databases on AWS?
+(Choose 3)
+
+Question 21
+
+Which of the following enables you to interact with AWS services using only textual commands?
+
+Question 22
+
+Which component of the AWS Global Infrastructure caches content for fast delivery to users?
+
+Question 23
+
+Which following statement is true of newly created security groups with their default rules?
+
+Question 24
+
+Which of the following AWS Support levels offers the assistance of a Technical Account Manager?
+
+Question 25
+
+Which of the following AWS services enables you to continuously monitor and record configuration changes of your resources?
+
+Question 26
+
+Which of the following best describes the ability to scale computing resources out or in easily, while only paying for the resources used?
+
+Question 27
+
+Your Development team uses 4 On-Demand EC2 instances. Your QA team has 5 Reserved Instances, only 3 of which are being used. Assuming all AWS accounts are under a single AWS Organization, how will the Development team's instances be billed?
+
+Question 28
+
+Which of the following falls under the AWS compute services category?
+(Choose 2)
+
+Question 29
+
+You are working with IAM and need to attach policies to users, groups, and roles. Which of the following will you be attaching these policies to?
+
+Question 30
+
+Which of the following statements are true of Amazon Aurora?
+(Choose 2)
+
+Question 31
+
+Which of the following support plans features access to Enhanced Technical Support via email only during business hours?
+
+Question 32
+
+In order to comply with regulatory mandates, some of your data needs to be retained in perpetuity. Which of the following AWS storage classes offers low-cost, long-term data archival?
+
+Question 33
+
+Your application needs fully managed storage for objects. Which of the following options should you choose?
+
+Question 34
+
+You have recently started using AWS and now need to launch a large number of instances in your VPC. You learn that this number exceeds the service limits for instances in a VPC. What can you do?
+
+Question 35
+
+You've been tasked with assessing your AWS infrastructure in terms of cost optimization. Which of the following AWS services would help with this task?
+
+Question 36
+
+AWS uses the shared responsibility model. For security, which of the following are the responsibilities of AWS?
+(Choose 3)
+
+Question 37
+
+Which of the following does Amazon ensure will happen when paying for AWS on an as-needed basis?
+(Choose 3)
+
+Question 38
+
+Which of the following are characteristics of Availability Zones (AZs)?
+(Choose 3)
+
+Question 39
+
+Which benefit of cloud computing helps you innovate faster and gives you speed to market?
+
+Question 40
+
+A company has a large number of S3 buckets and needs to manage and automate tasks on these buckets at one time. Which AWS feature can do this?
+
+Question 41
+
+Which of the following AWS services fall under the Migration and Transfer category?
+(Choose 2)
+
+Question 42
+
+Your company has entered into a 3-year contract with a government agency. Your best option for EC2 is Reserved Instances. Which AWS feature would you use to track your Reserved Instance usage?
+
+Question 43
+
+The AWS Global Infrastructure comprises Regions, Availability Zones, and edge locations, and there is a different number of each infrastructure element. Select the option that shows the correct order from greatest to least.
+
+Question 44
+
+Which of the following does AWS use to notify you by email when you exceed 85% of your Free Tier limits for each service?
+
+Question 45
+
+Enabling Amazon GuardDuty automatically grants the service permission to analyze continuous metadata streams from which of the following data sources?
+(Choose 3)
+
+Question 46
+
+When would you use the Reserved Instance pricing model?
+(Choose 2)
+
+Question 47
+
+Which of the following is AWS' managed DDoS protection service?
+
+Question 48
+
+A company on the Business Support plan currently runs all their applications in a single Region. They have made the decision to expand to multiple Regions. What is the process to start deploying their applications to the new Regions?
+
+Question 49
+
+Which of the following is true of AWS Lambda?
+(Choose 3)
+
+Question 50
+
+Which of the following statements are true of the AWS Free Tier?
+(Choose 2)
+
+Question 51
+
+Upon which of these measurements is AWS Lambda pricing based?
+(Choose 3)
+
+Question 52
+
+In AWS, you can stop or terminate instances when not in use. Which of the following concepts describes this capability?
+
+Question 53
+
+Which of the below are you responsible for when running an EC2 instance on AWS?
+(Choose 2)
+
+Question 54
+
+Your company hosts gaming applications online and would like to deliver these apps to a worldwide audience. Which AWS service would enable delivery to users worldwide and greatly improve response times?
+
+Question 55
+
+Which of the following is an AWS managed distributed denial-of-service (DDoS) protection service?
+
+Question 56
+
+Which of the following falls under AWS compute services category?
+(Choose 3)
+
+Question 57
+
+According to the AWS Shared Responsibility Model, which of the following is the customer responsible for?
+(Choose 3)
+
+Question 58
+
+Which of the following compute services is ideal if you need to run a simple website or a simple e-commerce application?
+
+Question 59
+
+VPC, CloudFront, and Route 53 are examples of what type of AWS service?
+
+Question 60
+
+Which deployment types offers the advantages of cloud computing?
+(Choose 2)
+
+Question 61
+
+Which of the following are examples of programmatic access?
+(Choose 3)
+
+Question 62
+
+Which of the following are characteristics of cloud computing?
+(Choose 3)
+
+Question 63
+
+How are permissions assigned to an IAM group?
+(Choose 2)
+
+Question 64
+
+Which of the following describes a subnet accurately?
+
+Question 65
+
+When architecting a solution on AWS, it is important to know if you are designing for zero downtime even if a component fails or if you are designing for reliable performance and minimal (but non-zero) downtime. Which of the following terms best describes the latter solution?

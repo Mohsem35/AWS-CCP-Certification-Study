@@ -1716,42 +1716,54 @@ CloudWatch is a **collection of services** that help you **monitor and observe y
 - Collects **`metrics`**, **`logs`**, and **`events`**
 - **Detect anomalies** in your environment
 - **Set alarms**
-- **Visualize logs**
+- **Visualize logs**   
 
 
-_CloudWatch Alarms_: Set high resolution alarms
+1. **CloudWatch Alarms**: Set high resolution alarms
 
-_CloudWatch Logs_: Monitor application logs
+2. **CloudWatch Logs**: Monitor application logs
 
-_CloudWatch Metrics_: Visualize **`time-series data`**
+3. **CloudWatch Metrics**: Visualize **time-series date**
 
-_CloudWatch Events_: **`Trigger an event`** based on a **`condition`**
+4. **CloudWatch Events**: **Trigger an event** based on a **condition**
 
 
-##### Use cases
+##### Use cases of CloudWatch
 
-_Provide real-time monitoring on EC2 instances_
+- Provide **real-time monitoring on EC2 instances**
 
 
 <img width="500" alt="Screenshot 2023-10-21 at 8 43 52 AM" src="https://github.com/Mohsem35/AWS-Learning/assets/58659448/de894384-6c10-41f8-b608-4860ac39fc32">
 
 
 
-_Receive a notification when root user activity is detected in your account:_ Create a **`CloudWatch event rule`** to notify you when root user API calls are detected in your account indicating root user activity.
+- Receive a notification when **root user activity** is detected in your account: Create a **`CloudWatch event rule`** to notify you when root user API calls are detected in your account indicating root user activity.
 
 <img width="500" alt="Screenshot 2023-10-21 at 8 44 30 AM" src="https://github.com/Mohsem35/AWS-Learning/assets/58659448/bfca2724-de9f-411d-82f0-448e64d46fc6">
 
 
 #### CloudTrail
 
+API call related যত রকমের sespecious activity আছে, সব logintrail দেখে 
+
+কোন user কি change করছে, security analysis  
+
+কোন region থেকে change হইছে, কোন সময়ে change টা হইছে সব কিছুর track রাখতাছে
+
+1. Username 
+2. **Event time and time**
+3. **IP Address**
+4. **Access Key**
+5. Region
+6. Error Code
 
 CloudTrail tracks **user activity** and **API calls within your account** 
 
 - **Log** and **retain** account activity
-- Track activity through the **`console`**, **`SDKs`**, and **`CLI`**
+- **Track activity** through the **`console`**, **`SDKs`**, and **`CLI`**
 - Identify **which user made changes**
 - **Detect unusual activity** in your account
-- The AWS API call history produced by CloudTrail enables _security analysis_, _resource change tracking_, and _compliance auditing_
+- The AWS API call history produced by CloudTrail enables **security analysis**, **resource change tracking**, and **compliance auditing**
 
 ##### Use cases of CloudTrail
 
@@ -1763,16 +1775,11 @@ You can troubleshoot events over the **past 90 days** using the **`CloudTrail ev
 
 <img width="500" alt="Screenshot 2023-10-21 at 8 52 29 AM" src="https://github.com/Mohsem35/AWS-Learning/assets/58659448/7f3c5603-1314-4afe-9ba1-36de44efdf12">
 
-1. Username 
-2. Event time and time
-3. IP Address
-4. Access Key
-5. Region
-6. Error Code
+
 
 > _Note_: Things to Remember
 
-CloudWatch: Don't forget you can use CloudWatch to monitor your EC2 instances and notify you when certain events occur.
+CloudWatch: Don't forget you can use CloudWatch to **monitor your EC2 instances** and notify you when certain events occur.
 
 CloudTrail: Don't forget the things you can track with CloudTrail: username, event time and name, IP address, access key, Region, and error code.
 
@@ -1782,170 +1789,176 @@ CloudTrail: Don't forget the things you can track with CloudTrail: username, eve
 
 #### Amazon WorkSpaces
 
-Amazon WorkSpaces allows you to **`host virtual desktops`** in the cloud
+TeamViewer এর AWS version হচ্ছে workspace
+
+Amazon WorkSpaces allows you to **host virtual desktops** in the cloud
 
 - Virtualize Windows or Linux desktops
-- Enables employees to **`work from home`**
+- Enables employees to **work from home**
 
 
 #### Amazon Connect
 
-Amazon Connect is a cloud **`contact center service`**
+কল সেন্টার যেইভাবে কাস্টমারদের সার্ভিস দেয়, এইটা ও সেইরকম সার্ভিস 
 
-- Provides customer service functionality
-- Improves productivity of help desk agents
+Amazon Connect is a cloud **contact center service**
+
+- Provides **customer service functionality**
+- **Improves productivity of help desk agents**
 
 
 
 
 
-Q: Which service enables you to centralize and automate data protection across AWS services?
+_Q: Which service enables you to **centralize and automate data protection** across AWS services?_
 
 AWS backup
 
-Q: What service could you recommend to a developer to automate the software release process?
+_Q2: What service could you recommend to a developer to automate the **software release process**?_
 
 CodePipeline
 
-Q: Amazon EC2 offers a variety of pricing options. Which of the following EC2 pricing options is the cheapest?
+_Q3: Amazon EC2 offers a variety of pricing options. Which of the following EC2 pricing options is the cheapest?_
 
 Spot instances
 
-Q: In which of the following is CloudFront content cached?
+_Q4: In which of the following is CloudFront content cached?_
 
 Edge Location
 
-Q: Which of the following are true statements about Simple Queue Service (SQS)?
+_Q5: Which of the following are true statements about Simple Queue Service (SQS)?_
 
 - Standard queues provide a loose-FIFO capability
-- SQS FIFO queues always preserve the exact order
+- SQS FIFO queues always preserve the **exact order**
 
-Q:Which machine learning service helps you build, train, and deploy models quickly?
+_Q6:Which machine learning service helps you build, train, and deploy models quickly?_
 
 SageMaker
 
-Q: Which machine learning service allows you to add image analysis to your applications?
+_Q7: Which machine learning service allows you to add image analysis to your applications?_
 
 Amazon Rekognition
 
-Q: Which service allows you to host virtual desktops in the cloud?
+_Q8: Which service allows you to host virtual desktops in the cloud?_
 
 Amazon WorkSpaces
 
-Q: Which service can you use to deploy applications both on-premises or in the cloud, using Chef or Puppet?
+_Q9: Which service can you use to deploy applications both on-premises or in the cloud, using Chef or Puppet?_
 
 OpsWorks
 
-Q: Which of the following is true of Amazon Route 53?
+_Q10: Which of the following is true of Amazon Route 53?_
 
 - Amazon Route 53 supports domain name registration.
 - Amazon Route 53 performs health checks on AWS resources.
 - Amazon Route 53 is a DNS service that routes users to applications.
 
-Q: Which migration service allows you to migrate databases to or within AWS over the internet easily and securely?
+_Q11: Which migration service allows you to migrate databases to or within AWS over the internet easily and securely?_
 
 AWS DMS
 
-Q: Which AWS networking service enables you to provision a logically isolated section of the AWS cloud where you can launch AWS resources in a virtual network that you define?
+_Q11: Which AWS networking service enables you to provision a **logically isolated section** of the AWS cloud where you can launch AWS resources in a virtual network that you define?_
 
 Virtual Private Cloud (VPC)
 
-Q: Which networking and content delivery service makes content globally available with low latency?
+_Q12: Which networking and content delivery service makes content globally available with low latency?_
 
 Amazon CloudFront
 
-Q: What is CloudWatch?
+_Q13: What is CloudWatch?_
 
 It is a collection of services designed to monitor and observe cloud resources.
 
-Q: Which AWS service can send both text and email messages from your applications?
+_Q14: Which AWS service can send both text and email messages from your applications?_
 
 Simple Notification Service (SNS)
 
-_Q: Objects stored in S3 are stored in a single, central location within AWS._
+_Q15: Objects stored in S3 are stored in a single, central location within AWS._
 
 False
 
-True: Objects stored in S3 are stored in multiple servers, in multiple facilities across AWS.
+True: **Objects stored in S3 are stored in multiple servers**, in multiple facilities across AWS.
 
 
-_Q: Which services allow you to build hybrid environments by connecting on-premises infrastructure to AWS_
+_Q16: Which services allow you to build hybrid environments by connecting on-premises infrastructure to AWS_
 - Site-to-Site VPN
 - AWS Direct Connect
 
-_Q: Which service is used to allow resources in your VPC to access the internet?_
+_Q17: Which service is used to allow resources in your VPC to access the internet?_
 
 Internet Gateway
 
-_Q: Which service allows you to practice Infrastructure as Code by provisioning your AWS resources via scripted templates?_
+_Q18: Which service allows you to practice Infrastructure as Code by provisioning your AWS resources via scripted templates?_
 
 AWS CloudFormation
 
-_Q: Which services allow you to run containerized applications without having to manage servers or clusters?_
+_Q19: Which services allow you to run containerized applications without having to manage servers or clusters?_
 
-- Amazon Elastic Container Service (Amazon ECS)
-- Amazon Elastic Kubernetes Service (EKS)
+- Amazon **Elastic Container Service** (Amazon ECS)
+- Amazon **Elastic Kubernetes Service** (EKS)
 - AWS Fargate
 
-_Q: What data transport solution allows moving terabytes to petabytes of data to AWS, with additional capability of running computing locally, even when there is no network connection available?_
+_Q20: What data transport solution allows moving terabytes to petabytes of data to AWS, with additional capability of running computing locally, even when there is no network connection available?_
 
 AWS Snowball Edge
 
-_Q: Which storage service is a scalable file system that only works with Linux-based workloads?_
+_Q21: Which storage service is a scalable file system that only works with Linux-based workloads?_
 
 Amazon Elastic File System (EFS)
 
-_Q: Which service routes user traffic through AWS's global network infrastructure to ensure low latency for your gaming application?_
+_Q22: Which service routes user traffic through AWS's global network infrastructure to ensure low latency for your gaming application?_
 
-AWS Global Accelerator
+**AWS Global Accelerator**
 
-Which database services make it easy for you to set up, operate, and scale relational databases in the cloud?
+_Q23:Which database services make it easy for you to set up, operate, and scale relational databases in the cloud?_
 
 - Amazon Relational Database Service (RDS)
 - Amazon Aurora
 
-Q: Which monitoring service helps you observe your cloud resources and provides actionable insights?
+_Q24: Which monitoring service helps you **observe your cloud resources and provides actionable insights**?_
 
 CloudWatch
 
-Q: Which AWS service provides a secure and resizable compute platform with choice of processor, storage, networking, operating system, and purchase model?
+_Q25: Which AWS service provides a secure and resizable compute platform with choice of processor, storage, networking, operating system, and purchase model?_
 
 EC2
 
-Q: Which machine learning service allows you to add image analysis to your applications?
+_Q26: Which machine learning service allows you to add image analysis to your applications?_
 
 Amazon Rekognition
 
-Q: What AWS services are used for notifications and messaging?
+_Q27: What AWS services are used for notifications and messaging?_
 
 - Simple Email Service (SES)
 - Simple Notification Service (SNS)
 
-Q: In which of the following is CloudFront content cached?
+_Q28: In which of the following is CloudFront content cached?_
 
 Edge Location
 
-Which service supports workloads that need to remain on-premises due to latency or data sovereignty needs?
+_Q29: Which service supports workloads that need to remain on-premises due to latency or data sovereignty needs?_
 
 AWS Outposts
 
-Q: Objects stored in S3 are stored in a single, central location within AWS.
+_Q29: Objects stored in S3 are stored in a single, central location within AWS._
 
-False
+**False**
 
-Q: Which EC2 storage mechanism is recommended when running a database on an EC2 instance?
+_Q30: Which EC2 storage mechanism is recommended when running a database on an EC2 instance?_
 
 AWS EBS
 
-Q:Which EC2 pricing option is best for short-term, irregular workloads that should not be interrupted?
+_Q31:Which EC2 pricing option is best for short-term, irregular workloads that should not be interrupted?_
 
 On-Demand
 
-Q: Which machine learning service helps you build, train, and deploy models quickly?
+_Q31: Which machine learning service helps you build, train, and deploy models quickly?_
 
 Sagemaker
 
-Which services allow you to send emails from your applications?
+_Q32: Which services allow you to send emails from your applications?_
+
+SES
 
 #### chapter 3
 ### Security and Compliance 
@@ -1955,55 +1968,55 @@ Which services allow you to send emails from your applications?
 
 In the public cloud, there is a shared security responsibility between you and AWS.
 
-`AWS' Responsibility`: Security **`of`** the Cloud
-`Your Responsibility`: Security **`in`** the Cloud
+`AWS' Responsibility`: Security **of** the Cloud
 
-#### Security of the Cloud
+`Your Responsibility`: Security **in** the Cloud
+
+#### Security `of` the Cloud
 AWS is responsible for _protecting and securing their infrastructure_
 
-1. _AWS Global Infrastructure_: AWS is responsible for its global infrastructure elements: **`Regions`**, **`edge locations`**, and **`Availability Zones`**
-2. _Building Security_: AWS controls access to its **`data centers`** where your data resides.
-3. _Networking Components_: AWS maintains networking components: **`generators`**, uninterruptible power supply (**`UPS`**) systems, computer room air conditioning (**`CRAC`**) units, **`fire suppression systems`**, and more
-4. _Software_: AWS is responsible for any **`managed service`** like **`RDS`**, **`S3`**, **`ECS`**, or **`Lambda`**, **`patching of host operating systems`**, and **`data access endpoints`**
+1. **`AWS Global Infrastructure`**: AWS is responsible for its global infrastructure elements: Regions, edge locations, and Availability Zones
+2. **`Building Security`**: AWS controls access to its **data centers** where your data resides.
+3. **`Networking Components`**: AWS maintains networking components: **generators**, uninterruptible power supply (**UPS**) systems, computer room air conditioning (**CRAC**) units, **fire suppression systems**, and more
+4. **`Software`**: AWS is responsible for any **managed service** like RDS, S3, ECS, or Lambda, **patching of host operating systems** and **data access endpoints**
 
-#### Security in the Cloud
+#### Security `in` the Cloud
 
 You are responsible for how the services are implemented and managing your application data. 
 
-1. _Application Data_: You are responsible for **`managing application data`**, which includes **`encryption`** options.
-2. _Security Configuration_: You are responsible for securing your **`account and API calls`**, **`rotating credentials`**, **`restricting internet access from your VPCs`**, and more.
+1. **`Application Data`**: You are responsible for **managing application data**, which includes **encryption** options.
+2. **`Security Configuration`**: You are responsible for securing your **account and API calls**, **rotating credentials**, **restricting internet access from your VPCs**, and more.
 
-3. _Patching_: You are responsible for the **`guest operating system (OS)`**, which includes _updates and security patches._
+3. **`Patching`**: You are responsible for the **guest operating system (OS)**, which includes _updates and security patches._
 
-4. _Identity and Access Management_: You are responsible for **`application security and identity and access management.`**
+4. **`Identity and Access Management`**: You are responsible for **application security** and **identity and access management**
 
-5. _Network Traffic_: You are responsible for **`network traffic protection`**, which includes **`security group firewall configuration.`**
+5. **`Network Traffic`**: You are responsible for **network traffic protection**, which includes **security group firewall configuration**
 
-6. _Installed Software_: You are responsible for your **`application code`**, **`installed software`**, and more. You should frequently _scan for and patch vulnerabilities in your code._
+6. **`Installed Software`**: You are responsible for your **application code**, **installed software**, and more. You should frequently _scan for and patch vulnerabilities in your code._
 
 
 ##### Who is responsible for what?
 
-Firewall configuration - you
+_Firewall configuration_ - you
 
-Data center security for physical building -  AWS
+_Data center security for physical building_ -  AWS
 
-Encryption of EBS volumes - you
+_Encryption of EBS volumes_ - you
 
-Language version of Lambda - AWS
+_Language version of Lambda_ - AWS
 
-Taking DB backups in RDS - you
+**Taking DB backups in RDS** - you
 
-Updating the firmware on the underlying EC2 hosts - AWS
+**Updating the firmware on the underlying EC2 hosts** - AWS
 
-Ensuring data is encrypted at rest - you
+_Ensuring data is encrypted at rest_ - you
 
-Managing the network infrastructure - AWS
+_Managing the network infrastructure_ - AWS
 
-Patching the guest operating system for EC2 - you
+_Patching the guest operating system for EC2_ - you
 
-Physically destroying storage media at end of life - AWS
-
+**Physically destroying storage media at end of life** - AWS
 
 
 #### Well-Architected Framework
@@ -2040,6 +2053,8 @@ Well-Architected Framework: Going into the exam, remember the 6 pillars and thei
 
 
 #### AWS Identity and Access Management (IAM)
+
+আমার cloud resource তে কে ঢুকতে পারবে, কারা ঢুকতে পারবে, কি কি জিনিষ access করতে পারবে তার পুরাটাই responsibility IAM এর 
 
 AWS Identity and Access Management (IAM) enables you to **securely control access to AWS services and resources** for your **AWS users, groups, and roles**
 
@@ -2192,12 +2207,12 @@ Roles
 
 You manage **permissions for IAM users, groups, and roles** by **creating a policy document** in **`JSON format`** and attaching it.
 
-1. **Custom policy** for User
+1. **Custom policy** for _User_
 
 <img width="500" alt="Screenshot 2023-10-24 at 8 40 28 PM" src="https://github.com/Mohsem35/AWS-Learning/assets/58659448/e0447371-d23c-49b2-b3dd-3c53e72ee8be">
 
 
-2. **Managed Policy** for Developer Group & Role
+2. **Managed Policy** for _Developer Group & Role_
 
 <img width="500" alt="Screenshot 2023-10-24 at 8 40 41 PM" src="https://github.com/Mohsem35/AWS-Learning/assets/58659448/77167f0c-350a-4744-98c1-dc993729c0b2">
 
@@ -2227,8 +2242,8 @@ and you understand everything that it really gives access to.
 
 The IAM credential report lists all users in your account and the status of their various credentials.
 
-- Lists all users and status of **`passwords`**, **`access keys`**, and **`MFA`** devices
-- Used for **`auditing`** and **`compliance`**
+- Lists all users and status of **passwords**, **access keys**, and **MFA** devices
+- Used for **auditing** and **compliance**
 
 
 
@@ -2253,16 +2268,18 @@ AWS has several _software-based security tools_ available to help you _monitor a
 
 #### Web Application Firewall (WAF)
 
-WAF helps protect your web applications against **`common web attacks`**
+sql injection, cross site scripting থেকে WAF সুরক্ষা দেয়
 
-- **`Protects`** apps against common attack patterns
-- Protects against **`SQL injection`**
-- Protects against **`cross-site scripting`**
+WAF helps protect your web applications against **common web attacks**
+
+- **Protects apps** against common attack patterns
+- Protects against **SQL injection**
+- Protects against **cross-site scripting**
 
 ##### WAF in the Real World
 
 
-You can deploy a web application directly to an EC2 instance and protect it _from cross-site scripting attacks using WAF_. You can even deploy **`WAF on CloudFront`** as part of your **CDN solution** to **`block malicious traffic`**
+You can deploy a web application directly to an EC2 instance and protect it _from cross-site scripting attacks using WAF_. You can even deploy **WAF on CloudFront** as part of your **CDN solution** to **`block malicious traffic`**
 
 <img width="500" alt="Screenshot 2023-10-24 at 9 38 16 PM" src="https://github.com/Mohsem35/AWS-Learning/assets/58659448/c1cfa428-f24d-4933-8f18-735cc44fe05d">
 
@@ -2278,9 +2295,9 @@ A DDoS attack causes a **`traffic jam`** on a website or web application in an a
 
 Shield is a managed Distributed Denial of Service (**`DDoS`**) _protection service_
 
-- **`Always-on`** detection
-- Shield **`Standard`** is free
-- Shield **`Advanced`** is a **paid** service
+- **Always-on detection**
+- Shield **Standard is free**
+- Shield **sAdvanced** is a **paid** service
 
 
 1. _Shield Standard_: Provides **`free`** protection against common and frequently occurring attacks
@@ -2297,23 +2314,25 @@ DDoS protection via Shield Advanced is supported on several services
 ##### Shield in the Real World
 
 
-Shield Advanced will give you _notifications of DDoS attacks_ via **`CloudWatch metrics`**.Additionally, with Shield Advanced, you have 24/7 access to AWS experts to assist during an attack. 
+Shield Advanced will give you **notifications of DDoS attacks** via **`CloudWatch metrics`**.Additionally, with Shield Advanced, you have 24/7 access to AWS experts to assist during an attack. 
 
 
 #### Macie
 
-Macie helps you **`discover and protect sensitive data`**
+ও হচ্ছে sensitive data explore করে S3 তে 
 
-- Uses **`machine learning`** 
-- Evaluates **`S3`** environment
-- Uncovers **`personally identifiable information`** (PII) 
+Macie helps you **discover and protect sensitive data**
+
+- Uses **machine learning** 
+- **Evaluates S3** environment
+- Uncovers **personally identifiable information** (PII) 
 
 
 
 ##### Macie in the Real World
 
 
-Macie can be used to find sensitive data like **`passport numbers`**, **`social security numbers`**, and **`credit card numbers`** on S3.
+Macie can be used to find sensitive data like **passport numbers**, **social security numbers**, and **credit card numbers** on S3.
 
 
 > _Note:_ Things to Remember
@@ -2333,16 +2352,18 @@ Macie: Remember that Macie helps you find sensitive information.
 
 ![AWS-Config](https://github.com/Mohsem35/AWS-Learning/assets/58659448/d1a025b9-e9be-4ff9-81f8-bdc100947a94)
 
+আমি আমার resource গুলোতে যা কিছু configuration করেছি, সেগুলোর evaluate করবে এবং configuration change গুলো দেখাবে 
+
 Config allows you to _assess, audit, and evaluate_ the **`configurations`** of your resources
 
-- **`Track configuration changes`** over time
-- Delivers _configuration history_ file to **`S3`**
+- **Track configuration changes** over time
+- **Delivers configuration history** file to **`S3`**
 - Notifications via Simple Notification Service (**`SNS`**) of **every configuration change**
 
 
 ##### Config in the Real World
 
-_Identify system-level configuration changes made to your EC2 instances_: Config allows you to record configuration changes within your EC2 instances. You can view **`network`**, **`software`**, and **`operating system (OS)`** configuration changes, **`system-level updates`**, and more
+**Identify system-level configuration changes made to your EC2 instances**: Config allows you to record configuration changes within your EC2 instances. You can view **network**, **software**, and **operating system (OS)** configuration changes, **system-level updates**, and more
 
 
 
@@ -2356,14 +2377,14 @@ GuardDuty is an **intelligent threat detection system** that **uncovers unauthor
 
 
 
-- Uses **`machine learning`**
+- Uses **machine learning**
 - **Built-in detection** for **`EC2`**, **`S3`**, and **`IAM`**
 - **Reviews CloudTrail**, **VPC Flow Logs**, and **DNS logs**
 
 
 ##### GuardDuty in the Real World
 
-_Detect unusual API calls in your account_: GuardDuty's anomaly detection feature **`evaluates all API requests`** in your account and identifies events that are associated with common techniques used by **`attackers`** 
+_Detect unusual API calls in your account_: GuardDuty's anomaly detection feature **evaluates all API requests** in your account and identifies events that are associated with common techniques used by **`attackers`** 
 
 
 #### Amazon Inspector
@@ -2403,11 +2424,11 @@ Artifact offers on-demand access to **AWS security and compliance reports**
 
 #### Cognito
 
-Cognito helps you **`control access to mobile and web applications`**
+Cognito helps you **control access to mobile and web applications**
 
 
-- Provides **`authentication`** and **`authorization`**
-- Helps you **`manage users`** 
+- Provides **authentication** and **authorization**
+- Helps you **manage users** 
 - Assists with **`user sign-up`** and **`sign-in`**
 
 
@@ -2461,8 +2482,8 @@ _Data at Rest_: Data that is **`inactive or stored`** for later use
 
 KMS allows you to **generate and store encryption keys**
 
-- **`Key generator`**
-- **`Store`** and **`control`** keys
+- **Key generator**
+- **Store** and **control** keys
 - **`AWS manages`** encryption keys
 - Automatically **`enabled`** for certain services like **CloudTrail logs**, **S3 Glacier**, and **Storage Gateway**
 
@@ -2474,11 +2495,11 @@ KMS allows you to **generate and store encryption keys**
 
 #### CloudHSM
 
-CloudHSM is a **`hardware security module`** (HSM) used to **`generate encryption keys`**
+CloudHSM is a **hardware security module** (HSM) used to **generate encryption keys**
 
-- **`Dedicated hardware`** for security
-- Generate and manage your **`own`** encryption keys
-- AWS does **`not`** have access to your keys
+- **Dedicated hardware for security**
+- Generate and manage your **own encryption keys**
+- **AWS does not** have access to your keys
 
 
 ##### CloudHSM in the Real World
@@ -2489,10 +2510,10 @@ CloudHSM allows you to _meet corporate, contractual, and regulatory compliance r
 
 #### Secrets Manager
 
-Secrets Manager allows you to **`manage`** and **`retrieve secrets`** (passwords or keys)
+Secrets Manager allows you to **manage** and **retrieve secrets** (passwords or keys)
 
 - Rotate, manage, and retrieve secrets
-- **`Encrypt`** secrets at rest
+- **Encrypt secrets at rest**
 - **`Integrates`** with services like **RDS**, **Redshift**, and **DocumentDB**
 
 ##### Secrets Manager in the Real World
@@ -2506,37 +2527,37 @@ KMS: Going into the exam, don't forget **`AWS manages KMS keys`**
 
 CloudHSM: Don't forget **`you manage`** the keys generated with CloudHSM
 
-Secrets Manager: Don't forget Secrets Manager has built-in integration for RDS, Redshift, and DocumentDB.
+Secrets Manager: Don't forget Secrets Manager has built-in integration for **RDS, Redshift, and DocumentDB**.
 
 
-_Which service can integrate with a Lambda function to automatically take remediation steps when it uncovers suspicious network activity when monitoring logs in your AWS account?_
+_Q1: Which service can integrate with a Lambda function to **automatically take remediation steps** when it uncovers **suspicious network activity** when monitoring logs in your AWS account?_
 
 Amazon GuardDuty
 
-_Which of the following are tasks that only the root user can complete?_
+_Q2: Which of the following are tasks that only the root user can complete?_
 
 
 - Change the account name and email address.
 - Close your AWS account.
 
-_In the shared responsibility model, what is the customer responsible for?_
+_Q3: In the shared responsibility model, what is the customer responsible for?_
 
 - Firewall configuration and application security
 - Patching the guest operating system (OS)
 
-_Which service protects your web application from cross-site scripting attacks?_
+_Q4: Which service protects your web application from cross-site scripting attacks?_
 
 AWS Web Application Firewall (WAF)
 
-_Which service helps you control access to mobile and web applications?_
+_Q5: Which service helps you control access to mobile and web applications?_
 
 Cognito
 
-_What is the purpose of CloudHSM?_
+_Q6: What is the purpose of CloudHSM?_
 
-Its purpose is to enable you to easily create and use your own encryption keys
+Its purpose is to enable you to easily create and use your **own encryption keys**
 
-_How do you manage permissions for multiple users at once using AWS Identity and Access Management (IAM)?_
+_Q7: How do you manage permissions for multiple users at once using AWS Identity and Access Management (IAM)?_
 
 Groups
 
@@ -2544,11 +2565,11 @@ _Which service allows you to locate credit card numbers stored in Amazon S3?_
 
 Amazon Macie
 
-_Which service has a feature that can assist with compliance and auditing by offering a downloadable report that provides the status of passwords and MFA devices in your account?_
+_Which service has a feature that can assist with **compliance and auditing by offering a downloadable report** that provides the status of passwords and MFA devices in your account?_
 
-AWS Identity and Access Management (IAM)
+**AWS Identity and Access Management (IAM)**
 
-_Which service allows you to generate encryption keys managed by AWS?_
+_Which service allows you to generate encryption keys **managed by AWS**?_
 
 AWS Key Management Service (KMS)
 
@@ -2563,7 +2584,7 @@ _Select the TRUE statement regarding the pillars of the AWS Well-Architected Fra
 
 - The Operational Excellence pillar enables the ability to support development, run workloads effectively, gain operational insights, and improve supporting processes and procedures.
 
-_Which service allows you to create access keys for someone needing to access AWS via the command line interface (CLI)?_
+_Which service allows you to create **access keys for someone needing to access AWS** via the command line interface (CLI)?_
 
 AWS Identity and Access Management (IAM)
 
