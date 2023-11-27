@@ -943,16 +943,21 @@ If you want access to all AWS Trusted Advisor checks, which of the AWS Support p
 
 **Enterprise**, **Business**
 
-## Dunp 6
+## Dump 6
 
 Question 1
 
 Who are the main users of the AWS Command Line Interface (CLI)?
 
+**Developers**
+
 Question 2
 
 Which of the following statements are true of Amazon Redshift?
 (Choose 2)
+
+- **It is designed for storing petabytes of data.**
+- **It is a data warehouse service.**
 
 Question 3
 
@@ -966,6 +971,8 @@ Question 5
 
 Which benefit of cloud computing allows you to avoid planning ahead of time for how much capacity you need?
 
+**Elasticity**
+
 Question 6
 
 Which of the following AWS services controls authentication and authorization within an AWS account?
@@ -978,13 +985,20 @@ Question 8
 
 Which defines one or more discrete data centers with redundant power, networking, and connectivity?
 
+**Availability Zone**
+
 Question 9
 
 Which of the following best describes Availability Zones (AZs)?
 
+**Distinct locations from within an AWS Region that are engineered to be isolated from failures**
+
+
 Question 10
 
 An auditor is conducting an audit of your IT operations for compliance. The auditor requests visibility to logs of event history across your AWS-based employee expense system infrastructure. Which AWS service will record and provide you the information you need?
+
+**AWS CloudTrail**
 
 Question 11
 
@@ -999,9 +1013,16 @@ Question 13
 Which of the following statements is true of AWS CloudTrail?
 (Choose 3)
 
+- **Log files are encrypted**
+- **With CloudTrail, you can create a trail that either applies to one Region or to all Regions**
+- **CloudTrail delivers log files within 15 minutes of account activity.**
+
+
 Question 14
 
 You are using your corporate directory to grant your users access to AWS services. What is this called?
+
+**Federated access**
 
 Question 15
 
@@ -1009,7 +1030,9 @@ You need to set up a virtual firewall for your EC2 instance. Which would you use
 
 Question 16
 
-Which term refers to the Identity and Access Management (IAM) resource objects that AWS uses for authentication?
+Which term refers to the Identity and Access Management (IAM) **resource objects** that AWS uses for authentication?
+
+**Entities**
 
 Question 17
 
@@ -1020,9 +1043,15 @@ Question 18
 Which of the following services does the AWS Shield Standard plan provide?
 (Choose 2)
 
+- **Network flow monitoring**
+- **Assistance with protection from common DDoS attacks**
+
+
 Question 19
 
 Trusted Advisor is classified as what type of AWS service?
+
+- **Management & Governance**
 
 Question 20
 
@@ -1036,6 +1065,8 @@ Which of the following enables you to interact with AWS services using only text
 Question 22
 
 Which component of the AWS Global Infrastructure caches content for fast delivery to users?
+
+**Edge locations**
 
 Question 23
 
@@ -1053,9 +1084,15 @@ Question 26
 
 Which of the following best describes the ability to scale computing resources out or in easily, while only paying for the resources used?
 
+**Elasticity**
+
+> Elasticity describes the ability to scale computing resources out or in easily, while only paying for the resources used.
+
 Question 27
 
 Your Development team uses 4 On-Demand EC2 instances. Your QA team has 5 Reserved Instances, only 3 of which are being used. Assuming all AWS accounts are under a single AWS Organization, how will the Development team's instances be billed?
+
+**The Dev team will be billed for 2 instances at On-Demand prices and 2 instances at the Reserved Instance price.**
 
 Question 28
 
@@ -1066,10 +1103,15 @@ Question 29
 
 You are working with IAM and need to attach policies to users, groups, and roles. Which of the following will you be attaching these policies to?
 
+**Identities**
+
 Question 30
 
 Which of the following statements are true of Amazon Aurora?
 (Choose 2)
+
+- **You can use the AWS Management Console, AWS CLI commands, and API operations to handle routine database tasks.**
+- **It is compatible with the MySQL and PostgreSQL database engines**.
 
 Question 31
 
@@ -1087,6 +1129,8 @@ Question 34
 
 You have recently started using AWS and now need to launch a large number of instances in your VPC. You learn that this number exceeds the service limits for instances in a VPC. What can you do?
 
+**Contact AWS and request a service limit increase**
+
 Question 35
 
 You've been tasked with assessing your AWS infrastructure in terms of cost optimization. Which of the following AWS services would help with this task?
@@ -1101,14 +1145,24 @@ Question 37
 Which of the following does Amazon ensure will happen when paying for AWS on an as-needed basis?
 (Choose 3)
 
+- Redirecting focus to innovation and invention
+- **Reducing procurement complexity**
+- Enabling the full elasticity of business operations
+
 Question 38
 
 Which of the following are characteristics of Availability Zones (AZs)?
 (Choose 3)
 
+- Fault tolerant
+- Physically separated
+- Connected through low-latency links
+
 Question 39
 
 Which benefit of cloud computing helps you innovate faster and gives you speed to market?
+
+**Agility**
 
 Question 40
 
@@ -1127,9 +1181,13 @@ Question 43
 
 The AWS Global Infrastructure comprises Regions, Availability Zones, and edge locations, and there is a different number of each infrastructure element. Select the option that shows the correct order from greatest to least.
 
+Number of Edge Locations > Number of Availability Zones > Number of Regions
+
 Question 44
 
-Which of the following does AWS use to notify you by email when you exceed 85% of your Free Tier limits for each service?
+Which of the following does AWS use to notify you by email when you exceed **85% of your Free Tier limits for each service**?
+
+**AWS Budgets**
 
 Question 45
 
@@ -1149,6 +1207,8 @@ Question 48
 
 A company on the Business Support plan currently runs all their applications in a single Region. They have made the decision to expand to multiple Regions. What is the process to start deploying their applications to the new Regions?
 
+**Just start deploying the applications to the new Regions**
+
 Question 49
 
 Which of the following is true of AWS Lambda?
@@ -1164,9 +1224,16 @@ Question 51
 Upon which of these measurements is AWS Lambda pricing based?
 (Choose 3)
 
+- **Number of requests**
+- **Data transfer**
+- **Duration and memory**
+
+
 Question 52
 
 In AWS, you can stop or terminate instances when not in use. Which of the following concepts describes this capability?
+
+Elasticity
 
 Question 53
 
@@ -1186,6 +1253,10 @@ Question 56
 Which of the following falls under AWS compute services category?
 (Choose 3)
 
+- **Amazon Elastic Compute Cloud (EC2)**
+- **Amazon Lightsail**
+- **Amazon Elastic Beanstalk**
+
 Question 57
 
 According to the AWS Shared Responsibility Model, which of the following is the customer responsible for?
@@ -1204,20 +1275,33 @@ Question 60
 Which deployment types offers the advantages of cloud computing?
 (Choose 2)
 
+- Public cloud
+- Hybrid cloud
+
 Question 61
 
 Which of the following are examples of programmatic access?
 (Choose 3)
+- Command Line Interface (CLI)
+- Application code
+- Software Development Kits (SDKs)
 
 Question 62
 
 Which of the following are characteristics of cloud computing?
 (Choose 3)
 
+- Services are delivered via the internet.
+- Pay-as-you-go pricing
+- On-demand delivery
+
 Question 63
 
 How are permissions assigned to an IAM group?
 (Choose 2)
+
+- **Roles**
+- **Policies**
 
 Question 64
 
@@ -1226,3 +1310,5 @@ Which of the following describes a subnet accurately?
 Question 65
 
 When architecting a solution on AWS, it is important to know if you are designing for zero downtime even if a component fails or if you are designing for reliable performance and minimal (but non-zero) downtime. Which of the following terms best describes the latter solution?
+
+**High availability**
