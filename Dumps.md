@@ -3,7 +3,7 @@ Links
 - [Dumps 1](#dumps-1)
 - [Dumps 2](#dumps-2)
 - [Dumps 3](#dumps-3)
-
+- [Dumps 4](#dumps-4)
 
 ### Dumps 1
 
@@ -1230,7 +1230,7 @@ _A company with a business-critical application needs to ensure business continu
 - **Standard Reserved Instance (RI) with a capacity reservation**
 
 
-_Q48: A purchasing department staff member is set up as an AWS user in the company’s Procurement AWS account. At each month-end, the staff member needs access to an application running on EC2 in the company’s Accounts Payable AWS account to reconcile reports. Which of the following provides the most secure and operationally efficient way to give the staff member access to the Accounts Payable application**?_
+_Q48: A purchasing department staff member is set up as an AWS user in the company’s Procurement AWS account. At each month-end, the staff member needs access to an application running on EC2 in the company’s Accounts Payable AWS account to reconcile reports. Which of the following provides the most secure and operationally efficient way to give the staff member access to the Accounts Payable application?_
 
 **Have the user request temporary security credentials for the application by assuming a role**
 
@@ -1302,7 +1302,7 @@ _Q57: You would like to set up a loosely coupled architecture. Which service wou
 
 Question 58
 
-_A customer has decided to go with a 1-year Standard Reserved Instance (RI) for EC2 since their application has steady state and predictable usage. Which pricing option should they choose to earn the **  **?_
+_A customer has decided to go with a 1-year Standard Reserved Instance (RI) for EC2 since their application has steady state and predictable usage. Which pricing option should they choose to earn the ?_
 
 **All upfront**
 
@@ -1355,16 +1355,7 @@ _A customer has set up an Amazon **S3 bucket** and wants to **limit access** to 
 
 
 
-
-
-
-
-
-
-
-
-
-
+## Dumps 4
 
 
 
